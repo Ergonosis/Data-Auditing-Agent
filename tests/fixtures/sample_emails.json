@@ -1,0 +1,29 @@
+[
+  {
+    "email_id": "email_001",
+    "subject": "AWS Invoice - February 2025",
+    "sender": "billing@aws.com",
+    "date": "2025-02-03T09:00:00Z",
+    "body": "Your AWS invoice for February 2025 is $500.00",
+    "attachments": ["invoice_feb_2025.pdf"],
+    "related_transactions": ["cc_12345"]
+  },
+  {
+    "email_id": "email_002",
+    "subject": "Receipt - Starbucks",
+    "sender": "receipts@starbucks.com",
+    "date": "2025-02-03T11:35:00Z",
+    "body": "Thank you for your purchase of $45.67",
+    "attachments": ["receipt.pdf"],
+    "related_transactions": ["cc_12346"]
+  },
+  {
+    "email_id": "email_003",
+    "subject": "Monthly Office Rent",
+    "sender": "landlord@realestate.com",
+    "date": "2025-01-31T08:00:00Z",
+    "body": "Rent payment of $2500 due by Feb 1st",
+    "attachments": [],
+    "related_transactions": ["bank_98766"]
+  }
+]

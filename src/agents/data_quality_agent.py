@@ -1,0 +1,77 @@
+"""Data Quality Agent - validates data before auditing"""
+
+from crewai import Agent, Task
+from src.tools.data_quality_tools import (
+    check_data_completeness,
+    validate_schema_conformity,
+    detect_duplicate_records,
+    infer_domain_freshness,
+    check_data_quality_gates
+)
+from src.utils.logging import get_logger
+
+logger = get_logger(__name__)
+
+# Agent definition
+data_quality_agent = Agent(
+    role="Data Quality Specialist",
+    goal="Validate data completeness, schema conformity, and freshness with 95%+ accuracy before audit begins",
+    backstory="""You are an expert data engineer with 10 years of experience in data validation.
+    You ensure that all transaction data meets quality standards before the audit process begins.
+    You are meticulous about data integrity and never let bad data pass through.""",
+
+    tools=[
+        check_data_completeness,
+        validate_schema_conformity,
+        detect_duplicate_records,
+        infer_domain_freshness,
+        check_data_quality_gates
+    ],
+
+    verbose=True,
+    allow_delegation=False,
+    llm=None  # No LLM needed for agent reasoning (tools handle LLM calls)
+)
+
+# Task definition
+data_quality_task = Task(
+    description="""
+    Given a table of transactions from Databricks Gold layer:
+
+    1. **Check data completeness** - ensure required fields (vendor, amount, date, source) are populated
+    2. **Validate schema conformity** - verify data types match expected schema
+    3. **Detect duplicate records** - find duplicate transactions based on txn_id
+    4. **Infer domain freshness** - determine business domain and max data age (use config if available, else infer via LLM)
+    5. **Apply quality gates** - check if completeness score meets threshold (default 90%)
+
+    **Input**: transactions table name (e.g., 'gold.recent_transactions')
+    **Output**: Structured report with:
+    - quality_score (0-1)
+    - incomplete_records (list of IDs)
+    - schema_violations (list of errors)
+    - duplicates (list of duplicate groups)
+    - domain_config (dict with domain, max_age_hours)
+    - freshness_violations (list of stale transactions)
+    - gate_passed (bool - True if quality acceptable, False if audit should halt)
+
+    **Important**:
+    - Use tools sequentially in order listed above
+    - If quality gate fails (completeness <90%), immediately return gate_passed=False
+    - For domain inference, check config first before calling LLM
+    - Log all findings clearly
+    """,
+
+    agent=data_quality_agent,
+
+    expected_output="""JSON object with data quality report:
+    {
+        "quality_score": 0.95,
+        "incomplete_records": ["cc_123", "cc_456"],
+        "schema_violations": [],
+        "duplicates": {"duplicate_count": 3, "duplicate_groups": [...]},
+        "domain_config": {"domain": "business_operations", "max_age_hours": 48, "confidence": 1.0},
+        "freshness_violations": [],
+        "gate_passed": true
+    }
+    """
+)

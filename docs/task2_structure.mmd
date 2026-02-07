@@ -1,0 +1,59 @@
+graph TB
+    subgraph "Data Quality Agent System"
+        Agent[Data Quality Agent<br/>Role: Data Quality Specialist<br/>LLM: None - Deterministic]
+        Task[Data Quality Task<br/>Sequential Execution]
+
+        Agent --> Task
+
+        subgraph "5 Validation Tools"
+            T1[Tool 1: check_data_completeness<br/>SQL/Pandas - NO LLM<br/>Returns: completeness_score 0-1]
+            T2[Tool 2: validate_schema_conformity<br/>Pandas - NO LLM<br/>Returns: list of errors]
+            T3[Tool 3: detect_duplicate_records<br/>SQL/Pandas - NO LLM<br/>Returns: duplicate groups]
+            T4[Tool 4: infer_domain_freshness<br/>Config-first, LLM fallback<br/>Returns: domain config]
+            T5[Tool 5: check_data_quality_gates<br/>Rule-based - NO LLM<br/>Returns: pass/fail boolean]
+        end
+
+        Task --> T1
+        T1 --> T2
+        T2 --> T3
+        T3 --> T4
+        T4 --> T5
+
+        T5 -->|Pass| Output[Quality Report JSON]
+        T5 -->|Fail| Halt[Halt Audit]
+    end
+
+    subgraph "Dependencies (Task 1)"
+        DB[databricks_client<br/>query_gold_tables]
+        LLM[llm_client<br/>call_llm]
+        Config[config_loader<br/>load_config]
+    end
+
+    T1 --> DB
+    T2 --> DB
+    T3 --> DB
+    T4 --> Config
+    T4 -.Optional.-> LLM
+
+    subgraph "Test Suite"
+        UT1[16 Unit Tests<br/>Mock data fixtures]
+        UT2[Edge case coverage<br/>Empty tables, errors]
+        UT3[Integration tests<br/>Agent/Task structure]
+    end
+
+    T1 -.tested by.-> UT1
+    T2 -.tested by.-> UT1
+    T3 -.tested by.-> UT1
+    T4 -.tested by.-> UT2
+    T5 -.tested by.-> UT2
+    Agent -.tested by.-> UT3
+
+    style Agent fill:#90EE90
+    style Task fill:#90EE90
+    style T1 fill:#87CEEB
+    style T2 fill:#87CEEB
+    style T3 fill:#87CEEB
+    style T4 fill:#FFD700
+    style T5 fill:#87CEEB
+    style Output fill:#98FB98
+    style Halt fill:#FFB6C1

@@ -1,0 +1,29 @@
+[
+  {
+    "txn_id": "cc_12345",
+    "source": "credit_card",
+    "amount": 500.00,
+    "vendor": "AWS",
+    "vendor_id": "aws_infrastructure",
+    "date": "2025-02-03T10:00:00Z",
+    "domain": "business_operations"
+  },
+  {
+    "txn_id": "cc_12346",
+    "source": "credit_card",
+    "amount": 45.67,
+    "vendor": "Starbucks",
+    "vendor_id": "starbucks_corporate",
+    "date": "2025-02-03T11:30:00Z",
+    "domain": "business_operations"
+  },
+  {
+    "txn_id": "cc_12347",
+    "source": "credit_card",
+    "amount": 1250.00,
+    "vendor": "Unknown Corp",
+    "vendor_id": null,
+    "date": "2025-02-03T14:00:00Z",
+    "domain": "business_operations"
+  }
+]

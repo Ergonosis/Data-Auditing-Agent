@@ -1,0 +1,22 @@
+[
+  {
+    "audit_run_id": "audit_2025_01_15_001",
+    "workflow_status": "completed",
+    "current_agent": null,
+    "completed_agents": ["data_quality", "reconciliation", "anomaly_detection", "context_enrichment", "escalation"],
+    "pending_agents": [],
+    "intermediate_results": {"flags_created": 15, "transactions_processed": 1000},
+    "created_at": "2025-01-15T08:00:00Z",
+    "updated_at": "2025-01-15T08:45:00Z"
+  },
+  {
+    "audit_run_id": "audit_2025_01_22_001",
+    "workflow_status": "completed",
+    "current_agent": null,
+    "completed_agents": ["data_quality", "reconciliation", "anomaly_detection", "context_enrichment", "escalation"],
+    "pending_agents": [],
+    "intermediate_results": {"flags_created": 18, "transactions_processed": 1050},
+    "created_at": "2025-01-22T08:00:00Z",
+    "updated_at": "2025-01-22T08:50:00Z"
+  }
+]

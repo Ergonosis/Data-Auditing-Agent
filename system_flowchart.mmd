@@ -1,0 +1,168 @@
+flowchart TB
+    subgraph DataLayer["🗄️ DATA LAYER - Databricks"]
+        KG["Knowledge Graph<br/><i>Entity linking across sources</i><br/><sub>Neo4j, Neptune, or Delta Lake</sub>"]
+
+        subgraph Medallion["Medallion Architecture"]
+            Bronze["Bronze Tables<br/><i>Raw ingested data</i>"]
+            Silver["Silver Tables<br/><i>Cleaned & validated</i>"]
+            Gold["Gold Tables<br/><i>Business aggregates</i>"]
+        end
+
+        Bronze --> Silver --> Gold
+    end
+
+    subgraph TriggerLayer["⏰ TRIGGER LAYER"]
+        TimeTrigger["Time-Based Trigger<br/><i>Hourly cron job</i><br/><sub>Databricks Workflows scheduler</sub>"]
+        EventTrigger["Event-Based Trigger<br/><i>New data arrival</i><br/><sub>Delta Lake change data feed</sub>"]
+        ManualTrigger["Manual Trigger<br/><i>On-demand audit</i><br/><sub>API endpoint or UI button</sub>"]
+    end
+
+    subgraph OrchestratorLayer["🎯 ORCHESTRATOR LAYER"]
+        Orchestrator["Orchestrator Agent<br/><b>CrewAI Manager</b><br/>━━━━━━━━━━━━━━━━<br/><i>Coordinates all sub-agents</i><br/><i>Manages workflow state</i><br/><i>Handles failures & retries</i>"]
+
+        StateStore["Workflow State Store<br/><sub>Redis or Databricks table</sub><br/>• Current audit run ID<br/>• Agent status tracking<br/>• Intermediate results<br/>• Graceful degradation state"]
+    end
+
+    subgraph AgentLayer["🤖 AGENT LAYER - Parallel Execution"]
+
+        subgraph Agent1["📊 Data Quality Agent"]
+            DQGoal["<b>Goal:</b> Validate data completeness & integrity"]
+            DQTools["<b>Tools:</b><br/>• check_data_completeness()<br/>• validate_schema_conformity()<br/>• detect_duplicate_records()<br/>• infer_domain_freshness()<br/>• check_data_quality_gates()"]
+            DQOutput["<b>Output:</b><br/>Quality score (0-100)<br/>List of incomplete/invalid records<br/>Domain freshness violations"]
+        end
+
+        subgraph Agent2["🔗 Reconciliation Agent"]
+            RecGoal["<b>Goal:</b> Match transactions across sources"]
+            RecTools["<b>Tools:</b><br/>• cross_source_matcher()<br/>• entity_resolver_kg()<br/>• fuzzy_vendor_matcher()<br/>• receipt_transaction_matcher()<br/>• find_orphan_transactions()"]
+            RecOutput["<b>Output:</b><br/>Matched transaction pairs<br/>Unmatched transactions (suspicious)<br/>Confidence scores per match"]
+        end
+
+        subgraph Agent3["🚨 Anomaly Detection Agent"]
+            AnomalyGoal["<b>Goal:</b> Detect statistical & ML-based anomalies"]
+            AnomalyTools["<b>Tools:</b><br/>• run_isolation_forest()<br/>• check_vendor_spending_profile()<br/>• detect_amount_outliers()<br/>• time_series_deviation_check()<br/>• batch_anomaly_scorer()"]
+            AnomalyOutput["<b>Output:</b><br/>Anomaly scores (0-1)<br/>Flagged transactions with reasons<br/>Vendor profile deviations"]
+        end
+
+        subgraph Agent4["🔍 Context Enrichment Agent"]
+            ContextGoal["<b>Goal:</b> Find supporting documentation"]
+            ContextTools["<b>Tools:</b><br/>• search_emails_batch()<br/>• search_calendar_events()<br/>• extract_approval_chains()<br/>• find_receipt_images()<br/>• semantic_search_documents()"]
+            ContextOutput["<b>Output:</b><br/>Linked emails/calendar events<br/>Approval status per transaction<br/>Missing documentation list"]
+        end
+
+        subgraph Agent5["⚖️ Escalation Agent"]
+            EscGoal["<b>Goal:</b> Classify severity & generate explanations"]
+            EscTools["<b>Tools:</b><br/>• calculate_severity_score()<br/>• generate_root_cause_analysis()<br/>• batch_classify_with_llm()<br/>• create_audit_flag()<br/>• check_escalation_rules()"]
+            EscOutput["<b>Output:</b><br/>🔴 CRITICAL flags<br/>🟡 WARNING flags<br/>🔵 INFO flags<br/>Natural language explanations"]
+        end
+
+        subgraph Agent6["📝 Audit Logging Agent"]
+            LogGoal["<b>Goal:</b> Record everything for transparency"]
+            LogTools["<b>Tools:</b><br/>• log_agent_decision()<br/>• create_audit_trail_entry()<br/>• save_workflow_state()<br/>• generate_lineage_trace()<br/>• archive_to_immutable_log()"]
+            LogOutput["<b>Output:</b><br/>Audit trail database entries<br/>Lineage graph (what led to what)<br/>Compliance-ready logs"]
+        end
+    end
+
+    subgraph DecisionLayer["💡 DECISION & FLAGGING ENGINE"]
+        Aggregator["Flag Aggregator<br/><i>Combines all agent outputs</i>"]
+
+        Classifier["Severity Classifier<br/>━━━━━━━━━━━━━━━━<br/>🔴 <b>CRITICAL</b>:<br/>  • Unauthorized >$X<br/>  • Missing revenue<br/>  • Compliance violations<br/>🟡 <b>WARNING</b>:<br/>  • Unusual patterns<br/>  • Missing receipts<br/>  • Amount mismatches<br/>🔵 <b>INFO</b>:<br/>  • Minor discrepancies<br/>  • Audit trail only"]
+
+        Explainer["Explainability Engine<br/><i>Generates human-readable reasons</i><br/><sub>Uses SHAP for ML, citations for LLM</sub>"]
+    end
+
+    subgraph OutputLayer["📤 OUTPUT & STORAGE"]
+        FlagDB[("🚩 Flag Database<br/><i>Pending review items</i><br/><sub>Postgres or Databricks table</sub><br/>• flag_id (UUID)<br/>• transaction_id<br/>• severity level<br/>• confidence score<br/>• explanation<br/>• supporting_evidence_links<br/>• created_at<br/>• reviewed (boolean)")]
+
+        AuditDB[("📜 Audit Trail DB<br/><i>Immutable compliance logs</i><br/><sub>Append-only Delta table</sub><br/>• audit_run_id<br/>• agent_name<br/>• tool_called<br/>• input_data<br/>• output_data<br/>• timestamp<br/>• llm_tokens_used<br/>• cost_incurred")]
+
+        Frontend["Frontend Dashboard<br/><i>Finance team interface</i><br/>• View flagged items<br/>• Mark as valid/invalid<br/>• Escalate/de-escalate<br/>• Add notes<br/>• Approve bulk items"]
+    end
+
+    subgraph FeedbackLayer["🔁 FEEDBACK & LEARNING LOOP"]
+        HumanFeedback["Human Feedback Collection<br/><i>From frontend interactions</i>"]
+
+        FeedbackAnalyzer["Feedback Analyzer<br/><i>Weekly batch job</i><br/>━━━━━━━━━━━━━━━━<br/>Analyzes patterns:<br/>• Vendor X: 80% false positives → whitelist<br/>• Rule Y: 50+ false flags → adjust threshold<br/>• Agent Z: Low confidence → retrain"]
+
+        RuleTuner["Automatic Rule Tuner<br/><i>No human approval needed</i><br/>Updates:<br/>• Vendor whitelists/blacklists<br/>• Dollar thresholds<br/>• Anomaly detection params<br/>• Domain freshness configs"]
+
+        ModelRetrainer["ML Model Retrainer<br/><i>Monthly retraining</i><br/>Uses labeled data from review queue"]
+    end
+
+    subgraph MonitoringLayer["📊 MONITORING & OBSERVABILITY"]
+        Metrics["System Metrics<br/>• Audit completion time<br/>• Agent success/failure rates<br/>• LLM token usage & cost<br/>• False positive rate<br/>• Human review throughput"]
+
+        Alerts["Alert System<br/>• Audit timeout >30min<br/>• Agent failure rate >10%<br/>• LLM cost spike >$X/day<br/>• Data quality gate failure<br/>• Databricks connection loss"]
+
+        Dashboards["Observability Dashboard<br/><sub>Datadog, Grafana, or Databricks UI</sub><br/>• Real-time audit progress<br/>• Cost tracking<br/>• Agent performance<br/>• SLA compliance"]
+    end
+
+    subgraph CostOptimization["💰 COST OPTIMIZATION STRATEGIES"]
+        Strategy1["<b>Strategy 1: Tool-First Approach</b><br/>SQL/Python tools filter to suspicious subset<br/>→ Only invoke LLM on <10% of transactions<br/>Example: 10,000 transactions → 800 LLM calls"]
+
+        Strategy2["<b>Strategy 2: Model Tiering</b><br/>Simple cases: GPT-4o-mini ($0.15/1M tokens)<br/>Complex cases: Claude Sonnet ($3/1M tokens)<br/>Ambiguous: GPT-4 or Claude Opus (rare)"]
+
+        Strategy3["<b>Strategy 3: Batch Processing</b><br/>Group 50-100 transactions per LLM call<br/>→ Reduces API overhead 50x<br/>Use context window efficiently"]
+
+        Strategy4["<b>Strategy 4: Caching</b><br/>Cache vendor profiles, approval patterns<br/>Avoid re-computing same analysis<br/>Redis TTL: 24 hours"]
+    end
+
+    %% Main Flow Connections
+    TimeTrigger -->|Hourly| Orchestrator
+    EventTrigger -->|On data arrival| Orchestrator
+    ManualTrigger -->|API call| Orchestrator
+
+    Gold -->|Query| Orchestrator
+    KG -->|Entity lookup| Orchestrator
+
+    Orchestrator <-->|State management| StateStore
+
+    Orchestrator ==>|Parallel dispatch| Agent1
+    Orchestrator ==>|Parallel dispatch| Agent2
+    Orchestrator ==>|Parallel dispatch| Agent3
+
+    Agent1 -->|Results| Orchestrator
+    Agent2 -->|Results| Orchestrator
+    Agent3 -->|Results| Orchestrator
+
+    Orchestrator ==>|Sequential| Agent4
+    Agent4 -->|Enriched context| Orchestrator
+
+    Orchestrator ==>|Sequential| Agent5
+    Agent5 -->|Classifications| Aggregator
+
+    Aggregator --> Classifier
+    Classifier --> Explainer
+
+    Explainer ==>|Write flags| FlagDB
+
+    Orchestrator ==>|Continuous logging| Agent6
+    Agent6 ==>|Write logs| AuditDB
+
+    FlagDB ==>|Display| Frontend
+    Frontend ==>|User actions| HumanFeedback
+
+    HumanFeedback -->|Batch weekly| FeedbackAnalyzer
+    FeedbackAnalyzer -->|Auto-update| RuleTuner
+    FeedbackAnalyzer -->|Retrain| ModelRetrainer
+
+    RuleTuner -.->|Update configs| Agent1
+    RuleTuner -.->|Update configs| Agent2
+    RuleTuner -.->|Update configs| Agent3
+    ModelRetrainer -.->|Deploy new models| Agent3
+
+    AuditDB -->|Aggregate| Metrics
+    Metrics -->|Threshold checks| Alerts
+    Metrics -->|Visualize| Dashboards
+
+    %% Styling
+    classDef dataStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef agentStyle fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
+    classDef outputStyle fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    classDef feedbackStyle fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef monitorStyle fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
+    class Bronze,Silver,Gold,KG dataStyle
+    class Orchestrator,Agent1,Agent2,Agent3,Agent4,Agent5,Agent6 agentStyle
+    class FlagDB,AuditDB,Frontend outputStyle
+    class HumanFeedback,FeedbackAnalyzer,RuleTuner,ModelRetrainer feedbackStyle
+    class Metrics,Alerts,Dashboards monitorStyle

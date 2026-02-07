@@ -1,0 +1,122 @@
+"""Audit logging tools for compliance and transparency"""
+
+from crewai_tools import tool
+from typing import Dict, Any, List
+from datetime import datetime
+from src.utils.logging import get_logger
+import json
+
+logger = get_logger(__name__)
+
+# In-memory audit trail (in production, this would write to database)
+AUDIT_TRAIL = []
+
+
+@tool("log_agent_decision")
+def log_agent_decision(
+    agent_name: str,
+    action: str,
+    input_data: dict,
+    output_data: dict,
+    metadata: dict
+) -> str:
+    """
+    Log agent decision with full context
+
+    Args:
+        agent_name: Name of agent
+        action: Action/tool called
+        input_data: Input parameters
+        output_data: Output results
+        metadata: Additional metadata (execution time, tokens, cost)
+
+    Returns:
+        Confirmation message
+    """
+    log_entry = {
+        'timestamp': datetime.now().isoformat(),
+        'agent_name': agent_name,
+        'action': action,
+        'input_data': input_data,
+        'output_data': output_data,
+        'metadata': metadata
+    }
+
+    AUDIT_TRAIL.append(log_entry)
+    logger.info(f"Logged {agent_name} decision", action=action)
+
+    return f"Decision logged for {agent_name}"
+
+
+@tool("create_audit_trail_entry")
+def create_audit_trail_entry(flag_id: str, decision_chain: list) -> str:
+    """
+    Link flag to decision chain
+
+    Args:
+        flag_id: Flag UUID
+        decision_chain: List of decisions leading to flag
+
+    Returns:
+        Confirmation message
+    """
+    entry = {
+        'flag_id': flag_id,
+        'decision_chain': decision_chain,
+        'timestamp': datetime.now().isoformat()
+    }
+
+    AUDIT_TRAIL.append(entry)
+    logger.info(f"Created audit trail for flag {flag_id}")
+
+    return f"Audit trail created for flag {flag_id}"
+
+
+@tool("get_audit_trail")
+def get_audit_trail(audit_run_id: str) -> str:
+    """
+    Retrieve audit trail for specific run
+
+    Args:
+        audit_run_id: Audit run ID
+
+    Returns:
+        JSON string of audit trail entries
+    """
+    # In production, query from database
+    # For now, return in-memory trail
+    logger.info(f"Retrieved audit trail for run {audit_run_id}")
+    return json.dumps(AUDIT_TRAIL, indent=2)
+
+
+@tool("generate_lineage_trace")
+def generate_lineage_trace(transaction_id: str) -> dict:
+    """
+    Generate data lineage graph for transaction
+
+    Args:
+        transaction_id: Transaction ID
+
+    Returns:
+        Lineage graph structure
+    """
+    # Simplified lineage
+    lineage = {
+        'transaction_id': transaction_id,
+        'lineage': [
+            {'stage': 'Bronze.credit_cards', 'row_id': 'row_456'},
+            {'stage': 'Silver.transactions_cleaned', 'row_id': 'row_789'},
+            {'stage': 'Gold.transactions_enriched', 'row_id': 'row_123'},
+            {'stage': 'Audit.flagged', 'flag_id': 'flag_xxx'}
+        ]
+    }
+
+    logger.info(f"Generated lineage trace for transaction {transaction_id}")
+    return lineage
+
+
+def clear_audit_trail():
+    """Clear the audit trail (for testing)"""
+    global AUDIT_TRAIL
+    AUDIT_TRAIL = []
+    logger.info("Audit trail cleared")

@@ -1,0 +1,47 @@
+version: "1.0.0"
+last_updated: "2025-02-06T00:00:00Z"
+
+whitelisted_vendors: []  # Auto-populated by feedback analyzer
+
+rules:
+  data_quality:
+    completeness_threshold: 0.90
+
+  reconciliation:
+    amount_match_threshold: 0.05  # ±5%
+    date_window_days: 3
+
+  anomaly_detection:
+    amount_outlier:
+      sigma: 2.5
+      min_transactions: 5
+    isolation_forest:
+      contamination: 0.05
+
+  escalation:
+    severity_thresholds:
+      CRITICAL: { min_score: 80 }
+      WARNING: { min_score: 50 }
+      INFO: { min_score: 20 }
+
+domain_configs:
+  # START WITH SINGLE BROAD DOMAIN - add specific domains later
+  default:
+    max_age_hours: 48
+    critical_amount_threshold: 1000
+    description: "Generic business transactions - customize per client later"
+
+  # FUTURE: Add specific domains after initial deployment
+  # inventory_management:
+  #   max_age_hours: 24
+  #   critical_amount_threshold: 5000
+  # senior_living:
+  #   max_age_hours: 168
+  #   critical_amount_threshold: 10000
+
+llm:
+  provider: "openrouter"
+  default_model: "openai/gpt-4o-mini"
+  edge_case_model: "anthropic/claude-3-5-haiku"
+  batch_size: 50
+  timeout_seconds: 60

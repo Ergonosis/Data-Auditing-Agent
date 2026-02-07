@@ -1,0 +1,61 @@
+version: "1.0.0-demo"
+last_updated: "2025-02-06T00:00:00Z"
+
+# Demo configuration optimized for RIA dataset
+# Adjusts thresholds for smaller dataset and different business patterns
+
+whitelisted_vendors:
+  # SaaS vendors that don't generate paper receipts
+  - "AWS"
+  - "Slack"
+  - "Microsoft"
+  - "Salesforce"
+  - "DocuSign"
+  - "Zoom"
+  - "Google"
+  - "Adobe"
+
+rules:
+  data_quality:
+    completeness_threshold: 0.85  # Lower for demo (47% missing receipts expected for SaaS)
+
+  reconciliation:
+    amount_match_threshold: 0.05  # ±5%
+    date_window_days: 3
+
+  anomaly_detection:
+    amount_outlier:
+      sigma: 2.0  # More sensitive for small dataset
+      min_transactions: 3  # Lower minimum for demo data
+    isolation_forest:
+      contamination: 0.10  # Higher anomaly rate expected in demo
+
+  escalation:
+    severity_thresholds:
+      CRITICAL: { min_score: 75 }  # Slightly lower threshold for demo
+      WARNING: { min_score: 45 }
+      INFO: { min_score: 20 }
+
+domain_configs:
+  # RIA-specific domain configuration
+  default:
+    max_age_hours: 168  # 7 days - RIA data spans longer period
+    critical_amount_threshold: 1000
+    description: "RIA business operations - investment advisor expenses"
+
+  business_development:
+    max_age_hours: 168
+    critical_amount_threshold: 1500
+    description: "Client entertainment and relationship development"
+
+  business_operations:
+    max_age_hours: 48
+    critical_amount_threshold: 500
+    description: "SaaS subscriptions and operational expenses"
+
+llm:
+  provider: "openrouter"
+  default_model: "openai/gpt-4o-mini"
+  edge_case_model: "anthropic/claude-3-5-haiku"
+  batch_size: 50
+  timeout_seconds: 60

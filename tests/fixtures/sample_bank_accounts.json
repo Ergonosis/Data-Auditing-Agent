@@ -1,0 +1,26 @@
+[
+  {
+    "txn_id": "bank_98765",
+    "account_number": "****4321",
+    "amount": 500.00,
+    "payee": "AWS Inc",
+    "date": "2025-02-03T10:00:00Z",
+    "transaction_type": "ACH"
+  },
+  {
+    "txn_id": "bank_98766",
+    "account_number": "****4321",
+    "amount": 2500.00,
+    "payee": "Office Rent LLC",
+    "date": "2025-02-01T09:00:00Z",
+    "transaction_type": "check"
+  },
+  {
+    "txn_id": "bank_98767",
+    "account_number": "****9876",
+    "amount": 150.00,
+    "payee": "Utility Company",
+    "date": "2025-02-02T12:00:00Z",
+    "transaction_type": "ACH"
+  }
+]

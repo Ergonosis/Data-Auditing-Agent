@@ -1,0 +1,26 @@
+[
+  {
+    "txn_id": "cc_12345",
+    "card_number": "****1234",
+    "amount": 500.00,
+    "vendor": "AWS",
+    "date": "2025-02-03T10:00:00Z",
+    "category": "cloud_services"
+  },
+  {
+    "txn_id": "cc_12346",
+    "card_number": "****1234",
+    "amount": 45.67,
+    "vendor": "Starbucks",
+    "date": "2025-02-03T11:30:00Z",
+    "category": "meals"
+  },
+  {
+    "txn_id": "cc_12347",
+    "card_number": "****5678",
+    "amount": 1250.00,
+    "vendor": "Unknown Corp",
+    "date": "2025-02-03T14:00:00Z",
+    "category": "unknown"
+  }
+]
