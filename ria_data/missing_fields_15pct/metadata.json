@@ -1,0 +1,2046 @@
+{
+  "dataset_name": "missing_fields_15pct",
+  "corruption_type": "missing_fields",
+  "corruption_params": {
+    "corruption_rate": 0.15,
+    "seed": 42
+  },
+  "created_at": "2026-02-08T21:46:48.090163",
+  "ground_truth": {
+    "total_rows": 2167,
+    "corrupted_rows": 325,
+    "corrupted_row_ids": [
+      "EXP_0000466",
+      "EXP_0000107",
+      "EXP_0001112",
+      "EXP_0000987",
+      "EXP_0000883",
+      "EXP_0000563",
+      "EXP_0000425",
+      "EXP_0002133",
+      "EXP_0000370",
+      "EXP_0001662",
+      "EXP_0000125",
+      "EXP_0000118",
+      "EXP_0000387",
+      "EXP_0000868",
+      "EXP_0000922",
+      "EXP_0001975",
+      "EXP_0000115",
+      "EXP_0000795",
+      "EXP_0001652",
+      "EXP_0000871",
+      "EXP_0001762",
+      "EXP_0001128",
+      "EXP_0000041",
+      "EXP_0000641",
+      "EXP_0001385",
+      "EXP_0000631",
+      "EXP_0000861",
+      "EXP_0001365",
+      "EXP_0000385",
+      "EXP_0001518",
+      "EXP_0000408",
+      "EXP_0001443",
+      "EXP_0001394",
+      "EXP_0001064",
+      "EXP_0000197",
+      "EXP_0001807",
+      "EXP_0002106",
+      "EXP_0000515",
+      "EXP_0001508",
+      "EXP_0000338",
+      "EXP_0002148",
+      "EXP_0001193",
+      "EXP_0001458",
+      "EXP_0000776",
+      "EXP_0000309",
+      "EXP_0000202",
+      "EXP_0000910",
+      "EXP_0001181",
+      "EXP_0000344",
+      "EXP_0000421",
+      "EXP_0001783",
+      "EXP_0001464",
+      "EXP_0000651",
+      "EXP_0001478",
+      "EXP_0001429",
+      "EXP_0000842",
+      "EXP_0001079",
+      "EXP_0000322",
+      "EXP_0000686",
+      "EXP_0002100",
+      "EXP_0000656",
+      "EXP_0001815",
+      "EXP_0001511",
+      "EXP_0001091",
+      "EXP_0002160",
+      "EXP_0000870",
+      "EXP_0001307",
+      "EXP_0000248",
+      "EXP_0000916",
+      "EXP_0001271",
+      "EXP_0001587",
+      "EXP_0001082",
+      "EXP_0000282",
+      "EXP_0000852",
+      "EXP_0001265",
+      "EXP_0000854",
+      "EXP_0001955",
+      "EXP_0001575",
+      "EXP_0001803",
+      "EXP_0000577",
+      "EXP_0001066",
+      "EXP_0000304",
+      "EXP_0000505",
+      "EXP_0001717",
+      "EXP_0001248",
+      "EXP_0001177",
+      "EXP_0000546",
+      "EXP_0001721",
+      "EXP_0001281",
+      "EXP_0000917",
+      "EXP_0002047",
+      "EXP_0001280",
+      "EXP_0000884",
+      "EXP_0000807",
+      "EXP_0000461",
+      "EXP_0000297",
+      "EXP_0001099",
+      "EXP_0001063",
+      "EXP_0000186",
+      "EXP_0001730",
+      "EXP_0000076",
+      "EXP_0001937",
+      "EXP_0000234",
+      "EXP_0000324",
+      "EXP_0001400",
+      "EXP_0000328",
+      "EXP_0001805",
+      "EXP_0001537",
+      "EXP_0000911",
+      "EXP_0001315",
+      "EXP_0000123",
+      "EXP_0000847",
+      "EXP_0000841",
+      "EXP_0001001",
+      "EXP_0001160",
+      "EXP_0000521",
+      "EXP_0001222",
+      "EXP_0002127",
+      "EXP_0000025",
+      "EXP_0001642",
+      "EXP_0000236",
+      "EXP_0001539",
+      "EXP_0002016",
+      "EXP_0001172",
+      "EXP_0001724",
+      "EXP_0000558",
+      "EXP_0001760",
+      "EXP_0001445",
+      "EXP_0000741",
+      "EXP_0000235",
+      "EXP_0000603",
+      "EXP_0000927",
+      "EXP_0000327",
+      "EXP_0000978",
+      "EXP_0000008",
+      "EXP_0002150",
+      "EXP_0001981",
+      "EXP_0001641",
+      "EXP_0001085",
+      "EXP_0001752",
+      "EXP_0000371",
+      "EXP_0001095",
+      "EXP_0002068",
+      "EXP_0000227",
+      "EXP_0001961",
+      "EXP_0001395",
+      "EXP_0000607",
+      "EXP_0001889",
+      "EXP_0001441",
+      "EXP_0001349",
+      "EXP_0000417",
+      "EXP_0000827",
+      "EXP_0000334",
+      "EXP_0001182",
+      "EXP_0001785",
+      "EXP_0002088",
+      "EXP_0001164",
+      "EXP_0002078",
+      "EXP_0000002",
+      "EXP_0001316",
+      "EXP_0000690",
+      "EXP_0001057",
+      "EXP_0000074",
+      "EXP_0000480",
+      "EXP_0001512",
+      "EXP_0001268",
+      "EXP_0000998",
+      "EXP_0000214",
+      "EXP_0001002",
+      "EXP_0000314",
+      "EXP_0000352",
+      "EXP_0002018",
+      "EXP_0000280",
+      "EXP_0000536",
+      "EXP_0000559",
+      "EXP_0001984",
+      "EXP_0000720",
+      "EXP_0001084",
+      "EXP_0001755",
+      "EXP_0000902",
+      "EXP_0000869",
+      "EXP_0001286",
+      "EXP_0001659",
+      "EXP_0001553",
+      "EXP_0001801",
+      "EXP_0001882",
+      "EXP_0000522",
+      "EXP_0001029",
+      "EXP_0000948",
+      "EXP_0000261",
+      "EXP_0001389",
+      "EXP_0000083",
+      "EXP_0000960",
+      "EXP_0000938",
+      "EXP_0000021",
+      "EXP_0000285",
+      "EXP_0000223",
+      "EXP_0000959",
+      "EXP_0000278",
+      "EXP_0000124",
+      "EXP_0001351",
+      "EXP_0000988",
+      "EXP_0001145",
+      "EXP_0000925",
+      "EXP_0000576",
+      "EXP_0001980",
+      "EXP_0001009",
+      "EXP_0001678",
+      "EXP_0000800",
+      "EXP_0000407",
+      "EXP_0000424",
+      "EXP_0001777",
+      "EXP_0001463",
+      "EXP_0001690",
+      "EXP_0001960",
+      "EXP_0000209",
+      "EXP_0000428",
+      "EXP_0000243",
+      "EXP_0001666",
+      "EXP_0001397",
+      "EXP_0000472",
+      "EXP_0001030",
+      "EXP_0000810",
+      "EXP_0001876",
+      "EXP_0000615",
+      "EXP_0001746",
+      "EXP_0000762",
+      "EXP_0001936",
+      "EXP_0001034",
+      "EXP_0000306",
+      "EXP_0001829",
+      "EXP_0000196",
+      "EXP_0000050",
+      "EXP_0000403",
+      "EXP_0000980",
+      "EXP_0000721",
+      "EXP_0002000",
+      "EXP_0000915",
+      "EXP_0001663",
+      "EXP_0000719",
+      "EXP_0001572",
+      "EXP_0000005",
+      "EXP_0001620",
+      "EXP_0001037",
+      "EXP_0001747",
+      "EXP_0001117",
+      "EXP_0001614",
+      "EXP_0002129",
+      "EXP_0001874",
+      "EXP_0000584",
+      "EXP_0000718",
+      "EXP_0001150",
+      "EXP_0000815",
+      "EXP_0000226",
+      "EXP_0002079",
+      "EXP_0000238",
+      "EXP_0001213",
+      "EXP_0000224",
+      "EXP_0000204",
+      "EXP_0001835",
+      "EXP_0001932",
+      "EXP_0002025",
+      "EXP_0000589",
+      "EXP_0001947",
+      "EXP_0000300",
+      "EXP_0000704",
+      "EXP_0000263",
+      "EXP_0000259",
+      "EXP_0000906",
+      "EXP_0001533",
+      "EXP_0000449",
+      "EXP_0000964",
+      "EXP_0000157",
+      "EXP_0000303",
+      "EXP_0001602",
+      "EXP_0002007",
+      "EXP_0001220",
+      "EXP_0001021",
+      "EXP_0000779",
+      "EXP_0000934",
+      "EXP_0001500",
+      "EXP_0000504",
+      "EXP_0001162",
+      "EXP_0001751",
+      "EXP_0000275",
+      "EXP_0000055",
+      "EXP_0001756",
+      "EXP_0002165",
+      "EXP_0000378",
+      "EXP_0000277",
+      "EXP_0002051",
+      "EXP_0000806",
+      "EXP_0001942",
+      "EXP_0000506",
+      "EXP_0001353",
+      "EXP_0000961",
+      "EXP_0001413",
+      "EXP_0001116",
+      "EXP_0001670",
+      "EXP_0002080",
+      "EXP_0001169",
+      "EXP_0002019",
+      "EXP_0000030",
+      "EXP_0002120",
+      "EXP_0001159",
+      "EXP_0000396",
+      "EXP_0000514",
+      "EXP_0001035",
+      "EXP_0000436",
+      "EXP_0000402",
+      "EXP_0002118",
+      "EXP_0000586",
+      "EXP_0001075",
+      "EXP_0001106",
+      "EXP_0000789",
+      "EXP_0001332",
+      "EXP_0000775",
+      "EXP_0001941",
+      "EXP_0001884",
+      "EXP_0000981",
+      "EXP_0000206",
+      "EXP_0000357",
+      "EXP_0001092",
+      "EXP_0000174",
+      "EXP_0000011"
+    ],
+    "corruption_details": {
+      "EXP_0000466": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000107": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001112": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000987": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000883": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000563": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000425": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002133": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000370": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001662": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000125": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000118": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000387": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000868": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000922": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001975": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000115": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000795": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001652": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000871": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001762": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001128": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000041": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000641": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001385": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000631": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000861": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001365": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000385": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001518": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000408": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001443": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001394": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001064": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000197": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001807": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0002106": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000515": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001508": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000338": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002148": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001193": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001458": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000776": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000309": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000202": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000910": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001181": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000344": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000421": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001783": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001464": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000651": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001478": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001429": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000842": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001079": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000322": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000686": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002100": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000656": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001815": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001511": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001091": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0002160": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000870": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001307": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000248": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000916": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001271": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001587": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001082": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000282": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000852": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001265": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000854": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001955": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001575": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001803": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000577": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001066": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000304": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000505": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001717": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001248": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001177": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000546": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001721": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001281": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000917": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002047": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001280": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000884": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000807": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000461": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000297": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001099": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001063": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000186": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001730": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000076": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001937": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000234": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000324": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001400": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000328": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001805": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001537": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000911": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001315": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000123": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000847": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000841": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001001": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001160": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000521": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001222": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002127": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000025": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001642": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000236": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001539": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002016": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001172": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001724": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000558": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001760": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001445": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000741": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000235": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000603": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000927": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000327": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000978": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000008": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002150": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001981": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001641": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001085": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001752": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000371": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001095": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002068": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000227": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001961": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001395": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000607": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001889": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001441": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001349": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000417": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000827": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000334": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001182": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001785": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002088": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001164": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0002078": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000002": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001316": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000690": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001057": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000074": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000480": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001512": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001268": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000998": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000214": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001002": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000314": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000352": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002018": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000280": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000536": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000559": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001984": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000720": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001084": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001755": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000902": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000869": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001286": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001659": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001553": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001801": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001882": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000522": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001029": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000948": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000261": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001389": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000083": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000960": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000938": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000021": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000285": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000223": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000959": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000278": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000124": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001351": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000988": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001145": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000925": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000576": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001980": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001009": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001678": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000800": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000407": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000424": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001777": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001463": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001690": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001960": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000209": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000428": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000243": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001666": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001397": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000472": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001030": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000810": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001876": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000615": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001746": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000762": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001936": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001034": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000306": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001829": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000196": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000050": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000403": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000980": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000721": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002000": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000915": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001663": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000719": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001572": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000005": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001620": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001037": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001747": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001117": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001614": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002129": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001874": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000584": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000718": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001150": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000815": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000226": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0002079": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000238": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001213": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000224": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000204": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001835": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001932": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0002025": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000589": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001947": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000300": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000704": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000263": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000259": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000906": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001533": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000449": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000964": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000157": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000303": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001602": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002007": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001220": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001021": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000779": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000934": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001500": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000504": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001162": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001751": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000275": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000055": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001756": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002165": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000378": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000277": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0002051": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000806": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001942": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0000506": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001353": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000961": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001413": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001116": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001670": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002080": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001169": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002019": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000030": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002120": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001159": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000396": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000514": {
+        "nulled_fields": [
+          "merchant",
+          "expense_date"
+        ]
+      },
+      "EXP_0001035": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000436": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000402": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0002118": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000586": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001075": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001106": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000789": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001332": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000775": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001941": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0001884": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000981": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000206": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000357": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0001092": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      },
+      "EXP_0000174": {
+        "nulled_fields": [
+          "amount"
+        ]
+      },
+      "EXP_0000011": {
+        "nulled_fields": [
+          "merchant"
+        ]
+      }
+    }
+  },
+  "expected_results": {
+    "completeness_score": 0.85,
+    "flags_created_min": 300,
+    "flags_created_max": 350,
+    "severity_distribution": {
+      "CRITICAL": 0,
+      "WARNING": 325,
+      "INFO": 0
+    },
+    "notes": "Most corrupted rows should trigger WARNING (+30 points for incomplete data)"
+  }
+}

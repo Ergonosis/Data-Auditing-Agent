@@ -1,0 +1,25 @@
+bank_account_id,transaction_date,description,type,amount,running_balance
+BANK_001,2024-02-29,Credit card payment,Credit Card Payment,-9674.36,90325.64
+BANK_001,2024-03-31,Quarterly advisory fees,Client Revenue,1148139.0,1238464.64
+BANK_001,2024-03-31,Credit card payment,Credit Card Payment,-12956.09,1225508.55
+BANK_001,2024-05-31,Credit card payment,Credit Card Payment,-11932.26,1201291.22
+BANK_001,2024-06-30,Credit card payment,Credit Card Payment,-16602.54,1184688.68
+BANK_001,2024-07-31,Credit card payment,Credit Card Payment,-12318.4,4266873.28
+BANK_001,2024-08-31,Credit card payment,Credit Card Payment,-14850.92,4252022.36
+BANK_001,2024-09-30,Credit card payment,Credit Card Payment,-25006.28,4227016.08
+BANK_001,2024-09-30,Quarterly advisory fees,Client Revenue,4842677.0,9069693.08
+BANK_001,2024-10-31,Credit card payment,Credit Card Payment,-24135.29,9045557.79
+BANK_001,2024-11-30,Credit card payment,Credit Card Payment,-25247.64,9020310.15
+BANK_001,2024-12-31,Credit card payment,Credit Card Payment,-29480.69,16266576.21
+BANK_001,2025-02-28,Credit card payment,Credit Card Payment,-33326.82,16199259.08
+BANK_001,2025-03-31,Quarterly advisory fees,Client Revenue,8890164.25,25089423.33
+BANK_001,2025-03-31,Credit card payment,Credit Card Payment,-39649.19,25049774.14
+BANK_001,2025-04-30,Credit card payment,Credit Card Payment,-40241.9,25009532.24
+BANK_001,2025-05-31,Credit card payment,Credit Card Payment,-42168.18,24967364.06
+BANK_001,2025-06-30,Credit card payment,Credit Card Payment,-50100.37,35661432.43
+BANK_001,2025-07-31,Credit card payment,Credit Card Payment,-58276.81,35603155.62
+BANK_001,2025-08-31,Credit card payment,Credit Card Payment,-58046.69,35545108.93
+BANK_001,2025-09-30,Quarterly advisory fees,Client Revenue,12393805.99,47876530.07
+BANK_001,2025-11-30,Credit card payment,Credit Card Payment,-64820.67,47757017.07
+BANK_001,2026-01-31,Credit card payment,Credit Card Payment,-56977.59,62186914.82
+BANK_001,2026-02-28,Credit card payment,Credit Card Payment,-11553.36,62175361.46

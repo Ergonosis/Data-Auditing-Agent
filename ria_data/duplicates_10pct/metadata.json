@@ -1,0 +1,3522 @@
+{
+  "dataset_name": "duplicates_10pct",
+  "corruption_type": "duplicates",
+  "corruption_params": {
+    "corruption_rate": 0.1,
+    "seed": 42
+  },
+  "created_at": "2026-02-08T21:46:48.117873",
+  "ground_truth": {
+    "total_rows": 2716,
+    "original_rows": 2167,
+    "corrupted_rows": 216,
+    "duplicate_count": 549,
+    "corrupted_row_ids": [
+      "EXP_0000457",
+      "EXP_0000103",
+      "EXP_0001127",
+      "EXP_0001004",
+      "EXP_0000915",
+      "EXP_0000572",
+      "EXP_0000420",
+      "EXP_0000357",
+      "EXP_0001729",
+      "EXP_0000131",
+      "EXP_0000123",
+      "EXP_0000384",
+      "EXP_0000896",
+      "EXP_0000953",
+      "EXP_0002070",
+      "EXP_0000109",
+      "EXP_0000815",
+      "EXP_0001719",
+      "EXP_0000903",
+      "EXP_0001840",
+      "EXP_0001140",
+      "EXP_0000027",
+      "EXP_0000654",
+      "EXP_0001732",
+      "EXP_0001394",
+      "EXP_0001139",
+      "EXP_0000637",
+      "EXP_0000882",
+      "EXP_0001379",
+      "EXP_0000419",
+      "EXP_0000380",
+      "EXP_0001557",
+      "EXP_0000397",
+      "EXP_0001471",
+      "EXP_0001409",
+      "EXP_0001084",
+      "EXP_0000178",
+      "EXP_0001882",
+      "EXP_0000512",
+      "EXP_0001551",
+      "EXP_0000323",
+      "EXP_0001201",
+      "EXP_0001482",
+      "EXP_0000788",
+      "EXP_0000285",
+      "EXP_0000188",
+      "EXP_0000934",
+      "EXP_0001186",
+      "EXP_0000327",
+      "EXP_0000954",
+      "EXP_0000414",
+      "EXP_0001858",
+      "EXP_0001495",
+      "EXP_0000667",
+      "EXP_0001517",
+      "EXP_0001456",
+      "EXP_0000859",
+      "EXP_0001094",
+      "EXP_0000293",
+      "EXP_0000701",
+      "EXP_0001003",
+      "EXP_0000670",
+      "EXP_0001894",
+      "EXP_0001555",
+      "EXP_0001106",
+      "EXP_0000900",
+      "EXP_0001329",
+      "EXP_0000230",
+      "EXP_0000939",
+      "EXP_0000132",
+      "EXP_0001293",
+      "EXP_0001644",
+      "EXP_0001097",
+      "EXP_0000272",
+      "EXP_0000865",
+      "EXP_0001289",
+      "EXP_0000871",
+      "EXP_0002045",
+      "EXP_0001621",
+      "EXP_0001880",
+      "EXP_0000586",
+      "EXP_0001085",
+      "EXP_0001011",
+      "EXP_0001077",
+      "EXP_0001755",
+      "EXP_0001636",
+      "EXP_0001483",
+      "EXP_0000899",
+      "EXP_0000567",
+      "EXP_0002088",
+      "EXP_0002022",
+      "EXP_0000373",
+      "EXP_0000193",
+      "EXP_0000450",
+      "EXP_0000627",
+      "EXP_0000656",
+      "EXP_0001730",
+      "EXP_0000261",
+      "EXP_0001577",
+      "EXP_0001564",
+      "EXP_0001918",
+      "EXP_0001030",
+      "EXP_0000048",
+      "EXP_0000470",
+      "EXP_0001093",
+      "EXP_0001203",
+      "EXP_0001781",
+      "EXP_0000648",
+      "EXP_0001859",
+      "EXP_0000014",
+      "EXP_0001079",
+      "EXP_0002051",
+      "EXP_0000732",
+      "EXP_0002080",
+      "EXP_0000436",
+      "EXP_0001223",
+      "EXP_0001532",
+      "EXP_0000662",
+      "EXP_0000003",
+      "EXP_0001328",
+      "EXP_0002002",
+      "EXP_0000080",
+      "EXP_0000459",
+      "EXP_0001487",
+      "EXP_0001260",
+      "EXP_0000981",
+      "EXP_0000238",
+      "EXP_0000987",
+      "EXP_0000351",
+      "EXP_0001991",
+      "EXP_0000284",
+      "EXP_0000516",
+      "EXP_0000526",
+      "EXP_0001947",
+      "EXP_0000677",
+      "EXP_0001086",
+      "EXP_0002162",
+      "EXP_0001734",
+      "EXP_0000868",
+      "EXP_0000824",
+      "EXP_0001277",
+      "EXP_0001635",
+      "EXP_0001530",
+      "EXP_0001795",
+      "EXP_0002120",
+      "EXP_0001850",
+      "EXP_0000496",
+      "EXP_0001016",
+      "EXP_0000921",
+      "EXP_0000263",
+      "EXP_0001385",
+      "EXP_0000087",
+      "EXP_0000943",
+      "EXP_0000030",
+      "EXP_0000291",
+      "EXP_0000242",
+      "EXP_0000938",
+      "EXP_0000277",
+      "EXP_0000129",
+      "EXP_0001354",
+      "EXP_0002106",
+      "EXP_0000975",
+      "EXP_0001141",
+      "EXP_0001989",
+      "EXP_0000878",
+      "EXP_0000542",
+      "EXP_0001937",
+      "EXP_0000996",
+      "EXP_0001938",
+      "EXP_0001668",
+      "EXP_0000780",
+      "EXP_0000387",
+      "EXP_0000398",
+      "EXP_0001766",
+      "EXP_0001452",
+      "EXP_0001735",
+      "EXP_0001684",
+      "EXP_0001913",
+      "EXP_0000222",
+      "EXP_0000404",
+      "EXP_0000249",
+      "EXP_0001650",
+      "EXP_0001390",
+      "EXP_0000448",
+      "EXP_0001019",
+      "EXP_0000785",
+      "EXP_0001838",
+      "EXP_0000575",
+      "EXP_0000752",
+      "EXP_0001895",
+      "EXP_0001024",
+      "EXP_0000309",
+      "EXP_0001816",
+      "EXP_0000402",
+      "EXP_0000208",
+      "EXP_0000061",
+      "EXP_0000383",
+      "EXP_0000969",
+      "EXP_0000682",
+      "EXP_0001665",
+      "EXP_0001990",
+      "EXP_0001972",
+      "EXP_0000876",
+      "EXP_0001643",
+      "EXP_0000241",
+      "EXP_0000675",
+      "EXP_0001553",
+      "EXP_0000009",
+      "EXP_0001600",
+      "EXP_0001087",
+      "EXP_0001864",
+      "EXP_0001169",
+      "EXP_0001733",
+      "EXP_0001994",
+      "EXP_0000635",
+      "EXP_0000778"
+    ],
+    "corruption_details": {
+      "EXP_0000457": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000103": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001127": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001004": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000915": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000572": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000420": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000357": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001729": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000131": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000123": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000384": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000896": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000953": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002070": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000109": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000815": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001719": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000903": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001840": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001140": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000027": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000654": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001732": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001394": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001139": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000637": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000882": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001379": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000419": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000380": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001557": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000397": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001471": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001409": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001084": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000178": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001882": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000512": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001551": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000323": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001201": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001482": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000788": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000285": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000188": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000934": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001186": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000327": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000954": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000414": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001858": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001495": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000667": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001517": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001456": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000859": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001094": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000293": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000701": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001003": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000670": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001894": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001555": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001106": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000900": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001329": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000230": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000939": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000132": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001293": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001644": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001097": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000272": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000865": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001289": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000871": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002045": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001621": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001880": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000586": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001085": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001011": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001077": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001755": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001636": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001483": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000899": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000567": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002088": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0002022": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000373": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000193": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000450": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000627": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000656": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001730": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000261": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001577": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001564": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001918": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001030": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000048": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000470": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001093": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001203": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001781": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000648": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001859": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000014": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001079": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002051": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000732": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002080": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000436": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001223": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001532": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000662": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000003": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001328": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002002": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000080": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000459": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001487": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001260": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000981": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000238": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000987": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000351": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001991": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000284": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000516": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000526": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001947": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000677": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001086": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0002162": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001734": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000868": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000824": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001277": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001635": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001530": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001795": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0002120": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001850": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000496": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001016": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000921": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000263": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001385": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000087": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000943": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000030": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000291": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000242": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000938": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000277": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000129": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001354": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0002106": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000975": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001141": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001989": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000878": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000542": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001937": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000996": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001938": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001668": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000780": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000387": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000398": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001766": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001452": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001735": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001684": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001913": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000222": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000404": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000249": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001650": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001390": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000448": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001019": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000785": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001838": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000575": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000752": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001895": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001024": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000309": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001816": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000402": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000208": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000061": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000383": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000969": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000682": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001665": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001990": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001972": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000876": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001643": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000241": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000675": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001553": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0000009": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001600": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001087": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001864": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001169": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0001733": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      },
+      "EXP_0001994": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "exact"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000635": {
+        "num_duplicates": 3,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 3,
+            "type": "near-duplicate"
+          }
+        ]
+      },
+      "EXP_0000778": {
+        "num_duplicates": 2,
+        "duplicate_info": [
+          {
+            "duplicate_number": 1,
+            "type": "near-duplicate"
+          },
+          {
+            "duplicate_number": 2,
+            "type": "exact"
+          }
+        ]
+      }
+    }
+  },
+  "expected_results": {
+    "duplicate_groups_detected": 217,
+    "flags_created_min": 200,
+    "flags_created_max": 250,
+    "severity_distribution": {
+      "CRITICAL": 0,
+      "WARNING": 217,
+      "INFO": 0
+    },
+    "notes": "Pipeline should detect duplicate expense_id groups. May flag some or all duplicates."
+  }
+}

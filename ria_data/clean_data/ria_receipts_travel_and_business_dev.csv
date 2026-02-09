@@ -1,0 +1,1150 @@
+receipt_id,receipt_date,vendor,amount,category,cardholder_name,expense_id
+RCPT_0000001,2024-02-07,Ruths Chris,888.9,Client Hosting & Entertainment,Antoine,EXP_0000001
+RCPT_0000002,2024-02-11,Shell,191.81,Gas & Travel,Antoine,EXP_0000006
+RCPT_0000003,2024-02-14,Shell,218.9,Gas & Travel,Antoine,EXP_0000009
+RCPT_0000004,2024-02-17,Shell,124.9,Gas & Travel,Antoine,EXP_0000014
+RCPT_0000005,2024-02-18,Uber,269.81,Gas & Travel,Jeff,EXP_0000015
+RCPT_0000006,2024-02-20,Staples Center,550.17,Client Hosting & Entertainment,Jeff,EXP_0000018
+RCPT_0000007,2024-02-21,Shell,218.7,Gas & Travel,Jeff,EXP_0000019
+RCPT_0000008,2024-02-22,Uber,55.06,Gas & Travel,Jeff,EXP_0000020
+RCPT_0000009,2024-02-27,Lyft,69.82,Gas & Travel,Jeff,EXP_0000024
+RCPT_0000010,2024-03-04,Ruths Chris,946.76,Client Hosting & Entertainment,Antoine,EXP_0000028
+RCPT_0000011,2024-03-05,United,315.72,Gas & Travel,Antoine,EXP_0000029
+RCPT_0000012,2024-03-05,Shell,357.17,Gas & Travel,Antoine,EXP_0000030
+RCPT_0000013,2024-03-06,Staples Center,1060.13,Client Hosting & Entertainment,Jeff,EXP_0000031
+RCPT_0000014,2024-03-09,Ruths Chris,749.84,Client Hosting & Entertainment,Jeff,EXP_0000036
+RCPT_0000015,2024-03-11,Nobu,1007.01,Client Hosting & Entertainment,Jeff,EXP_0000040
+RCPT_0000016,2024-03-12,Staples Center,334.23,Client Hosting & Entertainment,Jeff,EXP_0000041
+RCPT_0000017,2024-03-17,Pebble Beach,571.72,Client Hosting & Entertainment,Jeff,EXP_0000047
+RCPT_0000018,2024-03-21,Ruths Chris,84.24,Client Hosting & Entertainment,Jeff,EXP_0000051
+RCPT_0000019,2024-03-29,Ruths Chris,1009.47,Client Hosting & Entertainment,Jeff,EXP_0000054
+RCPT_0000020,2024-03-29,Lyft,372.11,Gas & Travel,Antoine,EXP_0000055
+RCPT_0000021,2024-04-02,Ruths Chris,831.63,Client Hosting & Entertainment,Jeff,EXP_0000059
+RCPT_0000022,2024-04-06,Pebble Beach,904.22,Client Hosting & Entertainment,Jeff,EXP_0000061
+RCPT_0000023,2024-04-13,Shell,210.69,Gas & Travel,Antoine,EXP_0000064
+RCPT_0000024,2024-04-14,Chevron,267.05,Gas & Travel,Jeff,EXP_0000065
+RCPT_0000025,2024-04-15,United,303.03,Gas & Travel,Jeff,EXP_0000066
+RCPT_0000026,2024-04-15,Shell,379.58,Gas & Travel,Jeff,EXP_0000067
+RCPT_0000027,2024-04-17,Uber,389.92,Gas & Travel,Jeff,EXP_0000069
+RCPT_0000028,2024-04-17,Starbucks,1149.81,Client Hosting & Entertainment,Jeff,EXP_0000070
+RCPT_0000029,2024-04-18,Lyft,35.06,Gas & Travel,Antoine,EXP_0000071
+RCPT_0000030,2024-04-19,Staples Center,421.11,Client Hosting & Entertainment,Antoine,EXP_0000072
+RCPT_0000031,2024-04-19,Ruths Chris,352.19,Client Hosting & Entertainment,Jeff,EXP_0000073
+RCPT_0000032,2024-04-21,Shell,75.36,Gas & Travel,Jeff,EXP_0000079
+RCPT_0000033,2024-04-22,Lyft,215.03,Gas & Travel,Antoine,EXP_0000080
+RCPT_0000034,2024-04-22,Shell,258.96,Gas & Travel,Jeff,EXP_0000081
+RCPT_0000035,2024-04-24,Staples Center,1078.88,Client Hosting & Entertainment,Antoine,EXP_0000082
+RCPT_0000036,2024-04-27,Delta,41.76,Gas & Travel,Jeff,EXP_0000085
+RCPT_0000037,2024-04-29,Delta,394.38,Gas & Travel,Jeff,EXP_0000088
+RCPT_0000038,2024-05-01,Nobu,481.65,Client Hosting & Entertainment,Antoine,EXP_0000090
+RCPT_0000039,2024-05-02,Topgolf,1075.11,Client Hosting & Entertainment,Antoine,EXP_0000091
+RCPT_0000040,2024-05-07,Starbucks,1156.57,Client Hosting & Entertainment,Jeff,EXP_0000095
+RCPT_0000041,2024-05-08,Shell,373.76,Gas & Travel,Antoine,EXP_0000096
+RCPT_0000042,2024-05-10,Pebble Beach,194.32,Client Hosting & Entertainment,Jeff,EXP_0000097
+RCPT_0000043,2024-05-10,Topgolf,242.88,Client Hosting & Entertainment,Antoine,EXP_0000098
+RCPT_0000044,2024-05-14,Delta,213.17,Gas & Travel,Jeff,EXP_0000099
+RCPT_0000045,2024-05-17,Ruths Chris,1199.11,Client Hosting & Entertainment,Jeff,EXP_0000101
+RCPT_0000046,2024-05-20,Pebble Beach,1013.79,Client Hosting & Entertainment,Antoine,EXP_0000103
+RCPT_0000047,2024-05-21,Staples Center,410.9,Client Hosting & Entertainment,Jeff,EXP_0000105
+RCPT_0000048,2024-05-21,Ruths Chris,621.66,Client Hosting & Entertainment,Jeff,EXP_0000106
+RCPT_0000049,2024-05-22,Ruths Chris,822.66,Client Hosting & Entertainment,Antoine,EXP_0000107
+RCPT_0000050,2024-05-22,Pebble Beach,495.97,Client Hosting & Entertainment,Jeff,EXP_0000108
+RCPT_0000051,2024-05-23,Delta,201.12,Gas & Travel,Antoine,EXP_0000109
+RCPT_0000052,2024-05-26,Chevron,359.33,Gas & Travel,Jeff,EXP_0000110
+RCPT_0000053,2024-05-29,Delta,276.16,Gas & Travel,Jeff,EXP_0000112
+RCPT_0000054,2024-06-02,Topgolf,689.52,Client Hosting & Entertainment,Jeff,EXP_0000115
+RCPT_0000055,2024-06-02,Ruths Chris,393.94,Client Hosting & Entertainment,Jeff,EXP_0000116
+RCPT_0000056,2024-06-03,Topgolf,651.62,Client Hosting & Entertainment,Antoine,EXP_0000117
+RCPT_0000057,2024-06-04,Nobu,1012.06,Client Hosting & Entertainment,Jeff,EXP_0000118
+RCPT_0000058,2024-06-06,Ruths Chris,340.23,Client Hosting & Entertainment,Jeff,EXP_0000122
+RCPT_0000059,2024-06-08,Pebble Beach,79.79,Client Hosting & Entertainment,Jeff,EXP_0000125
+RCPT_0000060,2024-06-11,Lyft,198.94,Gas & Travel,Jeff,EXP_0000128
+RCPT_0000061,2024-06-12,Lyft,290.69,Gas & Travel,Jeff,EXP_0000129
+RCPT_0000062,2024-06-13,Starbucks,1188.65,Client Hosting & Entertainment,Antoine,EXP_0000130
+RCPT_0000063,2024-06-16,Chevron,186.13,Gas & Travel,Jeff,EXP_0000133
+RCPT_0000064,2024-06-16,Shell,360.14,Gas & Travel,Jeff,EXP_0000134
+RCPT_0000065,2024-06-17,Delta,162.97,Gas & Travel,Jeff,EXP_0000135
+RCPT_0000066,2024-06-19,Delta,236.43,Gas & Travel,Jeff,EXP_0000138
+RCPT_0000067,2024-06-20,Shell,93.1,Gas & Travel,Antoine,EXP_0000139
+RCPT_0000068,2024-06-21,Lyft,265.62,Gas & Travel,Antoine,EXP_0000142
+RCPT_0000069,2024-06-22,Chevron,368.09,Gas & Travel,Antoine,EXP_0000143
+RCPT_0000070,2024-06-22,Uber,141.85,Gas & Travel,Jeff,EXP_0000145
+RCPT_0000071,2024-06-22,Delta,194.27,Gas & Travel,Antoine,EXP_0000146
+RCPT_0000072,2024-06-22,Nobu,1149.69,Client Hosting & Entertainment,Jeff,EXP_0000147
+RCPT_0000073,2024-06-24,Topgolf,493.44,Client Hosting & Entertainment,Antoine,EXP_0000150
+RCPT_0000074,2024-06-27,Delta,98.62,Gas & Travel,Antoine,EXP_0000152
+RCPT_0000075,2024-06-27,Delta,176.84,Gas & Travel,Antoine,EXP_0000153
+RCPT_0000076,2024-06-29,Delta,347.51,Gas & Travel,Jeff,EXP_0000155
+RCPT_0000077,2024-07-01,Chevron,159.6,Gas & Travel,Jeff,EXP_0000157
+RCPT_0000078,2024-07-05,Uber,28.2,Gas & Travel,Antoine,EXP_0000163
+RCPT_0000079,2024-07-10,United,331.85,Gas & Travel,Antoine,EXP_0000168
+RCPT_0000080,2024-07-10,Topgolf,202.36,Client Hosting & Entertainment,Jeff,EXP_0000169
+RCPT_0000081,2024-07-11,United,259.46,Gas & Travel,Jeff,EXP_0000171
+RCPT_0000082,2024-07-12,Staples Center,613.54,Client Hosting & Entertainment,Jeff,EXP_0000172
+RCPT_0000083,2024-07-12,Lyft,363.01,Gas & Travel,Jeff,EXP_0000173
+RCPT_0000084,2024-07-14,Lyft,164.08,Gas & Travel,Antoine,EXP_0000174
+RCPT_0000085,2024-07-17,Lyft,250.71,Gas & Travel,Jeff,EXP_0000178
+RCPT_0000086,2024-07-17,Starbucks,85.96,Client Hosting & Entertainment,Jeff,EXP_0000180
+RCPT_0000087,2024-07-18,United,372.08,Gas & Travel,Jeff,EXP_0000181
+RCPT_0000088,2024-07-18,Ruths Chris,600.95,Client Hosting & Entertainment,Jeff,EXP_0000182
+RCPT_0000089,2024-07-18,Ruths Chris,730.74,Client Hosting & Entertainment,Jeff,EXP_0000183
+RCPT_0000090,2024-07-22,Chevron,87.93,Gas & Travel,Antoine,EXP_0000187
+RCPT_0000091,2024-07-23,Nobu,227.14,Client Hosting & Entertainment,Jeff,EXP_0000191
+RCPT_0000092,2024-07-26,Starbucks,381.39,Client Hosting & Entertainment,Jeff,EXP_0000193
+RCPT_0000093,2024-07-29,Staples Center,356.21,Client Hosting & Entertainment,Jeff,EXP_0000194
+RCPT_0000094,2024-08-02,Staples Center,953.32,Client Hosting & Entertainment,Jeff,EXP_0000197
+RCPT_0000095,2024-08-03,Staples Center,249.59,Client Hosting & Entertainment,Jeff,EXP_0000198
+RCPT_0000096,2024-08-04,Shell,320.16,Gas & Travel,Jeff,EXP_0000200
+RCPT_0000097,2024-08-05,Starbucks,772.1,Client Hosting & Entertainment,Jeff,EXP_0000202
+RCPT_0000098,2024-08-06,Uber,285.69,Gas & Travel,Jeff,EXP_0000203
+RCPT_0000099,2024-08-07,Lyft,93.82,Gas & Travel,Antoine,EXP_0000204
+RCPT_0000100,2024-08-07,Topgolf,428.28,Client Hosting & Entertainment,Jeff,EXP_0000205
+RCPT_0000101,2024-08-08,Delta,39.24,Gas & Travel,Jeff,EXP_0000206
+RCPT_0000102,2024-08-10,Lyft,25.59,Gas & Travel,Antoine,EXP_0000210
+RCPT_0000103,2024-08-15,Shell,274.75,Gas & Travel,Jeff,EXP_0000215
+RCPT_0000104,2024-08-15,Starbucks,361.79,Client Hosting & Entertainment,Jeff,EXP_0000216
+RCPT_0000105,2024-08-15,Staples Center,110.39,Client Hosting & Entertainment,Jeff,EXP_0000218
+RCPT_0000106,2024-08-17,Shell,74.14,Gas & Travel,Jeff,EXP_0000220
+RCPT_0000107,2024-08-17,Shell,118.92,Gas & Travel,Jeff,EXP_0000221
+RCPT_0000108,2024-08-17,Uber,168.08,Gas & Travel,Antoine,EXP_0000222
+RCPT_0000109,2024-08-18,Uber,41.93,Gas & Travel,Antoine,EXP_0000224
+RCPT_0000110,2024-08-19,Staples Center,459.42,Client Hosting & Entertainment,Antoine,EXP_0000225
+RCPT_0000111,2024-08-19,Uber,333.85,Gas & Travel,Jeff,EXP_0000226
+RCPT_0000112,2024-08-21,Uber,397.11,Gas & Travel,Antoine,EXP_0000228
+RCPT_0000113,2024-08-22,Starbucks,975.22,Client Hosting & Entertainment,Antoine,EXP_0000229
+RCPT_0000114,2024-08-24,Starbucks,1070.89,Client Hosting & Entertainment,Jeff,EXP_0000230
+RCPT_0000115,2024-08-28,Delta,226.33,Gas & Travel,Jeff,EXP_0000232
+RCPT_0000116,2024-08-31,Pebble Beach,245.12,Client Hosting & Entertainment,Jeff,EXP_0000237
+RCPT_0000117,2024-09-01,Chevron,107.47,Gas & Travel,Antoine,EXP_0000238
+RCPT_0000118,2024-09-01,Ruths Chris,347.6,Client Hosting & Entertainment,Jeff,EXP_0000239
+RCPT_0000119,2024-09-01,Lyft,317.26,Gas & Travel,Antoine,EXP_0000240
+RCPT_0000120,2024-09-02,Starbucks,783.62,Client Hosting & Entertainment,Jeff,EXP_0000241
+RCPT_0000121,2024-09-03,Shell,285.73,Gas & Travel,Jeff,EXP_0000242
+RCPT_0000122,2024-09-03,Topgolf,395.24,Client Hosting & Entertainment,Jeff,EXP_0000244
+RCPT_0000123,2024-09-04,Shell,349.44,Gas & Travel,Antoine,EXP_0000245
+RCPT_0000124,2024-09-06,Staples Center,129.06,Client Hosting & Entertainment,Jeff,EXP_0000248
+RCPT_0000125,2024-09-07,United,41.71,Gas & Travel,Jeff,EXP_0000249
+RCPT_0000126,2024-09-08,Starbucks,1013.01,Client Hosting & Entertainment,Antoine,EXP_0000250
+RCPT_0000127,2024-09-09,Uber,298.5,Gas & Travel,Antoine,EXP_0000252
+RCPT_0000128,2024-09-10,Nobu,443.58,Client Hosting & Entertainment,Jeff,EXP_0000254
+RCPT_0000129,2024-09-10,Staples Center,694.32,Client Hosting & Entertainment,Jeff,EXP_0000255
+RCPT_0000130,2024-09-11,Ruths Chris,537.12,Client Hosting & Entertainment,Jeff,EXP_0000256
+RCPT_0000131,2024-09-12,Uber,216.9,Gas & Travel,Jeff,EXP_0000258
+RCPT_0000132,2024-09-12,Shell,246.49,Gas & Travel,Jeff,EXP_0000259
+RCPT_0000133,2024-09-13,Topgolf,1005.72,Client Hosting & Entertainment,Antoine,EXP_0000260
+RCPT_0000134,2024-09-13,Staples Center,366.86,Client Hosting & Entertainment,Jeff,EXP_0000262
+RCPT_0000135,2024-09-13,Chevron,85.77,Gas & Travel,Jeff,EXP_0000263
+RCPT_0000136,2024-09-14,Starbucks,735.89,Client Hosting & Entertainment,Jeff,EXP_0000265
+RCPT_0000137,2024-09-16,Lyft,79.98,Gas & Travel,Jeff,EXP_0000266
+RCPT_0000138,2024-09-17,Pebble Beach,883.54,Client Hosting & Entertainment,Jeff,EXP_0000269
+RCPT_0000139,2024-09-17,Shell,351.81,Gas & Travel,Jeff,EXP_0000270
+RCPT_0000140,2024-09-18,United,103.32,Gas & Travel,Jeff,EXP_0000271
+RCPT_0000141,2024-09-19,Pebble Beach,564.2,Client Hosting & Entertainment,Jeff,EXP_0000274
+RCPT_0000142,2024-09-19,Shell,184.01,Gas & Travel,Antoine,EXP_0000275
+RCPT_0000143,2024-09-20,Delta,343.99,Gas & Travel,Jeff,EXP_0000277
+RCPT_0000144,2024-09-20,Shell,355.09,Gas & Travel,Antoine,EXP_0000279
+RCPT_0000145,2024-09-21,United,51.57,Gas & Travel,Jeff,EXP_0000281
+RCPT_0000146,2024-09-22,Starbucks,770.76,Client Hosting & Entertainment,Jeff,EXP_0000282
+RCPT_0000147,2024-09-23,Lyft,260.22,Gas & Travel,Jeff,EXP_0000286
+RCPT_0000148,2024-09-23,Starbucks,1099.75,Client Hosting & Entertainment,Jeff,EXP_0000287
+RCPT_0000149,2024-09-27,United,110.14,Gas & Travel,Jeff,EXP_0000293
+RCPT_0000150,2024-09-27,Chevron,169.14,Gas & Travel,Antoine,EXP_0000294
+RCPT_0000151,2024-09-28,Shell,237.4,Gas & Travel,Jeff,EXP_0000299
+RCPT_0000152,2024-09-29,Uber,393.88,Gas & Travel,Antoine,EXP_0000300
+RCPT_0000153,2024-09-29,Pebble Beach,517.56,Client Hosting & Entertainment,Antoine,EXP_0000301
+RCPT_0000154,2024-09-30,Staples Center,655.99,Client Hosting & Entertainment,Jeff,EXP_0000302
+RCPT_0000155,2024-09-30,Shell,308.77,Gas & Travel,Antoine,EXP_0000303
+RCPT_0000156,2024-10-03,United,138.98,Gas & Travel,Jeff,EXP_0000307
+RCPT_0000157,2024-10-04,Topgolf,563.98,Client Hosting & Entertainment,Jeff,EXP_0000309
+RCPT_0000158,2024-10-05,Uber,252.4,Gas & Travel,Jeff,EXP_0000312
+RCPT_0000159,2024-10-08,Shell,381.47,Gas & Travel,Jeff,EXP_0000318
+RCPT_0000160,2024-10-09,Nobu,239.74,Client Hosting & Entertainment,Jeff,EXP_0000320
+RCPT_0000161,2024-10-09,Delta,118.09,Gas & Travel,Antoine,EXP_0000321
+RCPT_0000162,2024-10-10,Starbucks,582.72,Client Hosting & Entertainment,Jeff,EXP_0000322
+RCPT_0000163,2024-10-11,Ruths Chris,230.57,Client Hosting & Entertainment,Jeff,EXP_0000323
+RCPT_0000164,2024-10-12,Shell,42.14,Gas & Travel,Antoine,EXP_0000326
+RCPT_0000165,2024-10-13,Lyft,245.24,Gas & Travel,Antoine,EXP_0000329
+RCPT_0000166,2024-10-13,Topgolf,696.53,Client Hosting & Entertainment,Jeff,EXP_0000330
+RCPT_0000167,2024-10-13,Starbucks,977.44,Client Hosting & Entertainment,Antoine,EXP_0000331
+RCPT_0000168,2024-10-14,Starbucks,950.33,Client Hosting & Entertainment,Jeff,EXP_0000332
+RCPT_0000169,2024-10-14,Nobu,590.38,Client Hosting & Entertainment,Antoine,EXP_0000333
+RCPT_0000170,2024-10-15,United,214.28,Gas & Travel,Jeff,EXP_0000335
+RCPT_0000171,2024-10-17,Nobu,610.27,Client Hosting & Entertainment,Jeff,EXP_0000337
+RCPT_0000172,2024-10-17,Starbucks,526.8,Client Hosting & Entertainment,Antoine,EXP_0000338
+RCPT_0000173,2024-10-21,Pebble Beach,600.48,Client Hosting & Entertainment,Jeff,EXP_0000344
+RCPT_0000174,2024-10-22,Chevron,96.44,Gas & Travel,Antoine,EXP_0000345
+RCPT_0000175,2024-10-22,Topgolf,543.24,Client Hosting & Entertainment,Jeff,EXP_0000346
+RCPT_0000176,2024-10-23,Ruths Chris,539.84,Client Hosting & Entertainment,Jeff,EXP_0000347
+RCPT_0000177,2024-10-23,Topgolf,1081.67,Client Hosting & Entertainment,Antoine,EXP_0000348
+RCPT_0000178,2024-10-24,United,131.98,Gas & Travel,Antoine,EXP_0000351
+RCPT_0000179,2024-10-25,United,294.43,Gas & Travel,Jeff,EXP_0000354
+RCPT_0000180,2024-10-25,Topgolf,304.52,Client Hosting & Entertainment,Jeff,EXP_0000355
+RCPT_0000181,2024-10-28,Chevron,151.2,Gas & Travel,Antoine,EXP_0000357
+RCPT_0000182,2024-10-28,Nobu,1197.06,Client Hosting & Entertainment,Jeff,EXP_0000359
+RCPT_0000183,2024-10-30,Nobu,768.62,Client Hosting & Entertainment,Jeff,EXP_0000360
+RCPT_0000184,2024-10-30,Topgolf,389.92,Client Hosting & Entertainment,Jeff,EXP_0000361
+RCPT_0000185,2024-10-31,Uber,278.77,Gas & Travel,Jeff,EXP_0000362
+RCPT_0000186,2024-11-01,United,51.84,Gas & Travel,Jeff,EXP_0000365
+RCPT_0000187,2024-11-01,Shell,219.94,Gas & Travel,Antoine,EXP_0000366
+RCPT_0000188,2024-11-02,Delta,171.87,Gas & Travel,Jeff,EXP_0000367
+RCPT_0000189,2024-11-03,Lyft,82.3,Gas & Travel,Jeff,EXP_0000369
+RCPT_0000190,2024-11-03,Topgolf,1071.64,Client Hosting & Entertainment,Jeff,EXP_0000370
+RCPT_0000191,2024-11-04,Chevron,357.28,Gas & Travel,Antoine,EXP_0000372
+RCPT_0000192,2024-11-06,Staples Center,745.17,Client Hosting & Entertainment,Jeff,EXP_0000374
+RCPT_0000193,2024-11-06,Uber,111.78,Gas & Travel,Jeff,EXP_0000376
+RCPT_0000194,2024-11-06,Staples Center,754.01,Client Hosting & Entertainment,Jeff,EXP_0000377
+RCPT_0000195,2024-11-07,Shell,342.21,Gas & Travel,Jeff,EXP_0000378
+RCPT_0000196,2024-11-09,Lyft,258.24,Gas & Travel,Jeff,EXP_0000381
+RCPT_0000197,2024-11-10,Nobu,571.71,Client Hosting & Entertainment,Antoine,EXP_0000382
+RCPT_0000198,2024-11-10,Staples Center,689.46,Client Hosting & Entertainment,Jeff,EXP_0000384
+RCPT_0000199,2024-11-10,Ruths Chris,292.42,Client Hosting & Entertainment,Jeff,EXP_0000385
+RCPT_0000200,2024-11-11,Shell,209.89,Gas & Travel,Jeff,EXP_0000386
+RCPT_0000201,2024-11-11,Ruths Chris,1105.8,Client Hosting & Entertainment,Jeff,EXP_0000387
+RCPT_0000202,2024-11-13,Starbucks,397.47,Client Hosting & Entertainment,Jeff,EXP_0000390
+RCPT_0000203,2024-11-13,Shell,283.51,Gas & Travel,Jeff,EXP_0000391
+RCPT_0000204,2024-11-15,Shell,237.73,Gas & Travel,Jeff,EXP_0000396
+RCPT_0000205,2024-11-16,Chevron,178.52,Gas & Travel,Antoine,EXP_0000397
+RCPT_0000206,2024-11-16,Delta,306.32,Gas & Travel,Jeff,EXP_0000398
+RCPT_0000207,2024-11-17,Chevron,345.28,Gas & Travel,Jeff,EXP_0000402
+RCPT_0000208,2024-11-18,Ruths Chris,1179.5,Client Hosting & Entertainment,Jeff,EXP_0000404
+RCPT_0000209,2024-11-18,Staples Center,1140.46,Client Hosting & Entertainment,Jeff,EXP_0000405
+RCPT_0000210,2024-11-19,Staples Center,622.43,Client Hosting & Entertainment,Jeff,EXP_0000408
+RCPT_0000211,2024-11-20,Lyft,91.25,Gas & Travel,Jeff,EXP_0000409
+RCPT_0000212,2024-11-22,Ruths Chris,214.82,Client Hosting & Entertainment,Jeff,EXP_0000410
+RCPT_0000213,2024-11-24,Topgolf,807.77,Client Hosting & Entertainment,Jeff,EXP_0000412
+RCPT_0000214,2024-11-24,Nobu,961.71,Client Hosting & Entertainment,Jeff,EXP_0000413
+RCPT_0000215,2024-11-25,Lyft,267.06,Gas & Travel,Antoine,EXP_0000414
+RCPT_0000216,2024-11-26,Delta,44.65,Gas & Travel,Jeff,EXP_0000415
+RCPT_0000217,2024-11-26,Shell,331.34,Gas & Travel,Jeff,EXP_0000416
+RCPT_0000218,2024-11-26,Lyft,67.37,Gas & Travel,Jeff,EXP_0000419
+RCPT_0000219,2024-11-27,Ruths Chris,502.55,Client Hosting & Entertainment,Jeff,EXP_0000421
+RCPT_0000220,2024-11-28,Lyft,340.77,Gas & Travel,Jeff,EXP_0000423
+RCPT_0000221,2024-11-29,Pebble Beach,927.91,Client Hosting & Entertainment,Jeff,EXP_0000425
+RCPT_0000222,2024-12-01,Ruths Chris,274.29,Client Hosting & Entertainment,Jeff,EXP_0000431
+RCPT_0000223,2024-12-01,Lyft,65.66,Gas & Travel,Jeff,EXP_0000432
+RCPT_0000224,2024-12-01,Uber,330.02,Gas & Travel,Jeff,EXP_0000433
+RCPT_0000225,2024-12-03,Starbucks,713.08,Client Hosting & Entertainment,Jeff,EXP_0000434
+RCPT_0000226,2024-12-04,Chevron,215.2,Gas & Travel,Antoine,EXP_0000436
+RCPT_0000227,2024-12-06,Lyft,363.12,Gas & Travel,Antoine,EXP_0000439
+RCPT_0000228,2024-12-07,Lyft,129.82,Gas & Travel,Jeff,EXP_0000442
+RCPT_0000229,2024-12-10,Pebble Beach,376.3,Client Hosting & Entertainment,Jeff,EXP_0000446
+RCPT_0000230,2024-12-10,Uber,126.22,Gas & Travel,Jeff,EXP_0000448
+RCPT_0000231,2024-12-10,Chevron,187.48,Gas & Travel,Jeff,EXP_0000449
+RCPT_0000232,2024-12-10,Pebble Beach,972.91,Client Hosting & Entertainment,Jeff,EXP_0000451
+RCPT_0000233,2024-12-12,Topgolf,1044.36,Client Hosting & Entertainment,Antoine,EXP_0000453
+RCPT_0000234,2024-12-12,Shell,307.28,Gas & Travel,Antoine,EXP_0000454
+RCPT_0000235,2024-12-12,Starbucks,698.38,Client Hosting & Entertainment,Jeff,EXP_0000456
+RCPT_0000236,2024-12-13,Topgolf,428.09,Client Hosting & Entertainment,Antoine,EXP_0000457
+RCPT_0000237,2024-12-13,Lyft,314.34,Gas & Travel,Jeff,EXP_0000459
+RCPT_0000238,2024-12-13,Nobu,249.02,Client Hosting & Entertainment,Jeff,EXP_0000460
+RCPT_0000239,2024-12-14,Staples Center,261.45,Client Hosting & Entertainment,Jeff,EXP_0000464
+RCPT_0000240,2024-12-16,Nobu,762.83,Client Hosting & Entertainment,Jeff,EXP_0000466
+RCPT_0000241,2024-12-17,United,40.18,Gas & Travel,Jeff,EXP_0000473
+RCPT_0000242,2024-12-18,Nobu,314.25,Client Hosting & Entertainment,Jeff,EXP_0000475
+RCPT_0000243,2024-12-18,Nobu,1006.23,Client Hosting & Entertainment,Jeff,EXP_0000476
+RCPT_0000244,2024-12-19,Nobu,899.87,Client Hosting & Entertainment,Antoine,EXP_0000478
+RCPT_0000245,2024-12-20,Starbucks,133.0,Client Hosting & Entertainment,Antoine,EXP_0000479
+RCPT_0000246,2024-12-21,Shell,98.75,Gas & Travel,Jeff,EXP_0000481
+RCPT_0000247,2024-12-24,Lyft,184.54,Gas & Travel,Jeff,EXP_0000485
+RCPT_0000248,2024-12-25,Shell,226.06,Gas & Travel,Jeff,EXP_0000486
+RCPT_0000249,2024-12-26,Pebble Beach,807.03,Client Hosting & Entertainment,Jeff,EXP_0000487
+RCPT_0000250,2024-12-26,Delta,294.84,Gas & Travel,Jeff,EXP_0000488
+RCPT_0000251,2024-12-26,Uber,143.41,Gas & Travel,Antoine,EXP_0000489
+RCPT_0000252,2024-12-27,Topgolf,1001.2,Client Hosting & Entertainment,Jeff,EXP_0000490
+RCPT_0000253,2024-12-27,Staples Center,1097.54,Client Hosting & Entertainment,Antoine,EXP_0000491
+RCPT_0000254,2024-12-27,Lyft,282.93,Gas & Travel,Antoine,EXP_0000493
+RCPT_0000255,2024-12-27,Chevron,42.84,Gas & Travel,Jeff,EXP_0000494
+RCPT_0000256,2024-12-28,Ruths Chris,758.91,Client Hosting & Entertainment,Jeff,EXP_0000497
+RCPT_0000257,2025-01-01,Chevron,202.15,Gas & Travel,Antoine,EXP_0000503
+RCPT_0000258,2025-01-01,Lyft,149.89,Gas & Travel,Jeff,EXP_0000504
+RCPT_0000259,2025-01-02,United,114.81,Gas & Travel,Jeff,EXP_0000506
+RCPT_0000260,2025-01-03,Nobu,184.67,Client Hosting & Entertainment,Jeff,EXP_0000508
+RCPT_0000261,2025-01-03,Nobu,870.57,Client Hosting & Entertainment,Jeff,EXP_0000509
+RCPT_0000262,2025-01-04,Pebble Beach,832.49,Client Hosting & Entertainment,Jeff,EXP_0000510
+RCPT_0000263,2025-01-06,Ruths Chris,1100.7,Client Hosting & Entertainment,Jeff,EXP_0000511
+RCPT_0000264,2025-01-07,Chevron,68.32,Gas & Travel,Jeff,EXP_0000513
+RCPT_0000265,2025-01-07,Chevron,384.81,Gas & Travel,Jeff,EXP_0000514
+RCPT_0000266,2025-01-07,Staples Center,555.87,Client Hosting & Entertainment,Jeff,EXP_0000515
+RCPT_0000267,2025-01-08,Uber,50.28,Gas & Travel,Jeff,EXP_0000516
+RCPT_0000268,2025-01-08,Ruths Chris,1037.55,Client Hosting & Entertainment,Jeff,EXP_0000518
+RCPT_0000269,2025-01-08,United,221.82,Gas & Travel,Jeff,EXP_0000519
+RCPT_0000270,2025-01-12,Shell,246.44,Gas & Travel,Jeff,EXP_0000526
+RCPT_0000271,2025-01-12,Shell,71.35,Gas & Travel,Antoine,EXP_0000528
+RCPT_0000272,2025-01-12,Staples Center,137.64,Client Hosting & Entertainment,Jeff,EXP_0000529
+RCPT_0000273,2025-01-12,Lyft,55.65,Gas & Travel,Antoine,EXP_0000530
+RCPT_0000274,2025-01-13,Pebble Beach,1018.12,Client Hosting & Entertainment,Jeff,EXP_0000531
+RCPT_0000275,2025-01-14,Ruths Chris,1040.79,Client Hosting & Entertainment,Antoine,EXP_0000533
+RCPT_0000276,2025-01-16,Ruths Chris,835.75,Client Hosting & Entertainment,Antoine,EXP_0000535
+RCPT_0000277,2025-01-16,Starbucks,988.77,Client Hosting & Entertainment,Jeff,EXP_0000537
+RCPT_0000278,2025-01-17,Shell,224.14,Gas & Travel,Jeff,EXP_0000538
+RCPT_0000279,2025-01-17,Topgolf,944.96,Client Hosting & Entertainment,Jeff,EXP_0000539
+RCPT_0000280,2025-01-17,Ruths Chris,946.2,Client Hosting & Entertainment,Jeff,EXP_0000540
+RCPT_0000281,2025-01-17,Starbucks,1117.94,Client Hosting & Entertainment,Antoine,EXP_0000541
+RCPT_0000282,2025-01-18,Shell,296.35,Gas & Travel,Jeff,EXP_0000542
+RCPT_0000283,2025-01-21,United,256.22,Gas & Travel,Jeff,EXP_0000547
+RCPT_0000284,2025-01-21,Lyft,23.58,Gas & Travel,Antoine,EXP_0000549
+RCPT_0000285,2025-01-21,Topgolf,1097.86,Client Hosting & Entertainment,Jeff,EXP_0000550
+RCPT_0000286,2025-01-21,Pebble Beach,389.27,Client Hosting & Entertainment,Jeff,EXP_0000551
+RCPT_0000287,2025-01-22,Topgolf,181.05,Client Hosting & Entertainment,Jeff,EXP_0000552
+RCPT_0000288,2025-01-22,Topgolf,184.44,Client Hosting & Entertainment,Jeff,EXP_0000554
+RCPT_0000289,2025-01-22,Pebble Beach,1013.31,Client Hosting & Entertainment,Jeff,EXP_0000556
+RCPT_0000290,2025-01-22,Lyft,125.11,Gas & Travel,Jeff,EXP_0000557
+RCPT_0000291,2025-01-23,Lyft,73.71,Gas & Travel,Jeff,EXP_0000560
+RCPT_0000292,2025-01-24,Topgolf,1157.76,Client Hosting & Entertainment,Jeff,EXP_0000563
+RCPT_0000293,2025-01-24,Chevron,332.97,Gas & Travel,Jeff,EXP_0000564
+RCPT_0000294,2025-01-25,United,56.64,Gas & Travel,Jeff,EXP_0000566
+RCPT_0000295,2025-01-25,Pebble Beach,419.42,Client Hosting & Entertainment,Jeff,EXP_0000568
+RCPT_0000296,2025-01-26,Chevron,151.91,Gas & Travel,Jeff,EXP_0000569
+RCPT_0000297,2025-01-26,Nobu,1053.87,Client Hosting & Entertainment,Antoine,EXP_0000570
+RCPT_0000298,2025-01-26,Delta,333.76,Gas & Travel,Antoine,EXP_0000571
+RCPT_0000299,2025-01-27,Shell,379.36,Gas & Travel,Jeff,EXP_0000572
+RCPT_0000300,2025-01-28,Ruths Chris,392.68,Client Hosting & Entertainment,Jeff,EXP_0000575
+RCPT_0000301,2025-01-29,Starbucks,689.76,Client Hosting & Entertainment,Jeff,EXP_0000577
+RCPT_0000302,2025-01-29,United,228.02,Gas & Travel,Jeff,EXP_0000579
+RCPT_0000303,2025-01-29,Delta,176.29,Gas & Travel,Antoine,EXP_0000580
+RCPT_0000304,2025-01-30,Lyft,101.02,Gas & Travel,Jeff,EXP_0000582
+RCPT_0000305,2025-01-30,Delta,32.78,Gas & Travel,Jeff,EXP_0000583
+RCPT_0000306,2025-01-30,Shell,97.42,Gas & Travel,Antoine,EXP_0000584
+RCPT_0000307,2025-01-30,Lyft,67.44,Gas & Travel,Jeff,EXP_0000586
+RCPT_0000308,2025-01-31,Starbucks,146.54,Client Hosting & Entertainment,Antoine,EXP_0000587
+RCPT_0000309,2025-01-31,Chevron,214.37,Gas & Travel,Antoine,EXP_0000588
+RCPT_0000310,2025-02-01,Shell,215.64,Gas & Travel,Antoine,EXP_0000589
+RCPT_0000311,2025-02-02,Starbucks,716.83,Client Hosting & Entertainment,Antoine,EXP_0000591
+RCPT_0000312,2025-02-03,Pebble Beach,129.29,Client Hosting & Entertainment,Jeff,EXP_0000594
+RCPT_0000313,2025-02-04,Lyft,212.34,Gas & Travel,Antoine,EXP_0000596
+RCPT_0000314,2025-02-06,Lyft,289.74,Gas & Travel,Jeff,EXP_0000602
+RCPT_0000315,2025-02-06,Uber,257.31,Gas & Travel,Jeff,EXP_0000606
+RCPT_0000316,2025-02-08,Shell,72.4,Gas & Travel,Antoine,EXP_0000610
+RCPT_0000317,2025-02-08,Pebble Beach,325.34,Client Hosting & Entertainment,Jeff,EXP_0000611
+RCPT_0000318,2025-02-10,Lyft,358.81,Gas & Travel,Antoine,EXP_0000616
+RCPT_0000319,2025-02-10,Ruths Chris,399.46,Client Hosting & Entertainment,Jeff,EXP_0000617
+RCPT_0000320,2025-02-11,Shell,84.72,Gas & Travel,Jeff,EXP_0000618
+RCPT_0000321,2025-02-12,Staples Center,1137.85,Client Hosting & Entertainment,Jeff,EXP_0000619
+RCPT_0000322,2025-02-12,Ruths Chris,770.4,Client Hosting & Entertainment,Jeff,EXP_0000620
+RCPT_0000323,2025-02-12,Staples Center,869.38,Client Hosting & Entertainment,Antoine,EXP_0000621
+RCPT_0000324,2025-02-13,Topgolf,769.61,Client Hosting & Entertainment,Antoine,EXP_0000622
+RCPT_0000325,2025-02-14,Uber,129.93,Gas & Travel,Antoine,EXP_0000623
+RCPT_0000326,2025-02-14,Staples Center,1108.9,Client Hosting & Entertainment,Jeff,EXP_0000625
+RCPT_0000327,2025-02-15,Uber,125.02,Gas & Travel,Jeff,EXP_0000626
+RCPT_0000328,2025-02-15,Starbucks,812.67,Client Hosting & Entertainment,Jeff,EXP_0000627
+RCPT_0000329,2025-02-16,Chevron,363.83,Gas & Travel,Jeff,EXP_0000628
+RCPT_0000330,2025-02-16,Pebble Beach,1026.94,Client Hosting & Entertainment,Antoine,EXP_0000630
+RCPT_0000331,2025-02-16,Topgolf,832.89,Client Hosting & Entertainment,Antoine,EXP_0000631
+RCPT_0000332,2025-02-17,Uber,163.16,Gas & Travel,Antoine,EXP_0000632
+RCPT_0000333,2025-02-17,Topgolf,732.22,Client Hosting & Entertainment,Antoine,EXP_0000635
+RCPT_0000334,2025-02-18,Topgolf,890.38,Client Hosting & Entertainment,Jeff,EXP_0000638
+RCPT_0000335,2025-02-18,Staples Center,698.23,Client Hosting & Entertainment,Jeff,EXP_0000639
+RCPT_0000336,2025-02-18,Uber,191.62,Gas & Travel,Antoine,EXP_0000640
+RCPT_0000337,2025-02-18,Starbucks,256.24,Client Hosting & Entertainment,Jeff,EXP_0000641
+RCPT_0000338,2025-02-19,Delta,134.54,Gas & Travel,Jeff,EXP_0000643
+RCPT_0000339,2025-02-20,Nobu,839.52,Client Hosting & Entertainment,Jeff,EXP_0000645
+RCPT_0000340,2025-02-20,Pebble Beach,1070.84,Client Hosting & Entertainment,Antoine,EXP_0000646
+RCPT_0000341,2025-02-20,Uber,247.79,Gas & Travel,Jeff,EXP_0000649
+RCPT_0000342,2025-02-22,Starbucks,96.77,Client Hosting & Entertainment,Antoine,EXP_0000651
+RCPT_0000343,2025-02-22,Lyft,56.81,Gas & Travel,Antoine,EXP_0000652
+RCPT_0000344,2025-02-22,Delta,263.55,Gas & Travel,Jeff,EXP_0000653
+RCPT_0000345,2025-02-24,Nobu,393.44,Client Hosting & Entertainment,Jeff,EXP_0000656
+RCPT_0000346,2025-02-25,Staples Center,911.61,Client Hosting & Entertainment,Jeff,EXP_0000658
+RCPT_0000347,2025-02-25,Lyft,306.43,Gas & Travel,Jeff,EXP_0000659
+RCPT_0000348,2025-02-25,Staples Center,610.91,Client Hosting & Entertainment,Jeff,EXP_0000660
+RCPT_0000349,2025-02-26,Chevron,350.56,Gas & Travel,Antoine,EXP_0000661
+RCPT_0000350,2025-02-27,Staples Center,1026.01,Client Hosting & Entertainment,Jeff,EXP_0000662
+RCPT_0000351,2025-02-27,Shell,278.56,Gas & Travel,Antoine,EXP_0000664
+RCPT_0000352,2025-02-27,United,256.36,Gas & Travel,Antoine,EXP_0000665
+RCPT_0000353,2025-03-01,Lyft,176.86,Gas & Travel,Antoine,EXP_0000666
+RCPT_0000354,2025-03-01,United,24.19,Gas & Travel,Jeff,EXP_0000668
+RCPT_0000355,2025-03-02,Topgolf,271.3,Client Hosting & Entertainment,Jeff,EXP_0000669
+RCPT_0000356,2025-03-02,Starbucks,538.31,Client Hosting & Entertainment,Antoine,EXP_0000670
+RCPT_0000357,2025-03-03,Staples Center,645.3,Client Hosting & Entertainment,Jeff,EXP_0000672
+RCPT_0000358,2025-03-04,Shell,133.93,Gas & Travel,Jeff,EXP_0000675
+RCPT_0000359,2025-03-05,Chevron,45.17,Gas & Travel,Antoine,EXP_0000678
+RCPT_0000360,2025-03-05,Shell,234.38,Gas & Travel,Antoine,EXP_0000679
+RCPT_0000361,2025-03-07,Chevron,139.47,Gas & Travel,Jeff,EXP_0000681
+RCPT_0000362,2025-03-09,Delta,83.08,Gas & Travel,Jeff,EXP_0000684
+RCPT_0000363,2025-03-09,Starbucks,763.75,Client Hosting & Entertainment,Antoine,EXP_0000685
+RCPT_0000364,2025-03-09,Pebble Beach,583.96,Client Hosting & Entertainment,Antoine,EXP_0000686
+RCPT_0000365,2025-03-11,Shell,279.27,Gas & Travel,Antoine,EXP_0000693
+RCPT_0000366,2025-03-11,Ruths Chris,519.91,Client Hosting & Entertainment,Antoine,EXP_0000694
+RCPT_0000367,2025-03-11,Pebble Beach,819.06,Client Hosting & Entertainment,Jeff,EXP_0000696
+RCPT_0000368,2025-03-12,Pebble Beach,914.04,Client Hosting & Entertainment,Jeff,EXP_0000697
+RCPT_0000369,2025-03-12,Nobu,673.18,Client Hosting & Entertainment,Jeff,EXP_0000700
+RCPT_0000370,2025-03-14,Shell,342.57,Gas & Travel,Jeff,EXP_0000701
+RCPT_0000371,2025-03-15,Ruths Chris,475.62,Client Hosting & Entertainment,Jeff,EXP_0000703
+RCPT_0000372,2025-03-15,Chevron,143.9,Gas & Travel,Jeff,EXP_0000704
+RCPT_0000373,2025-03-15,Ruths Chris,1136.3,Client Hosting & Entertainment,Jeff,EXP_0000705
+RCPT_0000374,2025-03-15,Lyft,212.85,Gas & Travel,Jeff,EXP_0000707
+RCPT_0000375,2025-03-17,Ruths Chris,592.73,Client Hosting & Entertainment,Jeff,EXP_0000711
+RCPT_0000376,2025-03-18,Chevron,306.58,Gas & Travel,Jeff,EXP_0000714
+RCPT_0000377,2025-03-18,Uber,238.04,Gas & Travel,Antoine,EXP_0000717
+RCPT_0000378,2025-03-18,United,384.44,Gas & Travel,Antoine,EXP_0000718
+RCPT_0000379,2025-03-20,Ruths Chris,396.9,Client Hosting & Entertainment,Jeff,EXP_0000724
+RCPT_0000380,2025-03-21,Chevron,126.93,Gas & Travel,Jeff,EXP_0000727
+RCPT_0000381,2025-03-21,Shell,369.26,Gas & Travel,Jeff,EXP_0000728
+RCPT_0000382,2025-03-23,Topgolf,1079.91,Client Hosting & Entertainment,Jeff,EXP_0000731
+RCPT_0000383,2025-03-23,Uber,205.11,Gas & Travel,Antoine,EXP_0000734
+RCPT_0000384,2025-03-23,Nobu,972.61,Client Hosting & Entertainment,Jeff,EXP_0000735
+RCPT_0000385,2025-03-24,Nobu,935.21,Client Hosting & Entertainment,Antoine,EXP_0000738
+RCPT_0000386,2025-03-25,Nobu,1072.72,Client Hosting & Entertainment,Antoine,EXP_0000740
+RCPT_0000387,2025-03-26,United,100.99,Gas & Travel,Jeff,EXP_0000746
+RCPT_0000388,2025-03-26,Ruths Chris,871.21,Client Hosting & Entertainment,Antoine,EXP_0000748
+RCPT_0000389,2025-03-27,Uber,50.1,Gas & Travel,Antoine,EXP_0000750
+RCPT_0000390,2025-03-27,Topgolf,876.59,Client Hosting & Entertainment,Jeff,EXP_0000752
+RCPT_0000391,2025-03-29,Lyft,142.69,Gas & Travel,Jeff,EXP_0000754
+RCPT_0000392,2025-03-29,Staples Center,543.52,Client Hosting & Entertainment,Antoine,EXP_0000755
+RCPT_0000393,2025-03-29,Staples Center,234.27,Client Hosting & Entertainment,Jeff,EXP_0000756
+RCPT_0000394,2025-03-30,Uber,68.67,Gas & Travel,Jeff,EXP_0000757
+RCPT_0000395,2025-03-30,United,144.58,Gas & Travel,Jeff,EXP_0000758
+RCPT_0000396,2025-03-31,Lyft,250.65,Gas & Travel,Jeff,EXP_0000759
+RCPT_0000397,2025-03-31,Shell,364.02,Gas & Travel,Antoine,EXP_0000760
+RCPT_0000398,2025-04-02,Nobu,444.79,Client Hosting & Entertainment,Jeff,EXP_0000763
+RCPT_0000399,2025-04-03,Ruths Chris,426.37,Client Hosting & Entertainment,Jeff,EXP_0000767
+RCPT_0000400,2025-04-03,Nobu,391.25,Client Hosting & Entertainment,Jeff,EXP_0000768
+RCPT_0000401,2025-04-04,Lyft,348.13,Gas & Travel,Jeff,EXP_0000770
+RCPT_0000402,2025-04-04,Lyft,102.42,Gas & Travel,Antoine,EXP_0000771
+RCPT_0000403,2025-04-04,Delta,81.16,Gas & Travel,Jeff,EXP_0000772
+RCPT_0000404,2025-04-05,Staples Center,439.82,Client Hosting & Entertainment,Jeff,EXP_0000774
+RCPT_0000405,2025-04-05,Lyft,38.14,Gas & Travel,Jeff,EXP_0000775
+RCPT_0000406,2025-04-05,Ruths Chris,765.7,Client Hosting & Entertainment,Jeff,EXP_0000776
+RCPT_0000407,2025-04-06,Staples Center,853.38,Client Hosting & Entertainment,Antoine,EXP_0000778
+RCPT_0000408,2025-04-07,Chevron,140.21,Gas & Travel,Jeff,EXP_0000779
+RCPT_0000409,2025-04-07,Topgolf,93.16,Client Hosting & Entertainment,Jeff,EXP_0000780
+RCPT_0000410,2025-04-07,Delta,49.21,Gas & Travel,Jeff,EXP_0000781
+RCPT_0000411,2025-04-07,Uber,383.4,Gas & Travel,Antoine,EXP_0000782
+RCPT_0000412,2025-04-07,Pebble Beach,732.39,Client Hosting & Entertainment,Jeff,EXP_0000783
+RCPT_0000413,2025-04-07,United,189.51,Gas & Travel,Jeff,EXP_0000784
+RCPT_0000414,2025-04-07,Chevron,79.98,Gas & Travel,Jeff,EXP_0000785
+RCPT_0000415,2025-04-08,Staples Center,748.82,Client Hosting & Entertainment,Jeff,EXP_0000786
+RCPT_0000416,2025-04-08,Ruths Chris,897.62,Client Hosting & Entertainment,Jeff,EXP_0000787
+RCPT_0000417,2025-04-09,Uber,127.35,Gas & Travel,Jeff,EXP_0000788
+RCPT_0000418,2025-04-09,Uber,317.08,Gas & Travel,Jeff,EXP_0000789
+RCPT_0000419,2025-04-10,Uber,71.16,Gas & Travel,Jeff,EXP_0000793
+RCPT_0000420,2025-04-10,Topgolf,1189.7,Client Hosting & Entertainment,Jeff,EXP_0000794
+RCPT_0000421,2025-04-10,Ruths Chris,638.67,Client Hosting & Entertainment,Jeff,EXP_0000795
+RCPT_0000422,2025-04-10,Lyft,36.98,Gas & Travel,Antoine,EXP_0000798
+RCPT_0000423,2025-04-12,Topgolf,1112.88,Client Hosting & Entertainment,Jeff,EXP_0000802
+RCPT_0000424,2025-04-13,Staples Center,1174.31,Client Hosting & Entertainment,Antoine,EXP_0000804
+RCPT_0000425,2025-04-13,Lyft,344.28,Gas & Travel,Jeff,EXP_0000806
+RCPT_0000426,2025-04-14,United,215.82,Gas & Travel,Jeff,EXP_0000808
+RCPT_0000427,2025-04-14,United,225.01,Gas & Travel,Jeff,EXP_0000809
+RCPT_0000428,2025-04-15,Pebble Beach,1054.9,Client Hosting & Entertainment,Jeff,EXP_0000812
+RCPT_0000429,2025-04-16,Lyft,63.45,Gas & Travel,Jeff,EXP_0000814
+RCPT_0000430,2025-04-16,Uber,367.21,Gas & Travel,Jeff,EXP_0000815
+RCPT_0000431,2025-04-17,United,181.05,Gas & Travel,Antoine,EXP_0000819
+RCPT_0000432,2025-04-18,Starbucks,289.13,Client Hosting & Entertainment,Jeff,EXP_0000820
+RCPT_0000433,2025-04-19,Staples Center,648.96,Client Hosting & Entertainment,Antoine,EXP_0000823
+RCPT_0000434,2025-04-19,Chevron,277.25,Gas & Travel,Jeff,EXP_0000824
+RCPT_0000435,2025-04-19,Delta,349.26,Gas & Travel,Jeff,EXP_0000825
+RCPT_0000436,2025-04-20,Starbucks,113.73,Client Hosting & Entertainment,Antoine,EXP_0000826
+RCPT_0000437,2025-04-20,United,114.75,Gas & Travel,Jeff,EXP_0000828
+RCPT_0000438,2025-04-21,Staples Center,923.03,Client Hosting & Entertainment,Jeff,EXP_0000831
+RCPT_0000439,2025-04-21,Topgolf,504.69,Client Hosting & Entertainment,Antoine,EXP_0000832
+RCPT_0000440,2025-04-22,Lyft,258.53,Gas & Travel,Jeff,EXP_0000834
+RCPT_0000441,2025-04-22,Pebble Beach,187.44,Client Hosting & Entertainment,Jeff,EXP_0000836
+RCPT_0000442,2025-04-23,Topgolf,92.64,Client Hosting & Entertainment,Jeff,EXP_0000838
+RCPT_0000443,2025-04-24,Staples Center,1163.79,Client Hosting & Entertainment,Jeff,EXP_0000842
+RCPT_0000444,2025-04-24,Starbucks,518.92,Client Hosting & Entertainment,Jeff,EXP_0000843
+RCPT_0000445,2025-04-24,Uber,316.72,Gas & Travel,Antoine,EXP_0000844
+RCPT_0000446,2025-04-25,Lyft,259.98,Gas & Travel,Jeff,EXP_0000846
+RCPT_0000447,2025-04-25,Chevron,268.42,Gas & Travel,Jeff,EXP_0000848
+RCPT_0000448,2025-04-27,Lyft,231.61,Gas & Travel,Jeff,EXP_0000850
+RCPT_0000449,2025-04-27,Chevron,266.03,Gas & Travel,Jeff,EXP_0000851
+RCPT_0000450,2025-04-27,Pebble Beach,510.79,Client Hosting & Entertainment,Antoine,EXP_0000852
+RCPT_0000451,2025-04-28,Staples Center,132.1,Client Hosting & Entertainment,Antoine,EXP_0000854
+RCPT_0000452,2025-04-29,Lyft,351.37,Gas & Travel,Antoine,EXP_0000855
+RCPT_0000453,2025-04-29,Ruths Chris,545.47,Client Hosting & Entertainment,Jeff,EXP_0000856
+RCPT_0000454,2025-04-29,Pebble Beach,1126.69,Client Hosting & Entertainment,Jeff,EXP_0000857
+RCPT_0000455,2025-04-29,Nobu,893.36,Client Hosting & Entertainment,Jeff,EXP_0000861
+RCPT_0000456,2025-04-30,United,215.31,Gas & Travel,Jeff,EXP_0000862
+RCPT_0000457,2025-04-30,Nobu,406.57,Client Hosting & Entertainment,Antoine,EXP_0000863
+RCPT_0000458,2025-05-01,Ruths Chris,163.21,Client Hosting & Entertainment,Jeff,EXP_0000867
+RCPT_0000459,2025-05-02,Topgolf,583.83,Client Hosting & Entertainment,Jeff,EXP_0000868
+RCPT_0000460,2025-05-02,Ruths Chris,763.42,Client Hosting & Entertainment,Antoine,EXP_0000870
+RCPT_0000461,2025-05-03,Pebble Beach,238.02,Client Hosting & Entertainment,Antoine,EXP_0000871
+RCPT_0000462,2025-05-04,Nobu,614.2,Client Hosting & Entertainment,Antoine,EXP_0000875
+RCPT_0000463,2025-05-04,Chevron,196.13,Gas & Travel,Jeff,EXP_0000877
+RCPT_0000464,2025-05-05,Lyft,306.26,Gas & Travel,Jeff,EXP_0000878
+RCPT_0000465,2025-05-05,Ruths Chris,156.18,Client Hosting & Entertainment,Jeff,EXP_0000879
+RCPT_0000466,2025-05-05,Lyft,260.31,Gas & Travel,Antoine,EXP_0000880
+RCPT_0000467,2025-05-05,Delta,47.74,Gas & Travel,Antoine,EXP_0000881
+RCPT_0000468,2025-05-06,Ruths Chris,1136.49,Client Hosting & Entertainment,Jeff,EXP_0000883
+RCPT_0000469,2025-05-09,Lyft,79.72,Gas & Travel,Jeff,EXP_0000889
+RCPT_0000470,2025-05-11,Topgolf,220.27,Client Hosting & Entertainment,Jeff,EXP_0000896
+RCPT_0000471,2025-05-12,Pebble Beach,1117.47,Client Hosting & Entertainment,Jeff,EXP_0000901
+RCPT_0000472,2025-05-13,Starbucks,341.24,Client Hosting & Entertainment,Jeff,EXP_0000904
+RCPT_0000473,2025-05-14,Shell,110.57,Gas & Travel,Jeff,EXP_0000906
+RCPT_0000474,2025-05-14,United,232.16,Gas & Travel,Jeff,EXP_0000907
+RCPT_0000475,2025-05-14,Starbucks,988.36,Client Hosting & Entertainment,Antoine,EXP_0000909
+RCPT_0000476,2025-05-14,Nobu,406.22,Client Hosting & Entertainment,Jeff,EXP_0000910
+RCPT_0000477,2025-05-15,Uber,161.73,Gas & Travel,Antoine,EXP_0000912
+RCPT_0000478,2025-05-15,Nobu,817.5,Client Hosting & Entertainment,Antoine,EXP_0000916
+RCPT_0000479,2025-05-16,Staples Center,361.25,Client Hosting & Entertainment,Jeff,EXP_0000918
+RCPT_0000480,2025-05-16,Staples Center,106.8,Client Hosting & Entertainment,Jeff,EXP_0000919
+RCPT_0000481,2025-05-16,Ruths Chris,776.46,Client Hosting & Entertainment,Jeff,EXP_0000920
+RCPT_0000482,2025-05-17,Ruths Chris,1041.55,Client Hosting & Entertainment,Jeff,EXP_0000922
+RCPT_0000483,2025-05-18,Pebble Beach,1177.15,Client Hosting & Entertainment,Antoine,EXP_0000923
+RCPT_0000484,2025-05-18,Ruths Chris,1056.39,Client Hosting & Entertainment,Jeff,EXP_0000924
+RCPT_0000485,2025-05-20,Starbucks,576.26,Client Hosting & Entertainment,Antoine,EXP_0000929
+RCPT_0000486,2025-05-20,Lyft,131.83,Gas & Travel,Jeff,EXP_0000931
+RCPT_0000487,2025-05-21,United,273.03,Gas & Travel,Jeff,EXP_0000934
+RCPT_0000488,2025-05-22,Shell,196.74,Gas & Travel,Jeff,EXP_0000939
+RCPT_0000489,2025-05-24,Uber,179.82,Gas & Travel,Jeff,EXP_0000942
+RCPT_0000490,2025-05-24,Nobu,1127.63,Client Hosting & Entertainment,Jeff,EXP_0000943
+RCPT_0000491,2025-05-25,Lyft,143.51,Gas & Travel,Antoine,EXP_0000944
+RCPT_0000492,2025-05-27,Lyft,302.61,Gas & Travel,Jeff,EXP_0000953
+RCPT_0000493,2025-05-27,United,312.66,Gas & Travel,Jeff,EXP_0000957
+RCPT_0000494,2025-05-29,Shell,231.86,Gas & Travel,Jeff,EXP_0000961
+RCPT_0000495,2025-05-29,Lyft,218.95,Gas & Travel,Jeff,EXP_0000962
+RCPT_0000496,2025-05-30,Lyft,311.74,Gas & Travel,Antoine,EXP_0000964
+RCPT_0000497,2025-05-30,Shell,144.49,Gas & Travel,Jeff,EXP_0000965
+RCPT_0000498,2025-05-30,Pebble Beach,611.73,Client Hosting & Entertainment,Jeff,EXP_0000966
+RCPT_0000499,2025-05-30,United,345.38,Gas & Travel,Antoine,EXP_0000967
+RCPT_0000500,2025-05-31,Starbucks,719.31,Client Hosting & Entertainment,Jeff,EXP_0000970
+RCPT_0000501,2025-06-02,Nobu,363.21,Client Hosting & Entertainment,Jeff,EXP_0000974
+RCPT_0000502,2025-06-02,Lyft,21.73,Gas & Travel,Jeff,EXP_0000975
+RCPT_0000503,2025-06-03,Staples Center,523.81,Client Hosting & Entertainment,Antoine,EXP_0000977
+RCPT_0000504,2025-06-04,Chevron,211.27,Gas & Travel,Jeff,EXP_0000979
+RCPT_0000505,2025-06-04,United,361.4,Gas & Travel,Jeff,EXP_0000981
+RCPT_0000506,2025-06-05,Staples Center,106.74,Client Hosting & Entertainment,Jeff,EXP_0000984
+RCPT_0000507,2025-06-06,Nobu,468.24,Client Hosting & Entertainment,Jeff,EXP_0000985
+RCPT_0000508,2025-06-06,Starbucks,960.6,Client Hosting & Entertainment,Jeff,EXP_0000986
+RCPT_0000509,2025-06-06,Staples Center,366.77,Client Hosting & Entertainment,Jeff,EXP_0000987
+RCPT_0000510,2025-06-07,Staples Center,186.92,Client Hosting & Entertainment,Jeff,EXP_0000989
+RCPT_0000511,2025-06-08,Lyft,244.93,Gas & Travel,Antoine,EXP_0000993
+RCPT_0000512,2025-06-08,Pebble Beach,815.12,Client Hosting & Entertainment,Jeff,EXP_0000994
+RCPT_0000513,2025-06-08,Nobu,431.74,Client Hosting & Entertainment,Antoine,EXP_0000996
+RCPT_0000514,2025-06-09,Delta,105.18,Gas & Travel,Jeff,EXP_0000999
+RCPT_0000515,2025-06-09,Uber,31.69,Gas & Travel,Jeff,EXP_0001000
+RCPT_0000516,2025-06-10,United,356.7,Gas & Travel,Antoine,EXP_0001004
+RCPT_0000517,2025-06-10,Uber,175.67,Gas & Travel,Antoine,EXP_0001005
+RCPT_0000518,2025-06-11,Uber,249.46,Gas & Travel,Antoine,EXP_0001008
+RCPT_0000519,2025-06-12,Starbucks,361.2,Client Hosting & Entertainment,Jeff,EXP_0001012
+RCPT_0000520,2025-06-12,Lyft,119.4,Gas & Travel,Jeff,EXP_0001013
+RCPT_0000521,2025-06-12,Staples Center,443.28,Client Hosting & Entertainment,Antoine,EXP_0001014
+RCPT_0000522,2025-06-12,Topgolf,416.6,Client Hosting & Entertainment,Antoine,EXP_0001015
+RCPT_0000523,2025-06-12,Chevron,126.87,Gas & Travel,Jeff,EXP_0001016
+RCPT_0000524,2025-06-12,Chevron,199.84,Gas & Travel,Antoine,EXP_0001017
+RCPT_0000525,2025-06-13,Nobu,287.03,Client Hosting & Entertainment,Jeff,EXP_0001019
+RCPT_0000526,2025-06-14,Topgolf,548.59,Client Hosting & Entertainment,Jeff,EXP_0001020
+RCPT_0000527,2025-06-14,Chevron,225.86,Gas & Travel,Jeff,EXP_0001021
+RCPT_0000528,2025-06-14,Starbucks,976.56,Client Hosting & Entertainment,Jeff,EXP_0001023
+RCPT_0000529,2025-06-14,Pebble Beach,590.66,Client Hosting & Entertainment,Antoine,EXP_0001024
+RCPT_0000530,2025-06-15,Uber,67.02,Gas & Travel,Jeff,EXP_0001026
+RCPT_0000531,2025-06-15,Staples Center,560.18,Client Hosting & Entertainment,Jeff,EXP_0001028
+RCPT_0000532,2025-06-17,Uber,20.93,Gas & Travel,Jeff,EXP_0001032
+RCPT_0000533,2025-06-17,Topgolf,956.22,Client Hosting & Entertainment,Jeff,EXP_0001033
+RCPT_0000534,2025-06-17,Uber,125.48,Gas & Travel,Jeff,EXP_0001035
+RCPT_0000535,2025-06-18,Chevron,232.58,Gas & Travel,Antoine,EXP_0001037
+RCPT_0000536,2025-06-19,Pebble Beach,715.46,Client Hosting & Entertainment,Jeff,EXP_0001041
+RCPT_0000537,2025-06-20,Staples Center,669.19,Client Hosting & Entertainment,Jeff,EXP_0001046
+RCPT_0000538,2025-06-20,United,186.14,Gas & Travel,Jeff,EXP_0001047
+RCPT_0000539,2025-06-20,Ruths Chris,481.04,Client Hosting & Entertainment,Jeff,EXP_0001051
+RCPT_0000540,2025-06-20,Chevron,104.02,Gas & Travel,Antoine,EXP_0001052
+RCPT_0000541,2025-06-21,Starbucks,145.58,Client Hosting & Entertainment,Jeff,EXP_0001054
+RCPT_0000542,2025-06-21,Staples Center,631.18,Client Hosting & Entertainment,Jeff,EXP_0001056
+RCPT_0000543,2025-06-22,Starbucks,1131.67,Client Hosting & Entertainment,Jeff,EXP_0001059
+RCPT_0000544,2025-06-23,United,33.81,Gas & Travel,Jeff,EXP_0001060
+RCPT_0000545,2025-06-23,Staples Center,782.1,Client Hosting & Entertainment,Antoine,EXP_0001061
+RCPT_0000546,2025-06-23,Nobu,290.64,Client Hosting & Entertainment,Jeff,EXP_0001064
+RCPT_0000547,2025-06-24,Topgolf,981.12,Client Hosting & Entertainment,Antoine,EXP_0001066
+RCPT_0000548,2025-06-24,United,42.46,Gas & Travel,Jeff,EXP_0001069
+RCPT_0000549,2025-06-24,Shell,70.58,Gas & Travel,Jeff,EXP_0001071
+RCPT_0000550,2025-06-25,Chevron,346.88,Gas & Travel,Jeff,EXP_0001072
+RCPT_0000551,2025-06-25,Pebble Beach,925.51,Client Hosting & Entertainment,Antoine,EXP_0001074
+RCPT_0000552,2025-06-25,Lyft,374.07,Gas & Travel,Jeff,EXP_0001075
+RCPT_0000553,2025-06-26,Nobu,154.42,Client Hosting & Entertainment,Jeff,EXP_0001079
+RCPT_0000554,2025-06-26,Lyft,98.74,Gas & Travel,Antoine,EXP_0001080
+RCPT_0000555,2025-06-26,Ruths Chris,1005.14,Client Hosting & Entertainment,Jeff,EXP_0001082
+RCPT_0000556,2025-06-27,Ruths Chris,982.14,Client Hosting & Entertainment,Jeff,EXP_0001083
+RCPT_0000557,2025-06-27,Lyft,286.22,Gas & Travel,Jeff,EXP_0001086
+RCPT_0000558,2025-06-27,Uber,387.16,Gas & Travel,Antoine,EXP_0001087
+RCPT_0000559,2025-06-27,Chevron,273.26,Gas & Travel,Jeff,EXP_0001089
+RCPT_0000560,2025-06-28,Nobu,752.68,Client Hosting & Entertainment,Jeff,EXP_0001091
+RCPT_0000561,2025-06-28,Uber,203.42,Gas & Travel,Jeff,EXP_0001092
+RCPT_0000562,2025-06-28,Topgolf,631.02,Client Hosting & Entertainment,Jeff,EXP_0001094
+RCPT_0000563,2025-06-29,Delta,231.39,Gas & Travel,Jeff,EXP_0001096
+RCPT_0000564,2025-06-30,Delta,315.43,Gas & Travel,Jeff,EXP_0001098
+RCPT_0000565,2025-06-30,Uber,206.4,Gas & Travel,Antoine,EXP_0001101
+RCPT_0000566,2025-06-30,Chevron,22.37,Gas & Travel,Jeff,EXP_0001103
+RCPT_0000567,2025-07-01,Topgolf,687.35,Client Hosting & Entertainment,Jeff,EXP_0001105
+RCPT_0000568,2025-07-01,Shell,104.07,Gas & Travel,Antoine,EXP_0001106
+RCPT_0000569,2025-07-01,Ruths Chris,1060.55,Client Hosting & Entertainment,Jeff,EXP_0001107
+RCPT_0000570,2025-07-02,Staples Center,838.77,Client Hosting & Entertainment,Jeff,EXP_0001109
+RCPT_0000571,2025-07-02,Lyft,302.72,Gas & Travel,Jeff,EXP_0001110
+RCPT_0000572,2025-07-03,Ruths Chris,562.47,Client Hosting & Entertainment,Antoine,EXP_0001112
+RCPT_0000573,2025-07-03,Topgolf,948.79,Client Hosting & Entertainment,Antoine,EXP_0001113
+RCPT_0000574,2025-07-03,Uber,169.0,Gas & Travel,Jeff,EXP_0001115
+RCPT_0000575,2025-07-03,Chevron,201.0,Gas & Travel,Jeff,EXP_0001116
+RCPT_0000576,2025-07-04,Delta,348.74,Gas & Travel,Jeff,EXP_0001117
+RCPT_0000577,2025-07-04,United,362.21,Gas & Travel,Jeff,EXP_0001118
+RCPT_0000578,2025-07-04,Chevron,149.9,Gas & Travel,Jeff,EXP_0001119
+RCPT_0000579,2025-07-05,Chevron,142.96,Gas & Travel,Antoine,EXP_0001122
+RCPT_0000580,2025-07-05,Delta,200.96,Gas & Travel,Jeff,EXP_0001123
+RCPT_0000581,2025-07-05,Delta,364.32,Gas & Travel,Antoine,EXP_0001124
+RCPT_0000582,2025-07-05,Ruths Chris,409.55,Client Hosting & Entertainment,Jeff,EXP_0001125
+RCPT_0000583,2025-07-05,Nobu,207.75,Client Hosting & Entertainment,Antoine,EXP_0001128
+RCPT_0000584,2025-07-05,Pebble Beach,334.8,Client Hosting & Entertainment,Jeff,EXP_0001129
+RCPT_0000585,2025-07-06,Ruths Chris,1059.39,Client Hosting & Entertainment,Jeff,EXP_0001133
+RCPT_0000586,2025-07-06,Delta,98.54,Gas & Travel,Jeff,EXP_0001134
+RCPT_0000587,2025-07-06,Starbucks,373.56,Client Hosting & Entertainment,Jeff,EXP_0001135
+RCPT_0000588,2025-07-07,United,85.86,Gas & Travel,Jeff,EXP_0001136
+RCPT_0000589,2025-07-07,Staples Center,674.23,Client Hosting & Entertainment,Jeff,EXP_0001137
+RCPT_0000590,2025-07-08,Pebble Beach,1005.47,Client Hosting & Entertainment,Jeff,EXP_0001141
+RCPT_0000591,2025-07-08,Uber,193.24,Gas & Travel,Jeff,EXP_0001142
+RCPT_0000592,2025-07-10,Shell,255.68,Gas & Travel,Antoine,EXP_0001148
+RCPT_0000593,2025-07-10,Shell,58.65,Gas & Travel,Jeff,EXP_0001149
+RCPT_0000594,2025-07-11,Delta,245.22,Gas & Travel,Antoine,EXP_0001150
+RCPT_0000595,2025-07-11,Chevron,271.97,Gas & Travel,Antoine,EXP_0001151
+RCPT_0000596,2025-07-11,Staples Center,236.95,Client Hosting & Entertainment,Antoine,EXP_0001153
+RCPT_0000597,2025-07-12,Uber,352.37,Gas & Travel,Antoine,EXP_0001156
+RCPT_0000598,2025-07-14,United,365.93,Gas & Travel,Jeff,EXP_0001159
+RCPT_0000599,2025-07-14,Starbucks,1154.31,Client Hosting & Entertainment,Antoine,EXP_0001161
+RCPT_0000600,2025-07-14,Shell,261.33,Gas & Travel,Antoine,EXP_0001162
+RCPT_0000601,2025-07-15,Starbucks,797.98,Client Hosting & Entertainment,Jeff,EXP_0001163
+RCPT_0000602,2025-07-15,Starbucks,587.3,Client Hosting & Entertainment,Jeff,EXP_0001165
+RCPT_0000603,2025-07-15,Chevron,296.82,Gas & Travel,Antoine,EXP_0001168
+RCPT_0000604,2025-07-15,United,58.06,Gas & Travel,Antoine,EXP_0001169
+RCPT_0000605,2025-07-16,Shell,29.51,Gas & Travel,Antoine,EXP_0001171
+RCPT_0000606,2025-07-16,Topgolf,217.06,Client Hosting & Entertainment,Antoine,EXP_0001175
+RCPT_0000607,2025-07-16,Uber,96.04,Gas & Travel,Antoine,EXP_0001176
+RCPT_0000608,2025-07-16,Topgolf,491.18,Client Hosting & Entertainment,Jeff,EXP_0001178
+RCPT_0000609,2025-07-17,United,274.75,Gas & Travel,Antoine,EXP_0001180
+RCPT_0000610,2025-07-17,Ruths Chris,355.53,Client Hosting & Entertainment,Jeff,EXP_0001181
+RCPT_0000611,2025-07-18,Starbucks,1196.67,Client Hosting & Entertainment,Jeff,EXP_0001183
+RCPT_0000612,2025-07-18,Shell,142.3,Gas & Travel,Antoine,EXP_0001184
+RCPT_0000613,2025-07-19,Topgolf,827.81,Client Hosting & Entertainment,Jeff,EXP_0001185
+RCPT_0000614,2025-07-19,Delta,111.23,Gas & Travel,Jeff,EXP_0001186
+RCPT_0000615,2025-07-19,Lyft,373.35,Gas & Travel,Antoine,EXP_0001188
+RCPT_0000616,2025-07-20,Pebble Beach,507.37,Client Hosting & Entertainment,Jeff,EXP_0001192
+RCPT_0000617,2025-07-20,Pebble Beach,454.6,Client Hosting & Entertainment,Antoine,EXP_0001193
+RCPT_0000618,2025-07-22,Shell,179.19,Gas & Travel,Jeff,EXP_0001198
+RCPT_0000619,2025-07-22,Starbucks,1022.4,Client Hosting & Entertainment,Jeff,EXP_0001199
+RCPT_0000620,2025-07-22,Nobu,305.75,Client Hosting & Entertainment,Antoine,EXP_0001200
+RCPT_0000621,2025-07-23,Shell,285.67,Gas & Travel,Jeff,EXP_0001201
+RCPT_0000622,2025-07-24,Starbucks,525.42,Client Hosting & Entertainment,Jeff,EXP_0001203
+RCPT_0000623,2025-07-24,Lyft,121.26,Gas & Travel,Antoine,EXP_0001205
+RCPT_0000624,2025-07-24,Uber,359.29,Gas & Travel,Jeff,EXP_0001207
+RCPT_0000625,2025-07-25,Nobu,443.07,Client Hosting & Entertainment,Jeff,EXP_0001209
+RCPT_0000626,2025-07-25,United,195.02,Gas & Travel,Antoine,EXP_0001210
+RCPT_0000627,2025-07-25,Topgolf,789.27,Client Hosting & Entertainment,Jeff,EXP_0001212
+RCPT_0000628,2025-07-25,United,194.13,Gas & Travel,Antoine,EXP_0001213
+RCPT_0000629,2025-07-26,Topgolf,140.95,Client Hosting & Entertainment,Jeff,EXP_0001215
+RCPT_0000630,2025-07-26,Staples Center,437.52,Client Hosting & Entertainment,Jeff,EXP_0001216
+RCPT_0000631,2025-07-27,Starbucks,526.21,Client Hosting & Entertainment,Jeff,EXP_0001218
+RCPT_0000632,2025-07-27,Uber,281.55,Gas & Travel,Antoine,EXP_0001219
+RCPT_0000633,2025-07-27,Chevron,121.79,Gas & Travel,Jeff,EXP_0001220
+RCPT_0000634,2025-07-28,Ruths Chris,1091.54,Client Hosting & Entertainment,Jeff,EXP_0001223
+RCPT_0000635,2025-07-28,Uber,61.43,Gas & Travel,Jeff,EXP_0001224
+RCPT_0000636,2025-07-28,Topgolf,299.89,Client Hosting & Entertainment,Jeff,EXP_0001225
+RCPT_0000637,2025-07-28,Nobu,619.18,Client Hosting & Entertainment,Jeff,EXP_0001226
+RCPT_0000638,2025-07-28,Uber,360.26,Gas & Travel,Antoine,EXP_0001227
+RCPT_0000639,2025-07-29,Delta,224.07,Gas & Travel,Jeff,EXP_0001229
+RCPT_0000640,2025-07-29,Topgolf,832.08,Client Hosting & Entertainment,Jeff,EXP_0001231
+RCPT_0000641,2025-07-30,Pebble Beach,443.92,Client Hosting & Entertainment,Jeff,EXP_0001234
+RCPT_0000642,2025-07-31,United,210.55,Gas & Travel,Antoine,EXP_0001236
+RCPT_0000643,2025-07-31,Lyft,41.2,Gas & Travel,Antoine,EXP_0001237
+RCPT_0000644,2025-07-31,Pebble Beach,1042.86,Client Hosting & Entertainment,Antoine,EXP_0001238
+RCPT_0000645,2025-07-31,Ruths Chris,349.52,Client Hosting & Entertainment,Antoine,EXP_0001239
+RCPT_0000646,2025-08-01,Delta,195.7,Gas & Travel,Antoine,EXP_0001240
+RCPT_0000647,2025-08-01,Staples Center,807.46,Client Hosting & Entertainment,Jeff,EXP_0001241
+RCPT_0000648,2025-08-01,Lyft,330.24,Gas & Travel,Jeff,EXP_0001244
+RCPT_0000649,2025-08-03,Lyft,345.86,Gas & Travel,Jeff,EXP_0001249
+RCPT_0000650,2025-08-03,Staples Center,520.82,Client Hosting & Entertainment,Antoine,EXP_0001250
+RCPT_0000651,2025-08-04,Pebble Beach,759.11,Client Hosting & Entertainment,Jeff,EXP_0001253
+RCPT_0000652,2025-08-04,Nobu,1181.68,Client Hosting & Entertainment,Antoine,EXP_0001254
+RCPT_0000653,2025-08-04,Topgolf,753.16,Client Hosting & Entertainment,Jeff,EXP_0001255
+RCPT_0000654,2025-08-05,Delta,53.57,Gas & Travel,Jeff,EXP_0001260
+RCPT_0000655,2025-08-06,Ruths Chris,1123.16,Client Hosting & Entertainment,Jeff,EXP_0001261
+RCPT_0000656,2025-08-07,Shell,247.89,Gas & Travel,Jeff,EXP_0001264
+RCPT_0000657,2025-08-07,Nobu,833.75,Client Hosting & Entertainment,Jeff,EXP_0001265
+RCPT_0000658,2025-08-07,Uber,345.52,Gas & Travel,Antoine,EXP_0001266
+RCPT_0000659,2025-08-07,Lyft,357.26,Gas & Travel,Jeff,EXP_0001267
+RCPT_0000660,2025-08-08,Staples Center,474.05,Client Hosting & Entertainment,Jeff,EXP_0001271
+RCPT_0000661,2025-08-09,Topgolf,971.26,Client Hosting & Entertainment,Jeff,EXP_0001276
+RCPT_0000662,2025-08-09,Shell,155.56,Gas & Travel,Antoine,EXP_0001279
+RCPT_0000663,2025-08-09,Chevron,308.37,Gas & Travel,Antoine,EXP_0001282
+RCPT_0000664,2025-08-11,Pebble Beach,293.22,Client Hosting & Entertainment,Jeff,EXP_0001285
+RCPT_0000665,2025-08-11,Nobu,712.51,Client Hosting & Entertainment,Jeff,EXP_0001287
+RCPT_0000666,2025-08-11,Starbucks,254.58,Client Hosting & Entertainment,Jeff,EXP_0001288
+RCPT_0000667,2025-08-11,Staples Center,541.67,Client Hosting & Entertainment,Jeff,EXP_0001289
+RCPT_0000668,2025-08-11,Shell,121.19,Gas & Travel,Jeff,EXP_0001290
+RCPT_0000669,2025-08-11,Pebble Beach,1082.51,Client Hosting & Entertainment,Jeff,EXP_0001291
+RCPT_0000670,2025-08-11,Staples Center,294.19,Client Hosting & Entertainment,Jeff,EXP_0001292
+RCPT_0000671,2025-08-12,Staples Center,990.83,Client Hosting & Entertainment,Jeff,EXP_0001294
+RCPT_0000672,2025-08-12,Delta,125.64,Gas & Travel,Antoine,EXP_0001295
+RCPT_0000673,2025-08-12,Lyft,222.91,Gas & Travel,Jeff,EXP_0001296
+RCPT_0000674,2025-08-12,Shell,133.06,Gas & Travel,Jeff,EXP_0001297
+RCPT_0000675,2025-08-15,Lyft,190.75,Gas & Travel,Jeff,EXP_0001306
+RCPT_0000676,2025-08-15,Pebble Beach,1175.8,Client Hosting & Entertainment,Jeff,EXP_0001307
+RCPT_0000677,2025-08-15,Delta,306.59,Gas & Travel,Jeff,EXP_0001308
+RCPT_0000678,2025-08-15,Lyft,201.45,Gas & Travel,Jeff,EXP_0001309
+RCPT_0000679,2025-08-16,Delta,378.44,Gas & Travel,Antoine,EXP_0001311
+RCPT_0000680,2025-08-17,Delta,217.86,Gas & Travel,Jeff,EXP_0001314
+RCPT_0000681,2025-08-19,Ruths Chris,988.14,Client Hosting & Entertainment,Antoine,EXP_0001318
+RCPT_0000682,2025-08-19,Uber,234.22,Gas & Travel,Antoine,EXP_0001319
+RCPT_0000683,2025-08-19,Ruths Chris,886.86,Client Hosting & Entertainment,Antoine,EXP_0001320
+RCPT_0000684,2025-08-20,Lyft,36.96,Gas & Travel,Jeff,EXP_0001324
+RCPT_0000685,2025-08-21,Chevron,350.85,Gas & Travel,Jeff,EXP_0001330
+RCPT_0000686,2025-08-22,Shell,394.05,Gas & Travel,Jeff,EXP_0001331
+RCPT_0000687,2025-08-22,Delta,294.24,Gas & Travel,Jeff,EXP_0001332
+RCPT_0000688,2025-08-22,Uber,354.33,Gas & Travel,Antoine,EXP_0001333
+RCPT_0000689,2025-08-22,Topgolf,733.11,Client Hosting & Entertainment,Jeff,EXP_0001335
+RCPT_0000690,2025-08-22,Topgolf,1079.21,Client Hosting & Entertainment,Jeff,EXP_0001336
+RCPT_0000691,2025-08-22,Lyft,398.12,Gas & Travel,Jeff,EXP_0001339
+RCPT_0000692,2025-08-23,Topgolf,835.79,Client Hosting & Entertainment,Jeff,EXP_0001340
+RCPT_0000693,2025-08-23,Shell,296.55,Gas & Travel,Jeff,EXP_0001342
+RCPT_0000694,2025-08-23,Chevron,390.39,Gas & Travel,Jeff,EXP_0001343
+RCPT_0000695,2025-08-24,Topgolf,384.57,Client Hosting & Entertainment,Jeff,EXP_0001344
+RCPT_0000696,2025-08-24,Shell,29.55,Gas & Travel,Jeff,EXP_0001345
+RCPT_0000697,2025-08-24,Topgolf,544.67,Client Hosting & Entertainment,Antoine,EXP_0001346
+RCPT_0000698,2025-08-24,Starbucks,641.13,Client Hosting & Entertainment,Jeff,EXP_0001347
+RCPT_0000699,2025-08-24,Staples Center,1179.85,Client Hosting & Entertainment,Jeff,EXP_0001348
+RCPT_0000700,2025-08-24,Staples Center,91.36,Client Hosting & Entertainment,Jeff,EXP_0001352
+RCPT_0000701,2025-08-24,Lyft,128.94,Gas & Travel,Jeff,EXP_0001353
+RCPT_0000702,2025-08-25,Lyft,306.16,Gas & Travel,Antoine,EXP_0001354
+RCPT_0000703,2025-08-25,Nobu,828.12,Client Hosting & Entertainment,Antoine,EXP_0001355
+RCPT_0000704,2025-08-25,Lyft,74.73,Gas & Travel,Jeff,EXP_0001356
+RCPT_0000705,2025-08-25,Chevron,92.36,Gas & Travel,Jeff,EXP_0001359
+RCPT_0000706,2025-08-25,Shell,242.45,Gas & Travel,Jeff,EXP_0001360
+RCPT_0000707,2025-08-25,Uber,76.32,Gas & Travel,Jeff,EXP_0001361
+RCPT_0000708,2025-08-26,Delta,144.23,Gas & Travel,Jeff,EXP_0001362
+RCPT_0000709,2025-08-26,Chevron,106.16,Gas & Travel,Jeff,EXP_0001364
+RCPT_0000710,2025-08-26,Nobu,149.12,Client Hosting & Entertainment,Jeff,EXP_0001365
+RCPT_0000711,2025-08-27,United,222.96,Gas & Travel,Jeff,EXP_0001366
+RCPT_0000712,2025-08-27,Uber,349.86,Gas & Travel,Jeff,EXP_0001368
+RCPT_0000713,2025-08-27,Chevron,56.93,Gas & Travel,Antoine,EXP_0001370
+RCPT_0000714,2025-08-27,Staples Center,135.02,Client Hosting & Entertainment,Jeff,EXP_0001372
+RCPT_0000715,2025-08-28,Staples Center,884.68,Client Hosting & Entertainment,Jeff,EXP_0001374
+RCPT_0000716,2025-08-28,Lyft,121.49,Gas & Travel,Jeff,EXP_0001375
+RCPT_0000717,2025-08-28,Chevron,96.32,Gas & Travel,Antoine,EXP_0001376
+RCPT_0000718,2025-08-29,Pebble Beach,350.48,Client Hosting & Entertainment,Antoine,EXP_0001379
+RCPT_0000719,2025-08-30,Uber,142.56,Gas & Travel,Jeff,EXP_0001381
+RCPT_0000720,2025-08-31,Chevron,117.35,Gas & Travel,Jeff,EXP_0001384
+RCPT_0000721,2025-09-01,Ruths Chris,620.2,Client Hosting & Entertainment,Jeff,EXP_0001385
+RCPT_0000722,2025-09-01,Staples Center,942.08,Client Hosting & Entertainment,Jeff,EXP_0001387
+RCPT_0000723,2025-09-02,Ruths Chris,705.61,Client Hosting & Entertainment,Jeff,EXP_0001388
+RCPT_0000724,2025-09-02,Starbucks,1178.69,Client Hosting & Entertainment,Antoine,EXP_0001390
+RCPT_0000725,2025-09-02,Uber,23.73,Gas & Travel,Antoine,EXP_0001391
+RCPT_0000726,2025-09-02,United,294.98,Gas & Travel,Jeff,EXP_0001392
+RCPT_0000727,2025-09-03,Topgolf,404.32,Client Hosting & Entertainment,Jeff,EXP_0001394
+RCPT_0000728,2025-09-03,Ruths Chris,460.91,Client Hosting & Entertainment,Antoine,EXP_0001396
+RCPT_0000729,2025-09-03,Topgolf,1109.86,Client Hosting & Entertainment,Jeff,EXP_0001398
+RCPT_0000730,2025-09-04,Starbucks,331.74,Client Hosting & Entertainment,Jeff,EXP_0001403
+RCPT_0000731,2025-09-04,Staples Center,973.86,Client Hosting & Entertainment,Jeff,EXP_0001404
+RCPT_0000732,2025-09-05,United,348.99,Gas & Travel,Jeff,EXP_0001405
+RCPT_0000733,2025-09-05,Lyft,207.89,Gas & Travel,Antoine,EXP_0001408
+RCPT_0000734,2025-09-05,Uber,241.99,Gas & Travel,Jeff,EXP_0001409
+RCPT_0000735,2025-09-05,Lyft,201.89,Gas & Travel,Jeff,EXP_0001410
+RCPT_0000736,2025-09-06,Pebble Beach,554.79,Client Hosting & Entertainment,Jeff,EXP_0001412
+RCPT_0000737,2025-09-06,Delta,89.93,Gas & Travel,Jeff,EXP_0001413
+RCPT_0000738,2025-09-06,Delta,246.28,Gas & Travel,Antoine,EXP_0001414
+RCPT_0000739,2025-09-07,Topgolf,322.5,Client Hosting & Entertainment,Jeff,EXP_0001416
+RCPT_0000740,2025-09-07,Starbucks,999.31,Client Hosting & Entertainment,Jeff,EXP_0001417
+RCPT_0000741,2025-09-08,Starbucks,574.81,Client Hosting & Entertainment,Antoine,EXP_0001419
+RCPT_0000742,2025-09-08,Ruths Chris,76.24,Client Hosting & Entertainment,Jeff,EXP_0001422
+RCPT_0000743,2025-09-08,Pebble Beach,751.05,Client Hosting & Entertainment,Antoine,EXP_0001423
+RCPT_0000744,2025-09-09,Uber,398.31,Gas & Travel,Jeff,EXP_0001426
+RCPT_0000745,2025-09-10,Pebble Beach,639.98,Client Hosting & Entertainment,Jeff,EXP_0001429
+RCPT_0000746,2025-09-10,Lyft,222.71,Gas & Travel,Antoine,EXP_0001432
+RCPT_0000747,2025-09-11,Lyft,269.49,Gas & Travel,Jeff,EXP_0001433
+RCPT_0000748,2025-09-11,Shell,180.15,Gas & Travel,Jeff,EXP_0001434
+RCPT_0000749,2025-09-11,Ruths Chris,490.67,Client Hosting & Entertainment,Jeff,EXP_0001435
+RCPT_0000750,2025-09-11,United,146.58,Gas & Travel,Antoine,EXP_0001436
+RCPT_0000751,2025-09-11,Delta,362.93,Gas & Travel,Antoine,EXP_0001437
+RCPT_0000752,2025-09-11,Ruths Chris,359.17,Client Hosting & Entertainment,Antoine,EXP_0001438
+RCPT_0000753,2025-09-12,Nobu,480.02,Client Hosting & Entertainment,Antoine,EXP_0001440
+RCPT_0000754,2025-09-12,United,270.51,Gas & Travel,Antoine,EXP_0001442
+RCPT_0000755,2025-09-12,Ruths Chris,647.33,Client Hosting & Entertainment,Jeff,EXP_0001443
+RCPT_0000756,2025-09-13,United,120.97,Gas & Travel,Jeff,EXP_0001444
+RCPT_0000757,2025-09-13,United,324.16,Gas & Travel,Jeff,EXP_0001446
+RCPT_0000758,2025-09-13,Shell,299.44,Gas & Travel,Jeff,EXP_0001447
+RCPT_0000759,2025-09-14,Pebble Beach,669.42,Client Hosting & Entertainment,Jeff,EXP_0001449
+RCPT_0000760,2025-09-14,Ruths Chris,489.77,Client Hosting & Entertainment,Jeff,EXP_0001450
+RCPT_0000761,2025-09-14,Delta,308.7,Gas & Travel,Antoine,EXP_0001451
+RCPT_0000762,2025-09-15,Uber,174.3,Gas & Travel,Jeff,EXP_0001452
+RCPT_0000763,2025-09-15,Delta,221.23,Gas & Travel,Jeff,EXP_0001455
+RCPT_0000764,2025-09-15,Shell,99.82,Gas & Travel,Jeff,EXP_0001457
+RCPT_0000765,2025-09-15,Starbucks,88.25,Client Hosting & Entertainment,Antoine,EXP_0001458
+RCPT_0000766,2025-09-16,Topgolf,912.16,Client Hosting & Entertainment,Antoine,EXP_0001459
+RCPT_0000767,2025-09-16,Shell,101.46,Gas & Travel,Jeff,EXP_0001460
+RCPT_0000768,2025-09-16,Ruths Chris,807.81,Client Hosting & Entertainment,Antoine,EXP_0001462
+RCPT_0000769,2025-09-17,Topgolf,728.25,Client Hosting & Entertainment,Jeff,EXP_0001464
+RCPT_0000770,2025-09-17,Topgolf,664.67,Client Hosting & Entertainment,Jeff,EXP_0001466
+RCPT_0000771,2025-09-18,Nobu,569.24,Client Hosting & Entertainment,Jeff,EXP_0001468
+RCPT_0000772,2025-09-18,Delta,332.23,Gas & Travel,Jeff,EXP_0001469
+RCPT_0000773,2025-09-19,Pebble Beach,306.09,Client Hosting & Entertainment,Jeff,EXP_0001473
+RCPT_0000774,2025-09-19,Starbucks,1095.7,Client Hosting & Entertainment,Antoine,EXP_0001474
+RCPT_0000775,2025-09-20,Starbucks,268.97,Client Hosting & Entertainment,Antoine,EXP_0001477
+RCPT_0000776,2025-09-20,Starbucks,1031.26,Client Hosting & Entertainment,Antoine,EXP_0001478
+RCPT_0000777,2025-09-21,Pebble Beach,936.78,Client Hosting & Entertainment,Jeff,EXP_0001479
+RCPT_0000778,2025-09-21,Pebble Beach,347.87,Client Hosting & Entertainment,Antoine,EXP_0001480
+RCPT_0000779,2025-09-21,Shell,99.27,Gas & Travel,Jeff,EXP_0001481
+RCPT_0000780,2025-09-21,United,28.51,Gas & Travel,Antoine,EXP_0001482
+RCPT_0000781,2025-09-22,Nobu,710.22,Client Hosting & Entertainment,Antoine,EXP_0001485
+RCPT_0000782,2025-09-23,United,209.9,Gas & Travel,Jeff,EXP_0001486
+RCPT_0000783,2025-09-23,Shell,160.06,Gas & Travel,Jeff,EXP_0001487
+RCPT_0000784,2025-09-23,Pebble Beach,939.93,Client Hosting & Entertainment,Jeff,EXP_0001488
+RCPT_0000785,2025-09-24,Topgolf,924.43,Client Hosting & Entertainment,Jeff,EXP_0001489
+RCPT_0000786,2025-09-24,United,60.63,Gas & Travel,Jeff,EXP_0001490
+RCPT_0000787,2025-09-24,Nobu,95.12,Client Hosting & Entertainment,Jeff,EXP_0001491
+RCPT_0000788,2025-09-24,Uber,352.08,Gas & Travel,Antoine,EXP_0001492
+RCPT_0000789,2025-09-24,Delta,391.32,Gas & Travel,Jeff,EXP_0001493
+RCPT_0000790,2025-09-24,Nobu,561.87,Client Hosting & Entertainment,Jeff,EXP_0001494
+RCPT_0000791,2025-09-24,Shell,168.11,Gas & Travel,Jeff,EXP_0001495
+RCPT_0000792,2025-09-24,Lyft,118.96,Gas & Travel,Antoine,EXP_0001498
+RCPT_0000793,2025-09-24,Uber,329.93,Gas & Travel,Jeff,EXP_0001500
+RCPT_0000794,2025-09-25,Chevron,336.64,Gas & Travel,Jeff,EXP_0001502
+RCPT_0000795,2025-09-25,Lyft,377.27,Gas & Travel,Jeff,EXP_0001503
+RCPT_0000796,2025-09-25,United,173.64,Gas & Travel,Antoine,EXP_0001507
+RCPT_0000797,2025-09-26,Starbucks,410.43,Client Hosting & Entertainment,Antoine,EXP_0001508
+RCPT_0000798,2025-09-26,Starbucks,1039.06,Client Hosting & Entertainment,Jeff,EXP_0001511
+RCPT_0000799,2025-09-27,United,85.49,Gas & Travel,Jeff,EXP_0001516
+RCPT_0000800,2025-09-27,Lyft,208.85,Gas & Travel,Antoine,EXP_0001517
+RCPT_0000801,2025-09-28,Starbucks,712.22,Client Hosting & Entertainment,Antoine,EXP_0001518
+RCPT_0000802,2025-09-28,Staples Center,1045.85,Client Hosting & Entertainment,Jeff,EXP_0001520
+RCPT_0000803,2025-09-28,Lyft,394.17,Gas & Travel,Jeff,EXP_0001521
+RCPT_0000804,2025-09-29,Staples Center,880.77,Client Hosting & Entertainment,Jeff,EXP_0001523
+RCPT_0000805,2025-09-29,Lyft,260.13,Gas & Travel,Jeff,EXP_0001525
+RCPT_0000806,2025-09-30,Staples Center,1177.55,Client Hosting & Entertainment,Antoine,EXP_0001527
+RCPT_0000807,2025-09-30,Staples Center,364.46,Client Hosting & Entertainment,Jeff,EXP_0001528
+RCPT_0000808,2025-10-01,Nobu,1122.58,Client Hosting & Entertainment,Antoine,EXP_0001531
+RCPT_0000809,2025-10-01,United,203.42,Gas & Travel,Antoine,EXP_0001533
+RCPT_0000810,2025-10-01,United,288.61,Gas & Travel,Jeff,EXP_0001535
+RCPT_0000811,2025-10-02,Staples Center,379.17,Client Hosting & Entertainment,Antoine,EXP_0001536
+RCPT_0000812,2025-10-02,Delta,36.13,Gas & Travel,Jeff,EXP_0001538
+RCPT_0000813,2025-10-03,Starbucks,197.27,Client Hosting & Entertainment,Jeff,EXP_0001540
+RCPT_0000814,2025-10-03,Chevron,285.44,Gas & Travel,Jeff,EXP_0001541
+RCPT_0000815,2025-10-04,Delta,242.77,Gas & Travel,Jeff,EXP_0001542
+RCPT_0000816,2025-10-04,Pebble Beach,668.75,Client Hosting & Entertainment,Antoine,EXP_0001544
+RCPT_0000817,2025-10-04,Pebble Beach,384.6,Client Hosting & Entertainment,Antoine,EXP_0001546
+RCPT_0000818,2025-10-05,Delta,81.89,Gas & Travel,Jeff,EXP_0001552
+RCPT_0000819,2025-10-07,Chevron,307.02,Gas & Travel,Antoine,EXP_0001556
+RCPT_0000820,2025-10-07,Uber,364.31,Gas & Travel,Antoine,EXP_0001558
+RCPT_0000821,2025-10-08,Shell,170.57,Gas & Travel,Jeff,EXP_0001560
+RCPT_0000822,2025-10-08,Starbucks,608.87,Client Hosting & Entertainment,Antoine,EXP_0001561
+RCPT_0000823,2025-10-09,Lyft,395.32,Gas & Travel,Jeff,EXP_0001563
+RCPT_0000824,2025-10-09,Starbucks,240.18,Client Hosting & Entertainment,Antoine,EXP_0001564
+RCPT_0000825,2025-10-09,Lyft,170.33,Gas & Travel,Jeff,EXP_0001565
+RCPT_0000826,2025-10-10,Delta,372.81,Gas & Travel,Jeff,EXP_0001567
+RCPT_0000827,2025-10-11,Ruths Chris,725.23,Client Hosting & Entertainment,Jeff,EXP_0001569
+RCPT_0000828,2025-10-11,Pebble Beach,357.23,Client Hosting & Entertainment,Antoine,EXP_0001570
+RCPT_0000829,2025-10-11,Pebble Beach,1167.57,Client Hosting & Entertainment,Antoine,EXP_0001571
+RCPT_0000830,2025-10-12,Staples Center,333.35,Client Hosting & Entertainment,Jeff,EXP_0001574
+RCPT_0000831,2025-10-13,Pebble Beach,681.89,Client Hosting & Entertainment,Jeff,EXP_0001575
+RCPT_0000832,2025-10-13,Starbucks,409.57,Client Hosting & Entertainment,Antoine,EXP_0001577
+RCPT_0000833,2025-10-14,Staples Center,763.63,Client Hosting & Entertainment,Jeff,EXP_0001578
+RCPT_0000834,2025-10-14,Staples Center,346.28,Client Hosting & Entertainment,Antoine,EXP_0001579
+RCPT_0000835,2025-10-14,Uber,107.91,Gas & Travel,Antoine,EXP_0001581
+RCPT_0000836,2025-10-15,Ruths Chris,166.44,Client Hosting & Entertainment,Jeff,EXP_0001582
+RCPT_0000837,2025-10-15,Ruths Chris,255.13,Client Hosting & Entertainment,Antoine,EXP_0001587
+RCPT_0000838,2025-10-15,Delta,182.35,Gas & Travel,Antoine,EXP_0001588
+RCPT_0000839,2025-10-15,Pebble Beach,418.77,Client Hosting & Entertainment,Jeff,EXP_0001589
+RCPT_0000840,2025-10-16,Staples Center,659.51,Client Hosting & Entertainment,Antoine,EXP_0001591
+RCPT_0000841,2025-10-16,Topgolf,903.65,Client Hosting & Entertainment,Jeff,EXP_0001592
+RCPT_0000842,2025-10-16,Ruths Chris,647.54,Client Hosting & Entertainment,Jeff,EXP_0001594
+RCPT_0000843,2025-10-17,Delta,325.49,Gas & Travel,Jeff,EXP_0001598
+RCPT_0000844,2025-10-17,United,388.63,Gas & Travel,Antoine,EXP_0001600
+RCPT_0000845,2025-10-19,Delta,358.6,Gas & Travel,Jeff,EXP_0001602
+RCPT_0000846,2025-10-19,Staples Center,897.36,Client Hosting & Entertainment,Jeff,EXP_0001604
+RCPT_0000847,2025-10-19,Uber,253.13,Gas & Travel,Jeff,EXP_0001605
+RCPT_0000848,2025-10-19,Delta,157.13,Gas & Travel,Jeff,EXP_0001606
+RCPT_0000849,2025-10-20,Uber,99.25,Gas & Travel,Antoine,EXP_0001608
+RCPT_0000850,2025-10-20,Nobu,78.12,Client Hosting & Entertainment,Antoine,EXP_0001611
+RCPT_0000851,2025-10-21,Shell,133.15,Gas & Travel,Jeff,EXP_0001614
+RCPT_0000852,2025-10-21,Lyft,216.85,Gas & Travel,Antoine,EXP_0001615
+RCPT_0000853,2025-10-21,United,191.95,Gas & Travel,Antoine,EXP_0001617
+RCPT_0000854,2025-10-21,Uber,322.3,Gas & Travel,Jeff,EXP_0001618
+RCPT_0000855,2025-10-21,Nobu,267.84,Client Hosting & Entertainment,Jeff,EXP_0001621
+RCPT_0000856,2025-10-21,United,255.58,Gas & Travel,Antoine,EXP_0001622
+RCPT_0000857,2025-10-23,Ruths Chris,348.45,Client Hosting & Entertainment,Jeff,EXP_0001627
+RCPT_0000858,2025-10-23,United,232.67,Gas & Travel,Jeff,EXP_0001628
+RCPT_0000859,2025-10-23,Pebble Beach,150.12,Client Hosting & Entertainment,Jeff,EXP_0001630
+RCPT_0000860,2025-10-24,Staples Center,1142.49,Client Hosting & Entertainment,Jeff,EXP_0001631
+RCPT_0000861,2025-10-24,Uber,27.88,Gas & Travel,Jeff,EXP_0001632
+RCPT_0000862,2025-10-24,Pebble Beach,269.03,Client Hosting & Entertainment,Jeff,EXP_0001635
+RCPT_0000863,2025-10-24,Topgolf,351.53,Client Hosting & Entertainment,Jeff,EXP_0001636
+RCPT_0000864,2025-10-24,Ruths Chris,575.33,Client Hosting & Entertainment,Antoine,EXP_0001637
+RCPT_0000865,2025-10-25,Uber,202.79,Gas & Travel,Antoine,EXP_0001638
+RCPT_0000866,2025-10-25,Chevron,149.31,Gas & Travel,Jeff,EXP_0001639
+RCPT_0000867,2025-10-25,Shell,350.5,Gas & Travel,Jeff,EXP_0001640
+RCPT_0000868,2025-10-26,Ruths Chris,1104.22,Client Hosting & Entertainment,Jeff,EXP_0001643
+RCPT_0000869,2025-10-27,Pebble Beach,904.6,Client Hosting & Entertainment,Jeff,EXP_0001645
+RCPT_0000870,2025-10-27,Nobu,347.71,Client Hosting & Entertainment,Jeff,EXP_0001646
+RCPT_0000871,2025-10-27,Starbucks,832.4,Client Hosting & Entertainment,Jeff,EXP_0001647
+RCPT_0000872,2025-10-27,Delta,87.0,Gas & Travel,Jeff,EXP_0001648
+RCPT_0000873,2025-10-27,Uber,280.98,Gas & Travel,Jeff,EXP_0001650
+RCPT_0000874,2025-10-27,Topgolf,534.96,Client Hosting & Entertainment,Jeff,EXP_0001651
+RCPT_0000875,2025-10-27,Pebble Beach,822.46,Client Hosting & Entertainment,Jeff,EXP_0001652
+RCPT_0000876,2025-10-28,Uber,81.66,Gas & Travel,Antoine,EXP_0001655
+RCPT_0000877,2025-10-28,Staples Center,780.05,Client Hosting & Entertainment,Antoine,EXP_0001656
+RCPT_0000878,2025-10-28,Ruths Chris,290.09,Client Hosting & Entertainment,Jeff,EXP_0001658
+RCPT_0000879,2025-10-29,Staples Center,416.37,Client Hosting & Entertainment,Jeff,EXP_0001662
+RCPT_0000880,2025-10-30,United,187.69,Gas & Travel,Jeff,EXP_0001664
+RCPT_0000881,2025-10-30,Pebble Beach,742.82,Client Hosting & Entertainment,Jeff,EXP_0001668
+RCPT_0000882,2025-10-31,Shell,158.94,Gas & Travel,Jeff,EXP_0001669
+RCPT_0000883,2025-10-31,Uber,75.39,Gas & Travel,Jeff,EXP_0001670
+RCPT_0000884,2025-11-01,Starbucks,158.74,Client Hosting & Entertainment,Antoine,EXP_0001672
+RCPT_0000885,2025-11-01,Uber,85.97,Gas & Travel,Jeff,EXP_0001673
+RCPT_0000886,2025-11-01,Pebble Beach,833.94,Client Hosting & Entertainment,Jeff,EXP_0001674
+RCPT_0000887,2025-11-02,Ruths Chris,969.53,Client Hosting & Entertainment,Jeff,EXP_0001677
+RCPT_0000888,2025-11-03,Topgolf,1050.52,Client Hosting & Entertainment,Antoine,EXP_0001680
+RCPT_0000889,2025-11-04,Starbucks,1134.04,Client Hosting & Entertainment,Jeff,EXP_0001684
+RCPT_0000890,2025-11-04,Ruths Chris,1109.49,Client Hosting & Entertainment,Jeff,EXP_0001686
+RCPT_0000891,2025-11-04,Chevron,55.68,Gas & Travel,Antoine,EXP_0001688
+RCPT_0000892,2025-11-04,Delta,178.4,Gas & Travel,Jeff,EXP_0001689
+RCPT_0000893,2025-11-05,Topgolf,947.03,Client Hosting & Entertainment,Jeff,EXP_0001691
+RCPT_0000894,2025-11-05,Staples Center,260.85,Client Hosting & Entertainment,Jeff,EXP_0001692
+RCPT_0000895,2025-11-05,United,360.1,Gas & Travel,Jeff,EXP_0001693
+RCPT_0000896,2025-11-05,Ruths Chris,259.82,Client Hosting & Entertainment,Jeff,EXP_0001694
+RCPT_0000897,2025-11-05,Pebble Beach,166.96,Client Hosting & Entertainment,Jeff,EXP_0001695
+RCPT_0000898,2025-11-06,Pebble Beach,550.39,Client Hosting & Entertainment,Jeff,EXP_0001697
+RCPT_0000899,2025-11-06,Nobu,837.01,Client Hosting & Entertainment,Jeff,EXP_0001699
+RCPT_0000900,2025-11-06,Ruths Chris,457.52,Client Hosting & Entertainment,Jeff,EXP_0001700
+RCPT_0000901,2025-11-06,Starbucks,1155.0,Client Hosting & Entertainment,Jeff,EXP_0001701
+RCPT_0000902,2025-11-07,Ruths Chris,293.51,Client Hosting & Entertainment,Jeff,EXP_0001703
+RCPT_0000903,2025-11-08,Lyft,370.76,Gas & Travel,Jeff,EXP_0001704
+RCPT_0000904,2025-11-08,Shell,138.12,Gas & Travel,Jeff,EXP_0001706
+RCPT_0000905,2025-11-09,Delta,374.09,Gas & Travel,Antoine,EXP_0001708
+RCPT_0000906,2025-11-09,Uber,315.87,Gas & Travel,Antoine,EXP_0001709
+RCPT_0000907,2025-11-09,Pebble Beach,106.82,Client Hosting & Entertainment,Antoine,EXP_0001710
+RCPT_0000908,2025-11-09,Chevron,231.11,Gas & Travel,Jeff,EXP_0001711
+RCPT_0000909,2025-11-09,Delta,258.14,Gas & Travel,Jeff,EXP_0001712
+RCPT_0000910,2025-11-10,Lyft,47.93,Gas & Travel,Antoine,EXP_0001714
+RCPT_0000911,2025-11-11,Topgolf,826.23,Client Hosting & Entertainment,Jeff,EXP_0001716
+RCPT_0000912,2025-11-11,Starbucks,277.2,Client Hosting & Entertainment,Jeff,EXP_0001718
+RCPT_0000913,2025-11-13,Uber,199.98,Gas & Travel,Antoine,EXP_0001728
+RCPT_0000914,2025-11-13,Uber,192.03,Gas & Travel,Antoine,EXP_0001729
+RCPT_0000915,2025-11-13,Topgolf,713.4,Client Hosting & Entertainment,Jeff,EXP_0001731
+RCPT_0000916,2025-11-13,Delta,168.42,Gas & Travel,Jeff,EXP_0001732
+RCPT_0000917,2025-11-14,Lyft,394.52,Gas & Travel,Jeff,EXP_0001733
+RCPT_0000918,2025-11-14,Ruths Chris,455.09,Client Hosting & Entertainment,Jeff,EXP_0001734
+RCPT_0000919,2025-11-14,Nobu,640.25,Client Hosting & Entertainment,Jeff,EXP_0001735
+RCPT_0000920,2025-11-14,Chevron,355.37,Gas & Travel,Jeff,EXP_0001738
+RCPT_0000921,2025-11-14,Pebble Beach,520.33,Client Hosting & Entertainment,Jeff,EXP_0001739
+RCPT_0000922,2025-11-15,Starbucks,337.41,Client Hosting & Entertainment,Jeff,EXP_0001742
+RCPT_0000923,2025-11-16,Pebble Beach,1119.96,Client Hosting & Entertainment,Jeff,EXP_0001745
+RCPT_0000924,2025-11-16,Shell,137.0,Gas & Travel,Jeff,EXP_0001747
+RCPT_0000925,2025-11-16,Uber,300.17,Gas & Travel,Antoine,EXP_0001748
+RCPT_0000926,2025-11-16,Delta,109.64,Gas & Travel,Antoine,EXP_0001749
+RCPT_0000927,2025-11-16,Starbucks,363.05,Client Hosting & Entertainment,Jeff,EXP_0001750
+RCPT_0000928,2025-11-16,Lyft,371.83,Gas & Travel,Jeff,EXP_0001751
+RCPT_0000929,2025-11-17,Chevron,302.83,Gas & Travel,Jeff,EXP_0001756
+RCPT_0000930,2025-11-18,Delta,62.12,Gas & Travel,Jeff,EXP_0001758
+RCPT_0000931,2025-11-18,Delta,327.65,Gas & Travel,Antoine,EXP_0001759
+RCPT_0000932,2025-11-18,Starbucks,899.8,Client Hosting & Entertainment,Jeff,EXP_0001762
+RCPT_0000933,2025-11-18,Chevron,120.25,Gas & Travel,Antoine,EXP_0001766
+RCPT_0000934,2025-11-19,United,326.95,Gas & Travel,Jeff,EXP_0001767
+RCPT_0000935,2025-11-19,Topgolf,577.52,Client Hosting & Entertainment,Antoine,EXP_0001769
+RCPT_0000936,2025-11-20,Chevron,337.33,Gas & Travel,Antoine,EXP_0001771
+RCPT_0000937,2025-11-20,Shell,363.85,Gas & Travel,Jeff,EXP_0001773
+RCPT_0000938,2025-11-20,Nobu,999.06,Client Hosting & Entertainment,Jeff,EXP_0001774
+RCPT_0000939,2025-11-20,Delta,96.39,Gas & Travel,Jeff,EXP_0001776
+RCPT_0000940,2025-11-22,Nobu,225.17,Client Hosting & Entertainment,Jeff,EXP_0001778
+RCPT_0000941,2025-11-22,Staples Center,1030.8,Client Hosting & Entertainment,Jeff,EXP_0001782
+RCPT_0000942,2025-11-23,Pebble Beach,651.47,Client Hosting & Entertainment,Jeff,EXP_0001783
+RCPT_0000943,2025-11-23,Staples Center,399.26,Client Hosting & Entertainment,Jeff,EXP_0001786
+RCPT_0000944,2025-11-23,Lyft,368.05,Gas & Travel,Antoine,EXP_0001788
+RCPT_0000945,2025-11-24,United,62.57,Gas & Travel,Antoine,EXP_0001790
+RCPT_0000946,2025-11-24,Pebble Beach,261.07,Client Hosting & Entertainment,Jeff,EXP_0001792
+RCPT_0000947,2025-11-24,United,156.45,Gas & Travel,Antoine,EXP_0001794
+RCPT_0000948,2025-11-25,Pebble Beach,531.66,Client Hosting & Entertainment,Jeff,EXP_0001798
+RCPT_0000949,2025-11-25,Topgolf,242.66,Client Hosting & Entertainment,Antoine,EXP_0001800
+RCPT_0000950,2025-11-26,Staples Center,157.88,Client Hosting & Entertainment,Jeff,EXP_0001803
+RCPT_0000951,2025-11-27,Staples Center,1068.93,Client Hosting & Entertainment,Antoine,EXP_0001807
+RCPT_0000952,2025-11-27,Starbucks,302.44,Client Hosting & Entertainment,Jeff,EXP_0001808
+RCPT_0000953,2025-11-27,Delta,353.62,Gas & Travel,Jeff,EXP_0001809
+RCPT_0000954,2025-11-27,Nobu,434.87,Client Hosting & Entertainment,Antoine,EXP_0001810
+RCPT_0000955,2025-11-28,Chevron,378.55,Gas & Travel,Jeff,EXP_0001813
+RCPT_0000956,2025-11-28,Staples Center,957.46,Client Hosting & Entertainment,Antoine,EXP_0001815
+RCPT_0000957,2025-11-29,Delta,345.84,Gas & Travel,Jeff,EXP_0001816
+RCPT_0000958,2025-11-29,Uber,360.54,Gas & Travel,Antoine,EXP_0001817
+RCPT_0000959,2025-11-30,United,105.56,Gas & Travel,Antoine,EXP_0001818
+RCPT_0000960,2025-11-30,Chevron,109.71,Gas & Travel,Antoine,EXP_0001819
+RCPT_0000961,2025-12-01,Topgolf,480.62,Client Hosting & Entertainment,Jeff,EXP_0001825
+RCPT_0000962,2025-12-01,Pebble Beach,903.33,Client Hosting & Entertainment,Jeff,EXP_0001827
+RCPT_0000963,2025-12-01,Topgolf,984.67,Client Hosting & Entertainment,Antoine,EXP_0001828
+RCPT_0000964,2025-12-02,Delta,251.42,Gas & Travel,Jeff,EXP_0001833
+RCPT_0000965,2025-12-02,Shell,282.41,Gas & Travel,Jeff,EXP_0001834
+RCPT_0000966,2025-12-02,Uber,116.01,Gas & Travel,Jeff,EXP_0001835
+RCPT_0000967,2025-12-03,Delta,115.28,Gas & Travel,Jeff,EXP_0001837
+RCPT_0000968,2025-12-03,Staples Center,356.38,Client Hosting & Entertainment,Jeff,EXP_0001838
+RCPT_0000969,2025-12-03,Topgolf,652.27,Client Hosting & Entertainment,Jeff,EXP_0001839
+RCPT_0000970,2025-12-03,Starbucks,292.53,Client Hosting & Entertainment,Jeff,EXP_0001840
+RCPT_0000971,2025-12-03,Shell,48.28,Gas & Travel,Antoine,EXP_0001841
+RCPT_0000972,2025-12-03,Starbucks,1161.03,Client Hosting & Entertainment,Jeff,EXP_0001842
+RCPT_0000973,2025-12-03,Uber,250.43,Gas & Travel,Jeff,EXP_0001843
+RCPT_0000974,2025-12-03,Nobu,94.41,Client Hosting & Entertainment,Jeff,EXP_0001844
+RCPT_0000975,2025-12-04,Ruths Chris,300.14,Client Hosting & Entertainment,Jeff,EXP_0001845
+RCPT_0000976,2025-12-04,Topgolf,445.67,Client Hosting & Entertainment,Jeff,EXP_0001846
+RCPT_0000977,2025-12-04,Chevron,182.55,Gas & Travel,Jeff,EXP_0001849
+RCPT_0000978,2025-12-04,Starbucks,1143.7,Client Hosting & Entertainment,Antoine,EXP_0001851
+RCPT_0000979,2025-12-05,Starbucks,301.33,Client Hosting & Entertainment,Jeff,EXP_0001853
+RCPT_0000980,2025-12-05,Topgolf,773.64,Client Hosting & Entertainment,Jeff,EXP_0001854
+RCPT_0000981,2025-12-05,Nobu,199.1,Client Hosting & Entertainment,Jeff,EXP_0001856
+RCPT_0000982,2025-12-05,Lyft,324.51,Gas & Travel,Jeff,EXP_0001857
+RCPT_0000983,2025-12-06,Delta,315.31,Gas & Travel,Antoine,EXP_0001858
+RCPT_0000984,2025-12-06,United,240.29,Gas & Travel,Jeff,EXP_0001859
+RCPT_0000985,2025-12-06,Starbucks,287.09,Client Hosting & Entertainment,Jeff,EXP_0001860
+RCPT_0000986,2025-12-06,Uber,272.29,Gas & Travel,Jeff,EXP_0001861
+RCPT_0000987,2025-12-08,Delta,296.74,Gas & Travel,Antoine,EXP_0001872
+RCPT_0000988,2025-12-09,United,101.77,Gas & Travel,Jeff,EXP_0001874
+RCPT_0000989,2025-12-09,Lyft,357.12,Gas & Travel,Jeff,EXP_0001875
+RCPT_0000990,2025-12-10,Staples Center,1041.04,Client Hosting & Entertainment,Antoine,EXP_0001877
+RCPT_0000991,2025-12-10,Topgolf,656.03,Client Hosting & Entertainment,Jeff,EXP_0001878
+RCPT_0000992,2025-12-12,Delta,80.76,Gas & Travel,Jeff,EXP_0001884
+RCPT_0000993,2025-12-12,United,86.52,Gas & Travel,Jeff,EXP_0001886
+RCPT_0000994,2025-12-12,Topgolf,1057.75,Client Hosting & Entertainment,Antoine,EXP_0001887
+RCPT_0000995,2025-12-12,Lyft,116.58,Gas & Travel,Antoine,EXP_0001890
+RCPT_0000996,2025-12-13,Uber,319.04,Gas & Travel,Jeff,EXP_0001892
+RCPT_0000997,2025-12-13,Ruths Chris,700.46,Client Hosting & Entertainment,Antoine,EXP_0001893
+RCPT_0000998,2025-12-13,Staples Center,758.11,Client Hosting & Entertainment,Jeff,EXP_0001895
+RCPT_0000999,2025-12-13,Starbucks,102.28,Client Hosting & Entertainment,Jeff,EXP_0001896
+RCPT_0001000,2025-12-13,Topgolf,168.83,Client Hosting & Entertainment,Jeff,EXP_0001897
+RCPT_0001001,2025-12-13,Pebble Beach,804.31,Client Hosting & Entertainment,Antoine,EXP_0001898
+RCPT_0001002,2025-12-14,Staples Center,163.29,Client Hosting & Entertainment,Antoine,EXP_0001899
+RCPT_0001003,2025-12-14,Nobu,475.12,Client Hosting & Entertainment,Jeff,EXP_0001902
+RCPT_0001004,2025-12-14,Lyft,328.98,Gas & Travel,Jeff,EXP_0001903
+RCPT_0001005,2025-12-14,Nobu,972.02,Client Hosting & Entertainment,Jeff,EXP_0001905
+RCPT_0001006,2025-12-14,Chevron,110.13,Gas & Travel,Antoine,EXP_0001906
+RCPT_0001007,2025-12-14,Topgolf,875.49,Client Hosting & Entertainment,Antoine,EXP_0001908
+RCPT_0001008,2025-12-15,Uber,274.57,Gas & Travel,Jeff,EXP_0001910
+RCPT_0001009,2025-12-15,Ruths Chris,632.86,Client Hosting & Entertainment,Jeff,EXP_0001911
+RCPT_0001010,2025-12-15,Starbucks,1150.21,Client Hosting & Entertainment,Jeff,EXP_0001914
+RCPT_0001011,2025-12-15,Starbucks,655.03,Client Hosting & Entertainment,Antoine,EXP_0001916
+RCPT_0001012,2025-12-16,Ruths Chris,276.52,Client Hosting & Entertainment,Jeff,EXP_0001917
+RCPT_0001013,2025-12-17,United,112.02,Gas & Travel,Jeff,EXP_0001919
+RCPT_0001014,2025-12-17,Delta,284.95,Gas & Travel,Jeff,EXP_0001920
+RCPT_0001015,2025-12-17,Shell,355.85,Gas & Travel,Jeff,EXP_0001923
+RCPT_0001016,2025-12-18,Lyft,187.65,Gas & Travel,Jeff,EXP_0001924
+RCPT_0001017,2025-12-19,Shell,64.75,Gas & Travel,Jeff,EXP_0001926
+RCPT_0001018,2025-12-19,Lyft,158.73,Gas & Travel,Jeff,EXP_0001929
+RCPT_0001019,2025-12-20,United,160.49,Gas & Travel,Jeff,EXP_0001930
+RCPT_0001020,2025-12-20,Ruths Chris,216.03,Client Hosting & Entertainment,Antoine,EXP_0001931
+RCPT_0001021,2025-12-20,Chevron,105.18,Gas & Travel,Antoine,EXP_0001932
+RCPT_0001022,2025-12-20,Delta,237.32,Gas & Travel,Antoine,EXP_0001933
+RCPT_0001023,2025-12-22,Pebble Beach,786.4,Client Hosting & Entertainment,Jeff,EXP_0001938
+RCPT_0001024,2025-12-23,Shell,360.57,Gas & Travel,Jeff,EXP_0001940
+RCPT_0001025,2025-12-23,Shell,219.03,Gas & Travel,Jeff,EXP_0001941
+RCPT_0001026,2025-12-23,Lyft,156.44,Gas & Travel,Jeff,EXP_0001942
+RCPT_0001027,2025-12-23,Ruths Chris,974.33,Client Hosting & Entertainment,Jeff,EXP_0001943
+RCPT_0001028,2025-12-23,Pebble Beach,473.74,Client Hosting & Entertainment,Antoine,EXP_0001944
+RCPT_0001029,2025-12-23,Uber,37.79,Gas & Travel,Jeff,EXP_0001945
+RCPT_0001030,2025-12-24,Nobu,435.97,Client Hosting & Entertainment,Jeff,EXP_0001946
+RCPT_0001031,2025-12-24,Chevron,204.39,Gas & Travel,Jeff,EXP_0001947
+RCPT_0001032,2025-12-24,Lyft,288.69,Gas & Travel,Antoine,EXP_0001948
+RCPT_0001033,2025-12-24,Ruths Chris,1046.79,Client Hosting & Entertainment,Antoine,EXP_0001951
+RCPT_0001034,2025-12-25,Lyft,73.7,Gas & Travel,Antoine,EXP_0001954
+RCPT_0001035,2025-12-25,Pebble Beach,364.71,Client Hosting & Entertainment,Antoine,EXP_0001955
+RCPT_0001036,2025-12-26,United,345.86,Gas & Travel,Jeff,EXP_0001959
+RCPT_0001037,2025-12-27,Staples Center,566.63,Client Hosting & Entertainment,Jeff,EXP_0001965
+RCPT_0001038,2025-12-27,Lyft,41.51,Gas & Travel,Antoine,EXP_0001967
+RCPT_0001039,2025-12-28,Ruths Chris,348.68,Client Hosting & Entertainment,Jeff,EXP_0001968
+RCPT_0001040,2025-12-28,Starbucks,928.48,Client Hosting & Entertainment,Antoine,EXP_0001969
+RCPT_0001041,2025-12-28,Ruths Chris,439.09,Client Hosting & Entertainment,Antoine,EXP_0001971
+RCPT_0001042,2025-12-28,United,42.16,Gas & Travel,Jeff,EXP_0001972
+RCPT_0001043,2025-12-29,Starbucks,289.54,Client Hosting & Entertainment,Antoine,EXP_0001973
+RCPT_0001044,2025-12-29,Uber,177.33,Gas & Travel,Antoine,EXP_0001974
+RCPT_0001045,2025-12-29,Topgolf,796.95,Client Hosting & Entertainment,Jeff,EXP_0001975
+RCPT_0001046,2025-12-30,Pebble Beach,233.6,Client Hosting & Entertainment,Antoine,EXP_0001977
+RCPT_0001047,2025-12-30,Ruths Chris,306.75,Client Hosting & Entertainment,Jeff,EXP_0001978
+RCPT_0001048,2026-01-01,Lyft,124.21,Gas & Travel,Jeff,EXP_0001987
+RCPT_0001049,2026-01-01,Starbucks,825.91,Client Hosting & Entertainment,Jeff,EXP_0001988
+RCPT_0001050,2026-01-01,Pebble Beach,1102.12,Client Hosting & Entertainment,Jeff,EXP_0001989
+RCPT_0001051,2026-01-01,Uber,211.15,Gas & Travel,Jeff,EXP_0001990
+RCPT_0001052,2026-01-02,United,72.8,Gas & Travel,Jeff,EXP_0001991
+RCPT_0001053,2026-01-03,Uber,277.27,Gas & Travel,Antoine,EXP_0001995
+RCPT_0001054,2026-01-04,Shell,203.29,Gas & Travel,Jeff,EXP_0001997
+RCPT_0001055,2026-01-04,Lyft,182.64,Gas & Travel,Antoine,EXP_0001998
+RCPT_0001056,2026-01-04,Staples Center,771.73,Client Hosting & Entertainment,Antoine,EXP_0001999
+RCPT_0001057,2026-01-05,Delta,57.21,Gas & Travel,Jeff,EXP_0002002
+RCPT_0001058,2026-01-05,Nobu,244.91,Client Hosting & Entertainment,Jeff,EXP_0002004
+RCPT_0001059,2026-01-05,Uber,350.88,Gas & Travel,Antoine,EXP_0002005
+RCPT_0001060,2026-01-05,Chevron,389.41,Gas & Travel,Antoine,EXP_0002007
+RCPT_0001061,2026-01-05,United,37.01,Gas & Travel,Jeff,EXP_0002008
+RCPT_0001062,2026-01-05,Shell,48.11,Gas & Travel,Jeff,EXP_0002009
+RCPT_0001063,2026-01-06,United,122.55,Gas & Travel,Antoine,EXP_0002012
+RCPT_0001064,2026-01-06,Shell,349.76,Gas & Travel,Jeff,EXP_0002013
+RCPT_0001065,2026-01-06,Chevron,325.41,Gas & Travel,Jeff,EXP_0002014
+RCPT_0001066,2026-01-06,Starbucks,248.67,Client Hosting & Entertainment,Jeff,EXP_0002015
+RCPT_0001067,2026-01-08,Chevron,59.06,Gas & Travel,Antoine,EXP_0002019
+RCPT_0001068,2026-01-08,Delta,146.89,Gas & Travel,Jeff,EXP_0002020
+RCPT_0001069,2026-01-08,Starbucks,372.51,Client Hosting & Entertainment,Jeff,EXP_0002023
+RCPT_0001070,2026-01-09,Uber,379.87,Gas & Travel,Jeff,EXP_0002025
+RCPT_0001071,2026-01-09,Starbucks,1068.32,Client Hosting & Entertainment,Antoine,EXP_0002026
+RCPT_0001072,2026-01-10,Shell,174.54,Gas & Travel,Jeff,EXP_0002028
+RCPT_0001073,2026-01-10,Topgolf,647.03,Client Hosting & Entertainment,Jeff,EXP_0002029
+RCPT_0001074,2026-01-11,United,87.45,Gas & Travel,Jeff,EXP_0002032
+RCPT_0001075,2026-01-11,Chevron,28.54,Gas & Travel,Jeff,EXP_0002033
+RCPT_0001076,2026-01-11,Ruths Chris,640.6,Client Hosting & Entertainment,Jeff,EXP_0002034
+RCPT_0001077,2026-01-12,Chevron,217.93,Gas & Travel,Jeff,EXP_0002035
+RCPT_0001078,2026-01-12,United,26.86,Gas & Travel,Jeff,EXP_0002036
+RCPT_0001079,2026-01-13,Pebble Beach,1003.21,Client Hosting & Entertainment,Jeff,EXP_0002037
+RCPT_0001080,2026-01-13,Starbucks,567.26,Client Hosting & Entertainment,Jeff,EXP_0002041
+RCPT_0001081,2026-01-14,Staples Center,927.44,Client Hosting & Entertainment,Jeff,EXP_0002045
+RCPT_0001082,2026-01-14,Lyft,271.34,Gas & Travel,Jeff,EXP_0002046
+RCPT_0001083,2026-01-15,Pebble Beach,216.91,Client Hosting & Entertainment,Antoine,EXP_0002048
+RCPT_0001084,2026-01-15,Starbucks,274.06,Client Hosting & Entertainment,Antoine,EXP_0002049
+RCPT_0001085,2026-01-15,Lyft,383.9,Gas & Travel,Jeff,EXP_0002051
+RCPT_0001086,2026-01-16,Pebble Beach,382.31,Client Hosting & Entertainment,Antoine,EXP_0002053
+RCPT_0001087,2026-01-16,Ruths Chris,674.39,Client Hosting & Entertainment,Jeff,EXP_0002055
+RCPT_0001088,2026-01-17,Chevron,350.45,Gas & Travel,Jeff,EXP_0002056
+RCPT_0001089,2026-01-18,Lyft,30.83,Gas & Travel,Jeff,EXP_0002058
+RCPT_0001090,2026-01-18,Pebble Beach,274.47,Client Hosting & Entertainment,Jeff,EXP_0002063
+RCPT_0001091,2026-01-19,Topgolf,240.28,Client Hosting & Entertainment,Jeff,EXP_0002070
+RCPT_0001092,2026-01-19,Uber,217.63,Gas & Travel,Antoine,EXP_0002071
+RCPT_0001093,2026-01-19,Shell,79.53,Gas & Travel,Jeff,EXP_0002072
+RCPT_0001094,2026-01-19,Topgolf,1058.65,Client Hosting & Entertainment,Antoine,EXP_0002073
+RCPT_0001095,2026-01-20,Starbucks,369.17,Client Hosting & Entertainment,Antoine,EXP_0002076
+RCPT_0001096,2026-01-20,Ruths Chris,1114.93,Client Hosting & Entertainment,Antoine,EXP_0002077
+RCPT_0001097,2026-01-20,Shell,187.65,Gas & Travel,Jeff,EXP_0002079
+RCPT_0001098,2026-01-20,United,179.11,Gas & Travel,Jeff,EXP_0002080
+RCPT_0001099,2026-01-21,Lyft,79.73,Gas & Travel,Antoine,EXP_0002082
+RCPT_0001100,2026-01-21,Nobu,230.34,Client Hosting & Entertainment,Jeff,EXP_0002083
+RCPT_0001101,2026-01-22,Uber,313.78,Gas & Travel,Jeff,EXP_0002084
+RCPT_0001102,2026-01-22,Chevron,225.58,Gas & Travel,Jeff,EXP_0002085
+RCPT_0001103,2026-01-22,Staples Center,1082.32,Client Hosting & Entertainment,Antoine,EXP_0002086
+RCPT_0001104,2026-01-22,Chevron,70.74,Gas & Travel,Jeff,EXP_0002089
+RCPT_0001105,2026-01-23,Shell,366.98,Gas & Travel,Antoine,EXP_0002092
+RCPT_0001106,2026-01-23,Lyft,211.73,Gas & Travel,Jeff,EXP_0002093
+RCPT_0001107,2026-01-23,Pebble Beach,898.02,Client Hosting & Entertainment,Antoine,EXP_0002094
+RCPT_0001108,2026-01-23,Pebble Beach,175.77,Client Hosting & Entertainment,Jeff,EXP_0002095
+RCPT_0001109,2026-01-23,Pebble Beach,973.14,Client Hosting & Entertainment,Jeff,EXP_0002098
+RCPT_0001110,2026-01-23,Topgolf,238.46,Client Hosting & Entertainment,Jeff,EXP_0002100
+RCPT_0001111,2026-01-24,Nobu,665.51,Client Hosting & Entertainment,Antoine,EXP_0002101
+RCPT_0001112,2026-01-24,Nobu,1168.8,Client Hosting & Entertainment,Jeff,EXP_0002102
+RCPT_0001113,2026-01-25,Pebble Beach,930.68,Client Hosting & Entertainment,Antoine,EXP_0002106
+RCPT_0001114,2026-01-25,Staples Center,395.78,Client Hosting & Entertainment,Jeff,EXP_0002110
+RCPT_0001115,2026-01-26,United,313.28,Gas & Travel,Antoine,EXP_0002111
+RCPT_0001116,2026-01-26,Topgolf,327.63,Client Hosting & Entertainment,Jeff,EXP_0002113
+RCPT_0001117,2026-01-26,Shell,394.05,Gas & Travel,Jeff,EXP_0002114
+RCPT_0001118,2026-01-26,Ruths Chris,136.95,Client Hosting & Entertainment,Jeff,EXP_0002115
+RCPT_0001119,2026-01-27,Delta,268.92,Gas & Travel,Antoine,EXP_0002116
+RCPT_0001120,2026-01-27,United,125.34,Gas & Travel,Antoine,EXP_0002118
+RCPT_0001121,2026-01-27,Pebble Beach,666.5,Client Hosting & Entertainment,Antoine,EXP_0002119
+RCPT_0001122,2026-01-27,Uber,327.42,Gas & Travel,Jeff,EXP_0002120
+RCPT_0001123,2026-01-28,Pebble Beach,292.61,Client Hosting & Entertainment,Jeff,EXP_0002124
+RCPT_0001124,2026-01-28,Nobu,261.75,Client Hosting & Entertainment,Jeff,EXP_0002125
+RCPT_0001125,2026-01-28,Delta,307.89,Gas & Travel,Jeff,EXP_0002126
+RCPT_0001126,2026-01-28,Ruths Chris,355.07,Client Hosting & Entertainment,Jeff,EXP_0002128
+RCPT_0001127,2026-01-29,Delta,288.25,Gas & Travel,Jeff,EXP_0002129
+RCPT_0001128,2026-01-29,Pebble Beach,337.62,Client Hosting & Entertainment,Jeff,EXP_0002131
+RCPT_0001129,2026-01-29,United,50.0,Gas & Travel,Antoine,EXP_0002132
+RCPT_0001130,2026-01-29,Starbucks,925.91,Client Hosting & Entertainment,Antoine,EXP_0002133
+RCPT_0001131,2026-01-29,Topgolf,125.67,Client Hosting & Entertainment,Antoine,EXP_0002134
+RCPT_0001132,2026-01-29,Pebble Beach,710.44,Client Hosting & Entertainment,Jeff,EXP_0002135
+RCPT_0001133,2026-01-30,Uber,375.37,Gas & Travel,Jeff,EXP_0002136
+RCPT_0001134,2026-01-30,Topgolf,339.22,Client Hosting & Entertainment,Antoine,EXP_0002137
+RCPT_0001135,2026-01-30,Delta,178.16,Gas & Travel,Jeff,EXP_0002138
+RCPT_0001136,2026-01-31,Topgolf,85.3,Client Hosting & Entertainment,Jeff,EXP_0002139
+RCPT_0001137,2026-01-31,Nobu,488.06,Client Hosting & Entertainment,Jeff,EXP_0002141
+RCPT_0001138,2026-02-01,Starbucks,527.61,Client Hosting & Entertainment,Jeff,EXP_0002144
+RCPT_0001139,2026-02-01,Delta,124.56,Gas & Travel,Jeff,EXP_0002145
+RCPT_0001140,2026-02-02,Starbucks,619.8,Client Hosting & Entertainment,Antoine,EXP_0002148
+RCPT_0001141,2026-02-02,Uber,239.72,Gas & Travel,Antoine,EXP_0002149
+RCPT_0001142,2026-02-02,Topgolf,289.25,Client Hosting & Entertainment,Antoine,EXP_0002152
+RCPT_0001143,2026-02-02,Pebble Beach,761.15,Client Hosting & Entertainment,Jeff,EXP_0002153
+RCPT_0001144,2026-02-03,Pebble Beach,738.72,Client Hosting & Entertainment,Jeff,EXP_0002155
+RCPT_0001145,2026-02-04,Nobu,548.44,Client Hosting & Entertainment,Jeff,EXP_0002159
+RCPT_0001146,2026-02-04,Nobu,934.03,Client Hosting & Entertainment,Jeff,EXP_0002160
+RCPT_0001147,2026-02-04,Shell,128.09,Gas & Travel,Jeff,EXP_0002161
+RCPT_0001148,2026-02-05,Ruths Chris,173.02,Client Hosting & Entertainment,Jeff,EXP_0002164
+RCPT_0001149,2026-02-05,United,320.97,Gas & Travel,Antoine,EXP_0002165

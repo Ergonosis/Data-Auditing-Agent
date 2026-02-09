@@ -1,0 +1,294 @@
+{
+  "dataset_name": "orphan_transactions_60",
+  "corruption_type": "orphan_transactions",
+  "corruption_params": {
+    "new_orphans": 50,
+    "delete_bank_count": 10,
+    "seed": 42
+  },
+  "created_at": "2026-02-08T21:46:48.172204",
+  "ground_truth": {
+    "total_rows": 2217,
+    "corrupted_rows": 50,
+    "corrupted_row_ids": [
+      "EXP_0002168",
+      "EXP_0002169",
+      "EXP_0002170",
+      "EXP_0002171",
+      "EXP_0002172",
+      "EXP_0002173",
+      "EXP_0002174",
+      "EXP_0002175",
+      "EXP_0002176",
+      "EXP_0002177",
+      "EXP_0002178",
+      "EXP_0002179",
+      "EXP_0002180",
+      "EXP_0002181",
+      "EXP_0002182",
+      "EXP_0002183",
+      "EXP_0002184",
+      "EXP_0002185",
+      "EXP_0002186",
+      "EXP_0002187",
+      "EXP_0002188",
+      "EXP_0002189",
+      "EXP_0002190",
+      "EXP_0002191",
+      "EXP_0002192",
+      "EXP_0002193",
+      "EXP_0002194",
+      "EXP_0002195",
+      "EXP_0002196",
+      "EXP_0002197",
+      "EXP_0002198",
+      "EXP_0002199",
+      "EXP_0002200",
+      "EXP_0002201",
+      "EXP_0002202",
+      "EXP_0002203",
+      "EXP_0002204",
+      "EXP_0002205",
+      "EXP_0002206",
+      "EXP_0002207",
+      "EXP_0002208",
+      "EXP_0002209",
+      "EXP_0002210",
+      "EXP_0002211",
+      "EXP_0002212",
+      "EXP_0002213",
+      "EXP_0002214",
+      "EXP_0002215",
+      "EXP_0002216",
+      "EXP_0002217"
+    ],
+    "corruption_details": {
+      "EXP_0002168": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002169": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002170": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002171": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002172": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002173": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002174": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002175": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002176": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002177": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002178": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002179": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002180": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002181": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002182": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002183": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002184": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002185": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002186": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002187": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002188": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002189": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002190": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002191": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002192": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002193": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002194": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002195": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002196": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002197": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002198": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002199": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002200": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002201": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002202": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002203": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002204": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002205": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002206": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002207": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002208": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002209": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002210": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002211": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002212": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002213": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002214": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002215": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002216": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      },
+      "EXP_0002217": {
+        "corruption_type": "phantom_expense",
+        "description": "New credit card expense with no matching bank transaction"
+      }
+    },
+    "bank_deletions": {
+      "deleted_count": 10,
+      "deleted_descriptions": [
+        "Credit card payment",
+        "Credit card payment",
+        "Quarterly advisory fees",
+        "Credit card payment",
+        "Quarterly advisory fees",
+        "Quarterly advisory fees",
+        "Credit card payment",
+        "Credit card payment",
+        "Quarterly advisory fees",
+        "Quarterly advisory fees"
+      ]
+    },
+    "notes": "Added 50 phantom credit card expenses with high amounts ($5k-$15k). Deleted 10 bank transactions to orphan existing expenses."
+  },
+  "expected_results": {
+    "flags_created_min": 50,
+    "flags_created_max": 70,
+    "severity_distribution": {
+      "CRITICAL": 50,
+      "WARNING": 10,
+      "INFO": 0
+    },
+    "notes": "Phantom expenses with high amounts ($5k-$15k) should trigger CRITICAL (+50 no_match + 20 high_amount = 70+ severity score)"
+  }
+}

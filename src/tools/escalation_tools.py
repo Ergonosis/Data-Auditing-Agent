@@ -3,6 +3,7 @@
 from crewai.tools import tool
 from typing import Dict, Any, List
 import uuid
+import os
 from datetime import datetime
 from src.tools.llm_client import call_llm
 from src.utils.logging import get_logger
@@ -11,6 +12,20 @@ from src.constants import SeverityLevel
 import json
 
 logger = get_logger(__name__)
+
+# Global list for collecting flags in test mode
+_test_mode_flags = []
+
+
+def get_test_mode_flags():
+    """Retrieve flags collected during test mode"""
+    return _test_mode_flags.copy()
+
+
+def clear_test_mode_flags():
+    """Clear test mode flags (call at start of each test run)"""
+    global _test_mode_flags
+    _test_mode_flags = []
 
 @tool("calculate_severity_score")
 def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[str, Any]) -> dict[str, Any]:
@@ -257,6 +272,16 @@ def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, exp
     }
 
     logger.info(f"Flag created", **flag_data)
+
+    # Collect flag in test mode for benchmarking
+    if os.getenv('TEST_MODE') == 'true':
+        global _test_mode_flags
+        _test_mode_flags.append({
+            'flag_id': flag_id,
+            'txn_id': transaction_id,
+            'severity': severity,
+            'explanation': explanation
+        })
 
     return flag_id
 

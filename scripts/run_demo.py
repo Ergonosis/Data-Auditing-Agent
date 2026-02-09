@@ -13,6 +13,7 @@ Usage:
 
 import os
 import sys
+import json
 import argparse
 from pathlib import Path
 from datetime import datetime
@@ -35,6 +36,7 @@ os.environ["LOG_LEVEL"] = "INFO"
 from src.demo.csv_data_loader import DemoDataLoader
 from src.orchestrator.orchestrator_agent import AuditOrchestrator
 from src.utils.logging import get_logger
+from src.tools.escalation_tools import get_test_mode_flags
 
 logger = get_logger(__name__)
 
@@ -130,12 +132,13 @@ def show_data_summary():
         sys.exit(1)
 
 
-def run_demo_audit(limit: int = None):
+def run_demo_audit(limit: int = None, json_output: str = None):
     """
     Run full audit cycle in demo mode
 
     Args:
         limit: Optional limit on number of transactions to process
+        json_output: Optional path to save results as JSON
     """
     print_header("Running Demo Audit")
 
@@ -186,6 +189,22 @@ def run_demo_audit(limit: int = None):
         print(f"📋 Created {results['flags_created']} audit flags")
         print(f"🆔 Audit Run ID: {results['audit_run_id']}")
 
+        # Save JSON output if requested
+        if json_output:
+            output_data = {
+                'audit_run_id': results['audit_run_id'],
+                'status': results['status'],
+                'transaction_count': results['transaction_count'],
+                'flags_created': results['flags_created'],
+                'duration_seconds': duration,
+                'flags': get_test_mode_flags()
+            }
+
+            with open(json_output, 'w') as f:
+                json.dump(output_data, f, indent=2)
+
+            print(f"💾 JSON output saved to: {json_output}")
+
         return results
 
     except Exception as e:
@@ -219,6 +238,11 @@ def main():
         help="Path to demo data directory (default: ria_data)"
     )
 
+    parser.add_argument(
+        '--json-output',
+        help="Save results as JSON file to specified path"
+    )
+
     args = parser.parse_args()
 
     # Set data directory
@@ -242,7 +266,7 @@ def main():
         print("✅ Demo data validated successfully")
         print("💡 Run without --dry-run to execute full audit")
     else:
-        run_demo_audit(limit=args.limit)
+        run_demo_audit(limit=args.limit, json_output=args.json_output)
 
 
 if __name__ == "__main__":

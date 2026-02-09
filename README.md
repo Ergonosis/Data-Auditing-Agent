@@ -7,6 +7,7 @@ A production-ready, cost-optimized agentic audit system using CrewAI, Databricks
 **Tool-First, LLM-Light Architecture**: 97% deterministic operations (SQL/ML), 3% LLM calls
 
 ### Key Features
+
 - ✅ **6 Specialized Agents**: Data Quality, Reconciliation, Anomaly Detection, Context Enrichment, Escalation, Audit Logging
 - ✅ **Cost Optimized**: ~$150/month total ($100-150 Databricks compute + $2 LLM)
 - ✅ **Scalable**: Processes 10,000+ transactions/month
@@ -47,6 +48,7 @@ For full architecture details, see [`system_flowchart.mmd`](system_flowchart.mmd
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Python 3.11+
 - Redis (for state management)
 - OpenRouter API key (for LLM calls)
@@ -65,9 +67,32 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env and add your OPENROUTER_API_KEY
 
-# Run audit cycle (uses mock data)
-python src/main.py
+# Run demo audit
+python scripts/run_demo.py
 ```
+
+### Testing Framework
+
+The project includes an automated testing framework with augmented datasets:
+
+```bash
+# Generate test datasets with various corruptions
+python scripts/generate_test_datasets.py
+
+# Run automated benchmark suite
+python tests/demo_testing.py
+```
+
+**Test Datasets:**
+- `clean_data/` - Original pristine data
+- `missing_fields_15pct/` - 15% missing vendor/amount/date fields
+- `duplicates_10pct/` - 10% duplicate transactions
+- `orphan_transactions_60/` - 60 unmatched transactions (no bank reconciliation)
+
+**Benchmark Metrics:**
+- Full confusion matrix (TP/FP/TN/FN)
+- Precision, Recall, F1 Score
+- Performance comparison across corruption types
 
 ---
 
@@ -106,6 +131,7 @@ ergonosis_auditing/
 ## 🛠️ Development Status
 
 ### ✅ Completed (Foundation)
+
 - Directory structure
 - Configuration system (rules.yaml, .env)
 - Data models (Transaction, Flag, AuditLogEntry, VendorProfile)
@@ -114,6 +140,7 @@ ergonosis_auditing/
 - Architecture decision log (6 ADRs)
 
 ### 🚧 Ready for Implementation (See Task Assignments)
+
 The remaining implementation is broken down into **5 independent, parallelizable tasks**:
 
 1. **TASK 1**: Core Infrastructure (Databricks, LLM, State Manager) - 2 hours
@@ -143,14 +170,15 @@ All architectural decisions are tracked in [`development_history.md`](developmen
 
 **Monthly Cost Target**: ~$150/month per client
 
-| Component | Monthly Cost |
-|-----------|--------------|
-| Databricks compute (job clusters) | $100-150 |
-| LLM API calls (OpenRouter) | $2-10 |
-| Redis (state management) | $0-30 |
-| **Total** | **~$150** |
+| Component                         | Monthly Cost |
+| --------------------------------- | ------------ |
+| Databricks compute (job clusters) | $100-150     |
+| LLM API calls (OpenRouter)        | $2-10        |
+| Redis (state management)          | $0-30        |
+| **Total**                         | **~$150**    |
 
 **LLM Usage**:
+
 - 1000 audits/month × ~30 LLM calls/audit × ~500 tokens/call = **15M tokens/month**
 - Cost: ~$2-10/month (well under $100 budget)
 
@@ -164,5 +192,3 @@ All architectural decisions are tracked in [`development_history.md`](developmen
 - [`docs/TASK_ASSIGNMENTS_SUMMARY.md`](docs/TASK_ASSIGNMENTS_SUMMARY.md) - Implementation task breakdown
 
 ---
-
-**Built with ❤️ using CrewAI, Databricks, and a tool-first philosophy**

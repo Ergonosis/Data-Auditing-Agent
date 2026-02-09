@@ -1,0 +1,18 @@
+{
+  "dataset_name": "clean_data",
+  "corruption_type": "none",
+  "description": "Original pristine data with no corruption",
+  "created_at": "2026-02-08T21:46:48.049370",
+  "ground_truth": {
+    "total_rows": 2167,
+    "corrupted_rows": 0,
+    "corrupted_row_ids": [],
+    "corruption_details": {}
+  },
+  "expected_results": {
+    "completeness_score": 1.0,
+    "flags_created_min": 0,
+    "flags_created_max": 100,
+    "notes": "Clean data may still have flags due to sparse bank reconciliation data"
+  }
+}
