@@ -1,6 +1,6 @@
 """Data Quality validation tools"""
 
-from crewai_tools import tool
+from crewai.tools import tool
 import pandas as pd
 from typing import Dict, Any, List
 from src.tools.databricks_client import query_gold_tables
@@ -13,7 +13,7 @@ import os
 logger = get_logger(__name__)
 
 @tool("check_data_completeness")
-def check_data_completeness(table_name: str) -> dict:
+def check_data_completeness(table_name: str) -> dict[str, Any]:
     """
     Validate data completeness - check if required fields are populated
 
@@ -77,14 +77,13 @@ def check_data_completeness(table_name: str) -> dict:
 
 
 @tool("validate_schema_conformity")
-def validate_schema_conformity(table_name: str, expected_schema: dict) -> list:
+def validate_schema_conformity(table_name: str, expected_schema_json: str = "{}") -> list[dict[str, str]]:
     """
     Validate schema conformity - check data types and structure
 
     Args:
         table_name: Name of table to validate
-        expected_schema: Expected schema {'field': 'type', ...}
-                        e.g., {'amount': 'float', 'vendor': 'str', 'date': 'datetime'}
+        expected_schema_json: JSON string of expected schema like '{"amount": "float", "vendor": "str", "date": "datetime"}'
 
     Returns:
         List of validation errors (empty if all valid)
@@ -93,6 +92,8 @@ def validate_schema_conformity(table_name: str, expected_schema: dict) -> list:
             ...
         ]
     """
+    # Parse JSON string to dict
+    expected_schema = json.loads(expected_schema_json) if expected_schema_json else {}
     logger.info(f"Validating schema for {table_name}")
 
     try:
@@ -139,7 +140,7 @@ def validate_schema_conformity(table_name: str, expected_schema: dict) -> list:
 
 
 @tool("detect_duplicate_records")
-def detect_duplicate_records(table_name: str, key_fields: list) -> dict:
+def detect_duplicate_records(table_name: str, key_fields: list[str]) -> dict[str, Any]:
     """
     Detect duplicate records based on key fields
 
@@ -196,18 +197,14 @@ def detect_duplicate_records(table_name: str, key_fields: list) -> dict:
 
 
 @tool("infer_domain_freshness")
-def infer_domain_freshness(transaction_pattern: dict) -> dict:
+def infer_domain_freshness(transaction_pattern_json: str = "{}") -> dict[str, Any]:
     """
     Infer domain-specific freshness requirements
 
     Args:
-        transaction_pattern: Transaction characteristics
-        {
-            'frequency': 'daily' | 'weekly' | 'monthly',
-            'vendor_type': 'supplier' | 'service' | 'subscription',
-            'avg_amount': float,
-            'domain': str (optional - if known)
-        }
+        transaction_pattern_json: JSON string of transaction characteristics like:
+            '{"frequency": "daily", "vendor_type": "supplier", "avg_amount": 100.0, "domain": "inventory"}'
+            Keys: frequency, vendor_type, avg_amount, domain (optional)
 
     Returns:
         Domain configuration:
@@ -218,6 +215,8 @@ def infer_domain_freshness(transaction_pattern: dict) -> dict:
             'source': 'manual_config' | 'inferred'
         }
     """
+    # Parse JSON string to dict
+    transaction_pattern = json.loads(transaction_pattern_json) if transaction_pattern_json else {}
     logger.info(f"Inferring domain freshness for pattern: {transaction_pattern}")
 
     try:
@@ -286,18 +285,20 @@ Respond with ONLY a JSON object (no markdown, no explanation):
 
 
 @tool("check_data_quality_gates")
-def check_data_quality_gates(quality_metrics: dict, thresholds: dict) -> bool:
+def check_data_quality_gates(quality_metrics_json: str = "{}", thresholds_json: str = '{"completeness_threshold": 0.9}') -> bool:
     """
     Check if data quality meets minimum thresholds
 
     Args:
-        quality_metrics: Output from check_data_completeness
-        thresholds: Threshold configuration
-                   {'completeness_threshold': 0.90, ...}
+        quality_metrics_json: JSON string of quality metrics like '{"completeness_score": 0.95}'
+        thresholds_json: JSON string of thresholds like '{"completeness_threshold": 0.90}'
 
     Returns:
         True if quality passes gates, False if audit should halt
     """
+    # Parse JSON strings to dicts
+    quality_metrics = json.loads(quality_metrics_json) if quality_metrics_json else {}
+    thresholds = json.loads(thresholds_json) if thresholds_json else {"completeness_threshold": 0.9}
     logger.info("Checking data quality gates")
 
     try:

@@ -16,12 +16,17 @@ import sys
 import argparse
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
 
 # Add project root to path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-# Set demo mode environment variables
+# Load .env file FIRST (before any agent imports)
+env_path = project_root / '.env'
+load_dotenv(dotenv_path=env_path)
+
+# Set/override demo mode environment variables
 os.environ["DEMO_MODE"] = "true"
 os.environ["ENVIRONMENT"] = "demo"
 os.environ["STATE_BACKEND"] = "memory"

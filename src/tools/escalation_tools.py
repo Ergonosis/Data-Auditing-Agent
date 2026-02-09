@@ -1,6 +1,6 @@
 """Escalation and severity classification tools"""
 
-from crewai_tools import tool
+from crewai.tools import tool
 from typing import Dict, Any, List
 import uuid
 from datetime import datetime
@@ -13,7 +13,7 @@ import json
 logger = get_logger(__name__)
 
 @tool("calculate_severity_score")
-def calculate_severity_score(transaction: dict, agent_results: dict) -> dict:
+def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[str, Any]) -> dict[str, Any]:
     """
     Calculate severity score based on all agent outputs (rule-based)
 
@@ -99,7 +99,7 @@ def calculate_severity_score(transaction: dict, agent_results: dict) -> dict:
 
 
 @tool("generate_root_cause_analysis")
-def generate_root_cause_analysis(transaction: dict, agent_results: dict) -> str:
+def generate_root_cause_analysis(transaction: dict[str, Any], agent_results: dict[str, Any]) -> str:
     """
     Generate human-readable explanation for why transaction was flagged
 
@@ -167,13 +167,13 @@ Respond with 2 sentences explaining the red flags:
 
 
 @tool("batch_classify_with_llm")
-def batch_classify_with_llm(transactions: list, agent_results_list: list) -> list:
+def batch_classify_with_llm(transactions_json: str = "[]", agent_results_list_json: str = "[]") -> list[dict[str, str]]:
     """
     Batch classify edge-case transactions using LLM
 
     Args:
-        transactions: List of transactions
-        agent_results_list: List of agent results (parallel to transactions)
+        transactions_json: JSON array string of transactions like '[{"txn_id": "x", "vendor": "AWS", "amount": 100}, ...]'
+        agent_results_list_json: JSON array string of agent results like '[{"reconciliation": {"matched": false}, ...}, ...]'
 
     Returns:
         List of classifications [
@@ -181,6 +181,11 @@ def batch_classify_with_llm(transactions: list, agent_results_list: list) -> lis
             ...
         ]
     """
+    # Parse JSON strings to lists
+    import json
+    transactions = json.loads(transactions_json) if transactions_json else []
+    agent_results_list = json.loads(agent_results_list_json) if agent_results_list_json else []
+
     logger.info(f"Batch classifying {len(transactions)} edge cases with LLM")
 
     try:
@@ -226,7 +231,7 @@ Respond with ONLY a JSON array (no markdown):
 
 
 @tool("create_audit_flag")
-def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, explanation: str, evidence: dict) -> str:
+def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, explanation: str, evidence: dict[str, Any]) -> str:
     """
     Create audit flag entry (would write to database in production)
 

@@ -1,6 +1,6 @@
 """Anomaly detection tools using ML and statistical methods"""
 
-from crewai_tools import tool
+from crewai.tools import tool
 import pandas as pd
 import numpy as np
 from typing import Dict, Any, List
@@ -24,7 +24,7 @@ else:
 
 
 @tool("run_isolation_forest")
-def run_isolation_forest(transactions: list) -> dict:
+def run_isolation_forest(transactions_json: str = "[]") -> dict[str, Any]:
     """
     Run Isolation Forest anomaly detection on transaction features
 
@@ -35,7 +35,8 @@ def run_isolation_forest(transactions: list) -> dict:
     - time_since_last_transaction_from_vendor
 
     Args:
-        transactions: List of transaction dicts with keys: txn_id, amount, vendor_id, date
+        transactions_json: JSON array string of transaction dicts like '[{"txn_id": "x", "amount": 100, "vendor_id": "v1", "date": "2025-01-01"}, ...]'
+            Required keys: txn_id, amount, vendor_id, date
 
     Returns:
         {
@@ -46,6 +47,10 @@ def run_isolation_forest(transactions: list) -> dict:
             'anomaly_count': int
         }
     """
+    # Parse JSON string to list
+    import json
+    transactions = json.loads(transactions_json) if transactions_json else []
+
     logger.info(f"Running Isolation Forest on {len(transactions)} transactions")
 
     try:
@@ -95,7 +100,7 @@ def run_isolation_forest(transactions: list) -> dict:
 
 
 @tool("check_vendor_spending_profile")
-def check_vendor_spending_profile(vendor_id: str, amount: float) -> dict:
+def check_vendor_spending_profile(vendor_id: str, amount: float) -> dict[str, Any]:
     """
     Check if transaction amount is typical for vendor
 
@@ -165,12 +170,12 @@ def check_vendor_spending_profile(vendor_id: str, amount: float) -> dict:
 
 
 @tool("detect_amount_outliers")
-def detect_amount_outliers(transactions: list) -> dict:
+def detect_amount_outliers(transactions_json: str = "[]") -> dict[str, Any]:
     """
     Simple statistical outlier detection using z-scores
 
     Args:
-        transactions: List of transaction dicts
+        transactions_json: JSON array string of transaction dicts like '[{"txn_id": "x", "amount": 100}, ...]'
 
     Returns:
         {
@@ -178,6 +183,10 @@ def detect_amount_outliers(transactions: list) -> dict:
             'outlier_count': int
         }
     """
+    # Parse JSON string to list
+    import json
+    transactions = json.loads(transactions_json) if transactions_json else []
+
     logger.info(f"Detecting amount outliers in {len(transactions)} transactions")
 
     try:
@@ -209,12 +218,12 @@ def detect_amount_outliers(transactions: list) -> dict:
 
 
 @tool("time_series_deviation_check")
-def time_series_deviation_check(recurring_transactions: list) -> dict:
+def time_series_deviation_check(recurring_transactions_json: str = "[]") -> dict[str, Any]:
     """
     Check for deviations in recurring transactions (simplified version)
 
     Args:
-        recurring_transactions: List of recurring transactions (same vendor, similar amounts)
+        recurring_transactions_json: JSON array string of recurring transactions like '[{"txn_id": "x", "amount": 100, "date": "2025-01-01"}, ...]'
 
     Returns:
         {
@@ -222,6 +231,10 @@ def time_series_deviation_check(recurring_transactions: list) -> dict:
             'deviation_count': int
         }
     """
+    # Parse JSON string to list
+    import json
+    recurring_transactions = json.loads(recurring_transactions_json) if recurring_transactions_json else []
+
     logger.info(f"Checking time series deviations for {len(recurring_transactions)} transactions")
 
     try:
@@ -254,12 +267,12 @@ def time_series_deviation_check(recurring_transactions: list) -> dict:
 
 
 @tool("batch_anomaly_scorer")
-def batch_anomaly_scorer(transactions: list) -> dict:
+def batch_anomaly_scorer(transactions_json: str = "[]") -> dict[str, Any]:
     """
     Combine all anomaly signals into single score (0-100)
 
     Args:
-        transactions: List of transactions with anomaly data attached
+        transactions_json: JSON array string of transactions with anomaly data like '[{"txn_id": "x", "is_anomaly_if": true, ...}, ...]'
 
     Returns:
         {
@@ -270,6 +283,10 @@ def batch_anomaly_scorer(transactions: list) -> dict:
             'high_risk_count': int  # score >70
         }
     """
+    # Parse JSON string to list
+    import json
+    transactions = json.loads(transactions_json) if transactions_json else []
+
     logger.info(f"Scoring {len(transactions)} transactions")
 
     try:

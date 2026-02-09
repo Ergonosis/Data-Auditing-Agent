@@ -1,6 +1,6 @@
 """Context enrichment tools for finding supporting documentation"""
 
-from crewai_tools import tool
+from crewai.tools import tool
 import pandas as pd
 from typing import Dict, Any, List
 from datetime import timedelta
@@ -12,15 +12,13 @@ import re
 logger = get_logger(__name__)
 
 @tool("search_emails_batch")
-def search_emails_batch(transactions: list) -> dict:
+def search_emails_batch(transactions_json: str = "[]") -> dict[str, Any]:
     """
     Batch search emails for mentions of vendors/amounts/dates
 
     Args:
-        transactions: List of suspicious transactions [
-            {'txn_id': 'x', 'vendor': 'AWS', 'amount': 500, 'date': '2025-02-01'},
-            ...
-        ]
+        transactions_json: JSON array string of suspicious transactions like '[{"txn_id": "x", "vendor": "AWS", "amount": 500, "date": "2025-02-01"}, ...]'
+            Required keys: txn_id, vendor, amount, date
 
     Returns:
         {
@@ -33,6 +31,10 @@ def search_emails_batch(transactions: list) -> dict:
             ...
         }
     """
+    # Parse JSON string to list
+    import json
+    transactions = json.loads(transactions_json) if transactions_json else []
+
     logger.info(f"Searching emails for {len(transactions)} transactions")
 
     try:
@@ -194,7 +196,7 @@ def extract_approval_chains(email_thread_id: str) -> dict:
 
 
 @tool("find_receipt_images")
-def find_receipt_images(vendor: str, amount: float, date_range: tuple) -> list:
+def find_receipt_images(vendor: str, amount: float, date_range: tuple[str, str]) -> list[dict[str, str]]:
     """
     Find receipt images matching vendor/amount/date
 
@@ -209,6 +211,9 @@ def find_receipt_images(vendor: str, amount: float, date_range: tuple) -> list:
     logger.info(f"Finding receipts for {vendor}, ${amount}")
 
     try:
+        # Parse JSON array to tuple
+        import json
+        date_range = json.loads(date_range_json) if date_range_json else ["2025-01-01", "2025-12-31"]
         start_date, end_date = date_range
 
         receipts = query_gold_tables(f"""

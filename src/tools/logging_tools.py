@@ -1,6 +1,6 @@
 """Audit logging tools for compliance and transparency"""
 
-from crewai_tools import tool
+from crewai.tools import tool
 from typing import Dict, Any, List
 from datetime import datetime
 from src.utils.logging import get_logger
@@ -16,9 +16,9 @@ AUDIT_TRAIL = []
 def log_agent_decision(
     agent_name: str,
     action: str,
-    input_data: dict,
-    output_data: dict,
-    metadata: dict
+    input_data: dict[str, Any],
+    output_data: dict[str, Any],
+    metadata: dict[str, Any]
 ) -> str:
     """
     Log agent decision with full context
@@ -49,17 +49,21 @@ def log_agent_decision(
 
 
 @tool("create_audit_trail_entry")
-def create_audit_trail_entry(flag_id: str, decision_chain: list) -> str:
+def create_audit_trail_entry(flag_id: str, decision_chain_json: str = "[]") -> str:
     """
     Link flag to decision chain
 
     Args:
         flag_id: Flag UUID
-        decision_chain: List of decisions leading to flag
+        decision_chain_json: JSON array string of decisions like '[{"agent": "DataQuality", "action": "check", ...}, ...]'
 
     Returns:
         Confirmation message
     """
+    # Parse JSON string to list
+    import json
+    decision_chain = json.loads(decision_chain_json) if decision_chain_json else []
+
     entry = {
         'flag_id': flag_id,
         'decision_chain': decision_chain,

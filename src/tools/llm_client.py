@@ -1,6 +1,6 @@
 """OpenRouter LLM client with automatic cost tracking and model selection."""
 
-import openai
+from openai import OpenAI
 import os
 import time
 from typing import Optional
@@ -10,9 +10,21 @@ from src.utils.logging import get_logger
 
 logger = get_logger(__name__)
 
-# Configure OpenRouter
-openai.api_key = os.getenv("OPENROUTER_API_KEY")
-openai.api_base = "https://openrouter.ai/api/v1"
+# Lazy-initialize OpenRouter client
+_client = None
+
+def get_client():
+    """Get or create the OpenRouter client (lazy initialization)"""
+    global _client
+    if _client is None:
+        api_key = os.getenv("OPENROUTER_API_KEY")
+        if not api_key:
+            raise ValueError("OPENROUTER_API_KEY environment variable is not set")
+        _client = OpenAI(
+            api_key=api_key,
+            base_url="https://openrouter.ai/api/v1"
+        )
+    return _client
 
 # Pricing per 1M tokens (input tokens, simplified)
 MODEL_PRICING = {
@@ -49,7 +61,7 @@ def call_llm(
         try:
             start_time = time.time()
 
-            response = openai.ChatCompletion.create(
+            response = get_client().chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
                 timeout=60
@@ -57,7 +69,7 @@ def call_llm(
 
             # Track metrics
             latency = time.time() - start_time
-            tokens = response['usage']['total_tokens']
+            tokens = response.usage.total_tokens
             cost = calculate_cost(tokens, model)
 
             llm_tokens_counter.labels(model_name=model, agent_name=agent_name).inc(tokens)
@@ -73,21 +85,22 @@ def call_llm(
                 agent=agent_name
             )
 
-            return response['choices'][0]['message']['content']
-
-        except openai.error.RateLimitError as e:
-            logger.warning(f"Rate limit hit, retrying... (attempt {attempt + 1}/{max_retries})")
-            if attempt < max_retries - 1:
-                time.sleep(2 ** attempt)  # Exponential backoff
-            else:
-                raise LLMError(f"Rate limit exceeded after {max_retries} attempts: {e}")
+            return response.choices[0].message.content
 
         except Exception as e:
-            logger.error(f"LLM API error: {e}", attempt=attempt)
-            if attempt < max_retries - 1:
-                time.sleep(1)
+            # Check if it's a rate limit error
+            if "rate_limit" in str(e).lower() or "429" in str(e):
+                logger.warning(f"Rate limit hit, retrying... (attempt {attempt + 1}/{max_retries})")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)  # Exponential backoff
+                else:
+                    raise LLMError(f"Rate limit exceeded after {max_retries} attempts: {e}")
             else:
-                raise LLMError(f"LLM API call failed after {max_retries} attempts: {e}")
+                logger.error(f"LLM API error: {e}", attempt=attempt)
+                if attempt < max_retries - 1:
+                    time.sleep(1)
+                else:
+                    raise LLMError(f"LLM API call failed after {max_retries} attempts: {e}")
 
 
 def calculate_cost(tokens: int, model: str) -> float:

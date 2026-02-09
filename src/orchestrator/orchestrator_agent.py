@@ -152,21 +152,40 @@ class AuditOrchestrator:
             raise AuditSystemError(f"Audit {self.audit_run_id} failed: {e}")
 
     def _run_parallel_agents(self, transactions) -> Dict[str, Any]:
-        """Run Data Quality, Reconciliation, Anomaly agents in parallel"""
+        """Run Data Quality, Reconciliation, Anomaly agents (sequential in CrewAI)"""
 
         try:
             parallel_crew = Crew(
                 agents=[data_quality_agent, reconciliation_agent, anomaly_agent],
                 tasks=[data_quality_task, reconciliation_task, anomaly_task],
-                process=Process.parallel,
+                process=Process.sequential,
                 verbose=True
             )
 
             # Execute parallel agents
-            inputs = {'transactions': transactions.to_dict('records')}
-            results = parallel_crew.kickoff(inputs=inputs)
+            # Convert DataFrame to JSON-serializable format
+            import json
+            transactions_json = json.loads(transactions.to_json(orient='records', date_format='iso'))
+            inputs = {'transactions': transactions_json}
+            crew_output = parallel_crew.kickoff(inputs=inputs)
 
+            # CrewOutput object - extract the actual result
+            # The final task output is in crew_output.raw which is a string containing JSON
             logger.info("Parallel agents completed successfully")
+
+            # Parse the crew output - it's the final agent's output as a JSON string
+            if hasattr(crew_output, 'raw'):
+                results = json.loads(crew_output.raw) if isinstance(crew_output.raw, str) else crew_output.raw
+            elif hasattr(crew_output, 'json_dict'):
+                results = crew_output.json_dict
+            else:
+                # Fallback - return empty results structure
+                results = {
+                    'data_quality': {},
+                    'reconciliation': {},
+                    'anomaly': {}
+                }
+
             return results
 
         except Exception as e:

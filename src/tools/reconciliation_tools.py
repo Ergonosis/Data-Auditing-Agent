@@ -1,6 +1,6 @@
 """Reconciliation tools for cross-source transaction matching"""
 
-from crewai_tools import tool
+from crewai.tools import tool
 import pandas as pd
 from typing import Dict, Any, List, Tuple
 from datetime import datetime, timedelta
@@ -12,7 +12,7 @@ import numpy as np
 logger = get_logger(__name__)
 
 @tool("cross_source_matcher")
-def cross_source_matcher(source_1: str, source_2: str, date_range: tuple) -> dict:
+def cross_source_matcher(source_1: str, source_2: str, date_range_json: str = '["2025-01-01", "2025-12-31"]') -> dict[str, Any]:
     """
     Match transactions from two sources based on amount, date, and vendor
 
@@ -24,7 +24,7 @@ def cross_source_matcher(source_1: str, source_2: str, date_range: tuple) -> dic
     Args:
         source_1: First source name (e.g., 'credit_card')
         source_2: Second source name (e.g., 'bank')
-        date_range: (start_date, end_date) tuple
+        date_range_json: JSON array of [start_date, end_date] as ISO strings like '["2025-01-01", "2025-01-31"]'
 
     Returns:
         {
@@ -37,11 +37,13 @@ def cross_source_matcher(source_1: str, source_2: str, date_range: tuple) -> dic
             'match_rate': 0.88
         }
     """
-    logger.info(f"Matching {source_1} vs {source_2} for date range {date_range}")
-
     try:
-        # Query both sources
+        # Parse JSON array to tuple
+        import json
+        date_range = json.loads(date_range_json) if date_range_json else ["2025-01-01", "2025-12-31"]
         start_date, end_date = date_range
+
+        logger.info(f"Matching {source_1} vs {source_2} for date range {date_range}")
 
         df1 = query_gold_tables(f"""
             SELECT txn_id, amount, vendor, vendor_id, date
@@ -133,7 +135,7 @@ def cross_source_matcher(source_1: str, source_2: str, date_range: tuple) -> dic
 
 
 @tool("entity_resolver_kg")
-def entity_resolver_kg(vendor_name: str) -> dict:
+def entity_resolver_kg(vendor_name: str) -> dict[str, Any]:
     """
     Resolve vendor entity using Knowledge Graph (Delta Lake tables)
 
@@ -219,16 +221,13 @@ def fuzzy_vendor_matcher(vendor_a: str, vendor_b: str) -> float:
 
 
 @tool("receipt_transaction_matcher")
-def receipt_transaction_matcher(receipt_data: dict, transactions_table: str) -> dict:
+def receipt_transaction_matcher(receipt_data_json: str = "{}", transactions_table: str = "gold.transactions") -> dict[str, Any]:
     """
     Match OCR-extracted receipt to credit card transaction
 
     Args:
-        receipt_data: {
-            'vendor': str,
-            'amount': float,
-            'date': str (ISO format)
-        }
+        receipt_data_json: JSON string of receipt data like '{"vendor": "AWS", "amount": 100.0, "date": "2025-02-01"}'
+            Keys: vendor (str), amount (float), date (str in ISO format)
         transactions_table: Name of transactions table
 
     Returns:
@@ -239,12 +238,16 @@ def receipt_transaction_matcher(receipt_data: dict, transactions_table: str) -> 
             'date_delta_days': int
         }
     """
+    # Parse JSON string to dict
+    import json
+    receipt_data = json.loads(receipt_data_json) if receipt_data_json else {}
+
     logger.info(f"Matching receipt: {receipt_data}")
 
     try:
-        vendor = receipt_data['vendor']
-        amount = receipt_data['amount']
-        receipt_date = pd.to_datetime(receipt_data['date'])
+        vendor = receipt_data.get('vendor', '')
+        amount = receipt_data.get('amount', 0.0)
+        receipt_date = pd.to_datetime(receipt_data.get('date', '2025-01-01'))
 
         # Query transactions ±7 days from receipt date
         start_date = receipt_date - timedelta(days=7)
@@ -302,7 +305,7 @@ def receipt_transaction_matcher(receipt_data: dict, transactions_table: str) -> 
 
 
 @tool("find_orphan_transactions")
-def find_orphan_transactions(all_sources: list) -> dict:
+def find_orphan_transactions(all_sources: list[str]) -> dict[str, Any]:
     """
     Find transactions that appear in only one source (SUSPICIOUS)
 
