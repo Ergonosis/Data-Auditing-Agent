@@ -22,7 +22,7 @@ wheels/
 
 # Environment
 .env
-.end.demo
+.env.demo
 .venv
 env/
 venv/
