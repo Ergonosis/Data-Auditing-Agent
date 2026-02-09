@@ -15,21 +15,18 @@ logger = get_logger(__name__)
 @tool("calculate_severity_score")
 def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[str, Any]) -> dict[str, Any]:
     """
-    Calculate severity score based on all agent outputs (rule-based)
+    Calculate severity score based on Data Quality and Reconciliation outputs (rule-based)
 
-    Scoring rules:
-    - Not matched: +40 points
-    - Anomaly score >70: +30 points
-    - No email approval: +20 points
-    - No receipt found: +10 points
+    SIMPLIFIED 4-AGENT PIPELINE SCORING:
+    - Not matched in reconciliation: +50 points (increased weight - primary indicator)
+    - Incomplete data quality: +30 points
+    - High transaction amount (>$10k): +20 points (heuristic)
 
     Args:
         transaction: Transaction data
-        agent_results: Results from all previous agents {
+        agent_results: Results from Data Quality and Reconciliation agents {
             'data_quality': {...},
-            'reconciliation': {...},
-            'anomaly': {...},
-            'context': {...}
+            'reconciliation': {...}
         }
 
     Returns:
@@ -40,43 +37,41 @@ def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[st
             'contributing_factors': list
         }
     """
-    logger.info(f"Calculating severity for txn {transaction['txn_id']}")
+    logger.info(f"Calculating severity for txn {transaction.get('txn_id', 'unknown')}")
 
     try:
         score = 0
         factors = []
 
-        # Factor 1: Reconciliation match
+        # Factor 1: Reconciliation match (highest weight - now primary indicator)
         if not agent_results.get('reconciliation', {}).get('matched', False):
-            score += 40
+            score += 50
             factors.append('no_reconciliation_match')
 
-        # Factor 2: Anomaly score
-        anomaly_score = agent_results.get('anomaly', {}).get('anomaly_score', 0)
-        if anomaly_score > 70:
+        # Factor 2: Data quality (incomplete records)
+        if agent_results.get('data_quality', {}).get('incomplete', False):
             score += 30
-            factors.append('high_anomaly_score')
+            factors.append('incomplete_data')
 
-        # Factor 3: Email approval
-        if not agent_results.get('context', {}).get('email_approval', False):
+        # Factor 3: Amount-based heuristic (no ML/anomaly detection)
+        amount = transaction.get('amount', 0)
+        if amount > 10000:
             score += 20
-            factors.append('no_email_approval')
+            factors.append('high_amount')
 
-        # Factor 4: Receipt
-        if not agent_results.get('context', {}).get('receipt_found', False):
-            score += 10
-            factors.append('no_receipt')
+        # Removed: Anomaly detection (not in 4-agent scope)
+        # Removed: Context enrichment (email approval, receipts - not in 4-agent scope)
 
-        # Determine severity level
-        if score >= 80:
+        # Determine severity level (adjusted thresholds for simplified scoring)
+        if score >= 70:
             level = SeverityLevel.CRITICAL
         elif score >= 50:
             level = SeverityLevel.WARNING
         else:
             level = SeverityLevel.INFO
 
-        # Confidence based on number of factors
-        confidence = min(len(factors) / 4, 1.0)
+        # Confidence based on number of factors (max 3 now instead of 4)
+        confidence = min(len(factors) / 3, 1.0)
 
         result = {
             'severity_score': min(score, 100),

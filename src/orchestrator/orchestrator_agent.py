@@ -18,11 +18,11 @@ from src.utils.metrics import (
 )
 import time
 
-# Import all agents
+# Import all agents (4-agent simplified pipeline for demo)
 from src.agents.data_quality_agent import data_quality_agent, data_quality_task
 from src.agents.reconciliation_agent import reconciliation_agent, reconciliation_task
-from src.agents.anomaly_detection_agent import anomaly_agent, anomaly_task
-from src.agents.context_enrichment_agent import context_agent, context_task
+# Temporarily disabled: anomaly_detection_agent (not in initial scope)
+# Temporarily disabled: context_enrichment_agent (all tools broken in demo mode)
 from src.agents.escalation_agent import escalation_agent, escalation_task
 from src.agents.logging_agent import logging_agent, logging_task
 
@@ -76,24 +76,24 @@ class AuditOrchestrator:
                     'flags_created': 0
                 }
 
-            # Step 3: Save initial state
+            # Step 3: Save initial state (4-agent pipeline)
             save_workflow_state(self.audit_run_id, {
                 'status': 'in_progress',
                 'transaction_count': len(transactions),
                 'started_at': datetime.now().isoformat(),
                 'completed_agents': [],
-                'pending_agents': ['DataQuality', 'Reconciliation', 'Anomaly', 'Context', 'Escalation', 'Logging']
+                'pending_agents': ['DataQuality', 'Reconciliation', 'Escalation', 'Logging']
             })
 
-            # Step 4: Execute PARALLEL agents (Data Quality, Reconciliation, Anomaly)
+            # Step 4: Execute PARALLEL agents (Data Quality, Reconciliation)
             logger.info("🔄 Executing parallel agents...")
             parallel_results = self._run_parallel_agents(transactions)
 
             # Update state
             save_workflow_state(self.audit_run_id, {
                 'status': 'in_progress',
-                'completed_agents': ['DataQuality', 'Reconciliation', 'Anomaly'],
-                'pending_agents': ['Context', 'Escalation', 'Logging'],
+                'completed_agents': ['DataQuality', 'Reconciliation'],
+                'pending_agents': ['Escalation', 'Logging'],
                 'parallel_results': parallel_results
             })
 
@@ -152,12 +152,13 @@ class AuditOrchestrator:
             raise AuditSystemError(f"Audit {self.audit_run_id} failed: {e}")
 
     def _run_parallel_agents(self, transactions) -> Dict[str, Any]:
-        """Run Data Quality, Reconciliation, Anomaly agents (sequential in CrewAI)"""
+        """Run Data Quality and Reconciliation agents (sequential in CrewAI)"""
 
         try:
+            # Simplified 4-agent pipeline: Data Quality + Reconciliation only
             parallel_crew = Crew(
-                agents=[data_quality_agent, reconciliation_agent, anomaly_agent],
-                tasks=[data_quality_task, reconciliation_task, anomaly_task],
+                agents=[data_quality_agent, reconciliation_agent],
+                tasks=[data_quality_task, reconciliation_task],
                 process=Process.sequential,
                 verbose=True
             )
@@ -179,11 +180,10 @@ class AuditOrchestrator:
             elif hasattr(crew_output, 'json_dict'):
                 results = crew_output.json_dict
             else:
-                # Fallback - return empty results structure
+                # Fallback - return empty results structure (simplified for 4-agent pipeline)
                 results = {
                     'data_quality': {},
-                    'reconciliation': {},
-                    'anomaly': {}
+                    'reconciliation': {}
                 }
 
             return results
@@ -193,12 +193,13 @@ class AuditOrchestrator:
             raise
 
     def _run_sequential_agents(self, suspicious_txns: List[dict], parallel_results: dict) -> Dict[str, Any]:
-        """Run Context Enrichment and Escalation agents sequentially"""
+        """Run Escalation and Logging agents sequentially"""
 
         try:
+            # Simplified 4-agent pipeline: Escalation + Logging
             sequential_crew = Crew(
-                agents=[context_agent, escalation_agent],
-                tasks=[context_task, escalation_task],
+                agents=[escalation_agent, logging_agent],
+                tasks=[escalation_task, logging_task],
                 process=Process.sequential,
                 verbose=True
             )
@@ -223,7 +224,7 @@ class AuditOrchestrator:
         Merge results from parallel agents to identify suspicious transactions
 
         Args:
-            parallel_results: Results from Data Quality, Reconciliation, Anomaly
+            parallel_results: Results from Data Quality and Reconciliation (simplified pipeline)
             all_transactions: All transactions DataFrame
 
         Returns:
@@ -235,9 +236,9 @@ class AuditOrchestrator:
         unmatched = parallel_results.get('reconciliation', {}).get('unmatched_transactions', [])
         suspicious_ids.update([t['txn_id'] for t in unmatched])
 
-        # Add high anomaly scores
-        anomalies = parallel_results.get('anomaly', {}).get('flagged_transactions', [])
-        suspicious_ids.update([a['txn_id'] for a in anomalies])
+        # Anomaly detection removed (not in 4-agent scope)
+        # anomalies = parallel_results.get('anomaly', {}).get('flagged_transactions', [])
+        # suspicious_ids.update([a['txn_id'] for a in anomalies])
 
         # Add incomplete/bad quality records
         incomplete = parallel_results.get('data_quality', {}).get('incomplete_records', [])
