@@ -7,6 +7,7 @@ from src.tools.logging_tools import (
     get_audit_trail,
     generate_lineage_trace
 )
+from src.agents.llm_config import get_shared_agent_llm
 
 logging_agent = Agent(
     role="Audit Trail Recorder",
@@ -22,7 +23,8 @@ logging_agent = Agent(
     ],
 
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=get_shared_agent_llm()
 )
 
 logging_task = Task(

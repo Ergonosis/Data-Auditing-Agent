@@ -321,6 +321,11 @@ def find_orphan_transactions(all_sources: list[str]) -> dict[str, Any]:
             ]
         }
     """
+    # Coerce all_sources in case LLM passes a JSON string instead of a list
+    if isinstance(all_sources, str):
+        import json as _json
+        all_sources = _json.loads(all_sources) if all_sources.startswith('[') else [all_sources]
+
     logger.info(f"Finding orphan transactions across sources: {all_sources}")
 
     try:

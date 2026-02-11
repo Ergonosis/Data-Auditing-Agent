@@ -8,6 +8,7 @@ from src.tools.anomaly_tools import (
     time_series_deviation_check,
     batch_anomaly_scorer
 )
+from src.agents.llm_config import get_shared_agent_llm
 
 anomaly_agent = Agent(
     role="Anomaly Detection Specialist",
@@ -25,7 +26,7 @@ anomaly_agent = Agent(
 
     verbose=True,
     allow_delegation=False,
-    llm=None
+    llm=get_shared_agent_llm()
 )
 
 anomaly_task = Task(

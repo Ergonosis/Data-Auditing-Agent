@@ -9,6 +9,7 @@ from src.tools.data_quality_tools import (
     check_data_quality_gates
 )
 from src.utils.logging import get_logger
+from src.agents.llm_config import get_shared_agent_llm
 
 logger = get_logger(__name__)
 
@@ -30,7 +31,8 @@ data_quality_agent = Agent(
 
     verbose=True,
     allow_delegation=False,
-    llm=None  # No LLM needed for agent reasoning (tools handle LLM calls)
+    llm=get_shared_agent_llm()  # LLM orchestrates tools and formats JSON output
+    # Individual tools may still call LLM via llm_client.py for specialized reasoning
 )
 
 # Task definition
@@ -47,28 +49,30 @@ data_quality_task = Task(
     **Input**: transactions table name (e.g., 'gold.recent_transactions')
     **Output**: Structured report with:
     - quality_score (0-1)
-    - incomplete_records (list of IDs)
+    - incomplete_records (list of transaction ID STRINGS like ["EXP_001", "EXP_002"])
     - schema_violations (list of errors)
-    - duplicates (list of duplicate groups)
+    - duplicates (dict with duplicate_count and duplicate_groups)
     - domain_config (dict with domain, max_age_hours)
     - freshness_violations (list of stale transactions)
     - gate_passed (bool - True if quality acceptable, False if audit should halt)
 
     **Important**:
     - Use tools sequentially in order listed above
-    - If quality gate fails (completeness <90%), immediately return gate_passed=False
-    - For domain inference, check config first before calling LLM
-    - Log all findings clearly
+    - incomplete_records MUST be a list of transaction ID STRINGS (e.g., ["EXP_001", "EXP_002"])
+    - Extract txn_id values from tool results and return as simple string array
+    - If quality gate fails (completeness <90%), still return full results
+    - Ensure valid JSON with no trailing commas
+    - This output will be passed to the next task via context
     """,
 
     agent=data_quality_agent,
 
-    expected_output="""JSON object with data quality report:
+    expected_output="""Valid JSON object with data quality report. incomplete_records MUST be array of ID strings:
     {
         "quality_score": 0.95,
-        "incomplete_records": ["cc_123", "cc_456"],
+        "incomplete_records": ["EXP_001", "EXP_002"],
         "schema_violations": [],
-        "duplicates": {"duplicate_count": 3, "duplicate_groups": [...]},
+        "duplicates": {"duplicate_count": 3, "duplicate_groups": []},
         "domain_config": {"domain": "business_operations", "max_age_hours": 48, "confidence": 1.0},
         "freshness_violations": [],
         "gate_passed": true

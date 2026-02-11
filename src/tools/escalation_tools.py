@@ -1,7 +1,8 @@
 """Escalation and severity classification tools"""
 
 from crewai.tools import tool
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
+from pydantic import BaseModel, Field
 import uuid
 import os
 from datetime import datetime
@@ -12,6 +13,49 @@ from src.constants import SeverityLevel
 import json
 
 logger = get_logger(__name__)
+
+
+# Pydantic input models for OpenAI function calling schema compliance
+class TransactionInput(BaseModel):
+    """Transaction details for tool operations"""
+    txn_id: str = Field(description="Transaction ID")
+    vendor: str = Field(description="Vendor name")
+    amount: float = Field(description="Transaction amount")
+    date: str = Field(description="Transaction date (ISO format)")
+    source: str = Field(description="Data source (credit_card, bank, etc.)")
+    account: Optional[str] = Field(None, description="Account identifier")
+    category: Optional[str] = Field(None, description="Transaction category")
+    description: Optional[str] = Field(None, description="Transaction description")
+
+
+class DataQualityResult(BaseModel):
+    """Data quality agent output structure"""
+    quality_score: Optional[float] = Field(None, description="Overall quality score")
+    incomplete: Optional[bool] = Field(False, description="Whether record is incomplete")
+    incomplete_records: Optional[List[str]] = Field(default_factory=list, description="List of incomplete record IDs")
+    duplicate_records: Optional[List[str]] = Field(default_factory=list, description="List of duplicate record IDs")
+
+
+class ReconciliationResult(BaseModel):
+    """Reconciliation agent output structure"""
+    matched: Optional[bool] = Field(False, description="Whether transaction was matched")
+    match_rate: Optional[float] = Field(None, description="Match rate percentage")
+    suspicious_transactions: Optional[List[str]] = Field(default_factory=list, description="List of suspicious transaction IDs")
+
+
+class AgentResultsInput(BaseModel):
+    """Combined results from data_quality and reconciliation agents"""
+    data_quality: DataQualityResult = Field(description="Data quality agent output")
+    reconciliation: ReconciliationResult = Field(description="Reconciliation agent output")
+
+
+class EvidenceInput(BaseModel):
+    """Evidence details for audit flag creation"""
+    matched: bool = Field(description="Whether transaction was matched")
+    high_amount: bool = Field(False, description="Whether amount exceeds threshold")
+    vendor: str = Field(description="Vendor name")
+    anomaly_type: Optional[str] = Field(None, description="Type of anomaly detected")
+    contributing_factors: Optional[List[str]] = Field(None, description="List of contributing factors")
 
 # Global list for collecting flags in test mode
 _test_mode_flags = []
@@ -28,7 +72,7 @@ def clear_test_mode_flags():
     _test_mode_flags = []
 
 @tool("calculate_severity_score")
-def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[str, Any]) -> dict[str, Any]:
+def calculate_severity_score(transaction: TransactionInput, agent_results: AgentResultsInput) -> dict[str, Any]:
     """
     Calculate severity score based on Data Quality and Reconciliation outputs (rule-based)
 
@@ -52,24 +96,29 @@ def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[st
             'contributing_factors': list
         }
     """
-    logger.info(f"Calculating severity for txn {transaction.get('txn_id', 'unknown')}")
+    # Convert Pydantic models to dicts for internal use
+    # Handle both Pydantic models and plain dicts (CrewAI may pass either)
+    txn = transaction.model_dump() if hasattr(transaction, 'model_dump') else transaction
+    results = agent_results.model_dump() if hasattr(agent_results, 'model_dump') else agent_results
+
+    logger.info(f"Calculating severity for txn {txn.get('txn_id', 'unknown')}")
 
     try:
         score = 0
         factors = []
 
         # Factor 1: Reconciliation match (highest weight - now primary indicator)
-        if not agent_results.get('reconciliation', {}).get('matched', False):
+        if not results.get('reconciliation', {}).get('matched', False):
             score += 50
             factors.append('no_reconciliation_match')
 
         # Factor 2: Data quality (incomplete records)
-        if agent_results.get('data_quality', {}).get('incomplete', False):
+        if results.get('data_quality', {}).get('incomplete', False):
             score += 30
             factors.append('incomplete_data')
 
         # Factor 3: Amount-based heuristic (no ML/anomaly detection)
-        amount = transaction.get('amount', 0)
+        amount = txn.get('amount', 0)
         if amount > 10000:
             score += 20
             factors.append('high_amount')
@@ -109,7 +158,7 @@ def calculate_severity_score(transaction: dict[str, Any], agent_results: dict[st
 
 
 @tool("generate_root_cause_analysis")
-def generate_root_cause_analysis(transaction: dict[str, Any], agent_results: dict[str, Any]) -> str:
+def generate_root_cause_analysis(transaction: TransactionInput, agent_results: AgentResultsInput) -> str:
     """
     Generate human-readable explanation for why transaction was flagged
 
@@ -122,19 +171,31 @@ def generate_root_cause_analysis(transaction: dict[str, Any], agent_results: dic
     Returns:
         Human-readable explanation string
     """
-    logger.info(f"Generating root cause analysis for {transaction['txn_id']}")
+    # Convert Pydantic models to dicts
+    # Handle both Pydantic models and plain dicts (CrewAI may pass either)
+    txn = transaction.model_dump() if hasattr(transaction, 'model_dump') else transaction
+    results = agent_results.model_dump() if hasattr(agent_results, 'model_dump') else agent_results
+
+    logger.info(f"Generating root cause analysis for {txn['txn_id']}")
 
     try:
-        severity_info = agent_results.get('escalation', {})
-        confidence = severity_info.get('confidence', 0)
+        # Compute contributing factors from available agent results (data_quality + reconciliation)
+        # Note: 'escalation' key never exists in agent_results - compute confidence directly
+        factors = []
+        if not results.get('reconciliation', {}).get('matched', False):
+            factors.append('no_reconciliation_match')
+        if results.get('data_quality', {}).get('incomplete', False):
+            factors.append('incomplete_data')
+        if txn.get('amount', 0) > 10000:
+            factors.append('high_amount')
 
-        # Simple case: use template
-        if confidence >= 0.7:
-            factors = severity_info.get('contributing_factors', [])
-
+        # Use template whenever we have identifiable factors (fast, no LLM)
+        if factors:
             explanations = {
-                'no_reconciliation_match': f"No matching bank transaction found for ${transaction['amount']} to {transaction['vendor']}",
-                'high_anomaly_score': f"Transaction amount ${transaction['amount']} is statistically unusual for this vendor",
+                'no_reconciliation_match': f"No matching bank transaction found for ${txn['amount']} to {txn['vendor']}",
+                'incomplete_data': f"Transaction {txn['txn_id']} is missing required fields",
+                'high_amount': f"Transaction amount ${txn['amount']} exceeds high-value threshold",
+                'high_anomaly_score': f"Transaction amount ${txn['amount']} is statistically unusual for this vendor",
                 'no_email_approval': "No email approval or authorization found",
                 'no_receipt': "Receipt not found in system"
             }
@@ -146,7 +207,7 @@ def generate_root_cause_analysis(transaction: dict[str, Any], agent_results: dic
             logger.info("Used template for explanation")
             return explanation
 
-        # Complex case: use LLM
+        # LLM only for truly ambiguous cases (no identifiable factors)
         else:
             logger.info("Using LLM for complex explanation")
 
@@ -154,16 +215,16 @@ def generate_root_cause_analysis(transaction: dict[str, Any], agent_results: dic
 Generate a concise 2-sentence explanation for why this transaction was flagged as suspicious:
 
 Transaction:
-- ID: {transaction['txn_id']}
-- Vendor: {transaction['vendor']}
-- Amount: ${transaction['amount']}
-- Date: {transaction['date']}
+- ID: {txn['txn_id']}
+- Vendor: {txn['vendor']}
+- Amount: ${txn['amount']}
+- Date: {txn['date']}
 
 Findings:
-- Matched to bank: {agent_results.get('reconciliation', {}).get('matched', False)}
-- Anomaly score: {agent_results.get('anomaly', {}).get('anomaly_score', 0)}/100
-- Email approval: {agent_results.get('context', {}).get('email_approval', False)}
-- Receipt found: {agent_results.get('context', {}).get('receipt_found', False)}
+- Matched to bank: {results.get('reconciliation', {}).get('matched', False)}
+- Anomaly score: {results.get('anomaly', {}).get('anomaly_score', 0)}/100
+- Email approval: {results.get('context', {}).get('email_approval', False)}
+- Receipt found: {results.get('context', {}).get('receipt_found', False)}
 
 Respond with 2 sentences explaining the red flags:
 """
@@ -224,7 +285,7 @@ Respond with ONLY a JSON array (no markdown):
 ]
 """
 
-        response = call_llm(prompt, model="anthropic/claude-3-5-haiku", agent_name="Escalation")
+        response = call_llm(prompt, model="anthropic/claude-sonnet-4.5", agent_name="Escalation")
 
         # Parse JSON response
         try:
@@ -241,7 +302,7 @@ Respond with ONLY a JSON array (no markdown):
 
 
 @tool("create_audit_flag")
-def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, explanation: str, evidence: dict[str, Any]) -> str:
+def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, explanation: str, evidence: EvidenceInput) -> str:
     """
     Create audit flag entry (would write to database in production)
 
@@ -255,6 +316,10 @@ def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, exp
     Returns:
         Flag ID (UUID)
     """
+    # Convert Pydantic model to dict
+    # Handle both Pydantic models and plain dicts (CrewAI may pass either)
+    evidence_dict = evidence.model_dump() if hasattr(evidence, 'model_dump') else evidence
+
     flag_id = str(uuid.uuid4())
 
     logger.info(f"Created flag {flag_id} for txn {transaction_id} (severity: {severity})")
@@ -267,7 +332,7 @@ def create_audit_flag(transaction_id: str, audit_run_id: str, severity: str, exp
         'audit_run_id': audit_run_id,
         'severity_level': severity,
         'explanation': explanation,
-        'supporting_evidence_links': evidence,
+        'supporting_evidence_links': evidence_dict,
         'created_at': datetime.now().isoformat()
     }
 

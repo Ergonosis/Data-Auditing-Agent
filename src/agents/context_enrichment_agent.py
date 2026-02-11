@@ -8,6 +8,7 @@ from src.tools.context_tools import (
     find_receipt_images,
     semantic_search_documents
 )
+from src.agents.llm_config import get_shared_agent_llm
 
 context_agent = Agent(
     role="Context Enrichment Specialist",
@@ -25,7 +26,7 @@ context_agent = Agent(
 
     verbose=True,
     allow_delegation=False,
-    llm=None
+    llm=get_shared_agent_llm()
 )
 
 context_task = Task(

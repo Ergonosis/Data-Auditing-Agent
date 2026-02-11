@@ -28,9 +28,10 @@ def get_client():
 
 # Pricing per 1M tokens (input tokens, simplified)
 MODEL_PRICING = {
-    "openai/gpt-4o-mini": 0.15 / 1_000_000,
-    "anthropic/claude-3-5-haiku": 0.80 / 1_000_000,
-    "openai/gpt-4-turbo": 10.0 / 1_000_000  # Expensive, avoid unless necessary
+    "anthropic/claude-haiku-4.5": 0.80 / 1_000_000,
+    "anthropic/claude-sonnet-4.5": 3.0 / 1_000_000,
+    "anthropic/claude-sonnet-4": 3.0 / 1_000_000,
+    "openai/gpt-4o-mini": 0.15 / 1_000_000,  # kept for cost calc fallback
 }
 
 
@@ -55,7 +56,7 @@ def call_llm(
     Raises:
         LLMError: If API call fails after retries
     """
-    model = model or os.getenv("GPT4O_MINI_MODEL", "openai/gpt-4o-mini")
+    model = model or os.getenv("DEFAULT_LLM_MODEL", "anthropic/claude-haiku-4.5")
 
     for attempt in range(max_retries):
         try:

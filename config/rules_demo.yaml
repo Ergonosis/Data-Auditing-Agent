@@ -55,7 +55,7 @@ domain_configs:
 
 llm:
   provider: "openrouter"
-  default_model: "openai/gpt-4o-mini"
-  edge_case_model: "anthropic/claude-3-5-haiku"
+  default_model: "anthropic/claude-haiku-4.5"
+  edge_case_model: "anthropic/claude-sonnet-4.5"
   batch_size: 50
   timeout_seconds: 60

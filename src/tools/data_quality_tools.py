@@ -31,6 +31,8 @@ def check_data_completeness(table_name: str) -> dict[str, Any]:
             'completeness_score': float  # 0-1
         }
     """
+    # Normalize table_name in case LLM passes extra whitespace/quotes
+    table_name = table_name.strip().strip('"').strip("'")
     logger.info(f"Checking data completeness for {table_name}")
 
     try:
@@ -159,6 +161,11 @@ def detect_duplicate_records(table_name: str, key_fields: list[str]) -> dict[str
             ]
         }
     """
+    # Coerce key_fields in case LLM passes a JSON string instead of a list
+    if isinstance(key_fields, str):
+        import json as _json
+        key_fields = _json.loads(key_fields) if key_fields.startswith('[') else [key_fields]
+
     logger.info(f"Detecting duplicates in {table_name} on fields {key_fields}")
 
     try:
